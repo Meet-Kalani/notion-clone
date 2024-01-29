@@ -1,0 +1,118 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* utility classes */
+.flex{
+    display: flex;
+}
+
+/* main styling */
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+header .navbar-left .logo{
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+header .navbar-left .logo-img{
+    transform: scale(1.2);
+}
+
+header .navbar-left .nav-links{
+    list-style: none;
+    align-items: center;
+    margin-left: 1.2rem;
+}
+
+header .navbar-left .nav-link{
+    align-items:center;
+    cursor: pointer;
+    gap: 0.4rem;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+}
+
+header .navbar-left .nav-link:hover{
+    background-color: #0000000a;
+}
+
+header .navbar-left .nav-link .fa-solid{
+    font-size: 0.6rem;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* header .navbar-left .product-container{
+    gap: 1rem;
+}
+
+header .navbar-left .product-wrapper .product-content{
+    align-items: center;
+    justify-content: center;
+    gap:0.8rem;
+}
+
+header .navbar-left .product-wrapper .product-content span{
+    display: block;
+}
+
+header .navbar-left .product-guide span{
+    display: block;
+}
+
+header .navbar-left .product-guide .product-guide-description{
+    color: #959595;
+} */
+
+header .navbar-right{
+    align-items: center;
+}
+
+header .navbar-right a{
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.4rem 0.6rem;
+    margin: 0 0.5rem;
+}
+
+header .navbar-right .vertical-line{
+    color: #E5E5E5;
+}
+
+header .navbar-right .demo-btn:hover,
+header .navbar-right .login-btn:hover{
+    background-color: #0000000a;
+}
+
+header .navbar-right .free-notion-btn{
+    background-color: #131213;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+header .navbar-right .free-notion-btn:hover{
+    background-color: #333;
+}
+
+@media screen and (max-width: 1080px) {
+    
+}
