@@ -27,26 +27,42 @@
 
 <body>
     <header class="flex">
-        <nav class="navbar-left flex">
-            <div class="logo flex">
-                <img src="assets/favicon.svg" class="logo-img" alt="notion logo">
-                <span>Notion</span>
+        <div class="wrapper flex">
+            <div class="mobile-navbar">
+                <div class="logo flex">
+                    <img src="assets/favicon.svg" class="logo-img" alt="notion logo">
+                    <span>Notion</span>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openNavbar()"></i>
             </div>
-            <ul class="nav-links flex">
-                <li class="nav-link flex">Product <i class="fa-solid fa-angle-down"></i></li>
-                <li class="nav-link flex">Download <i class="fa-solid fa-angle-down"></i></li>
-                <li class="nav-link flex">Solutions <i class="fa-solid fa-angle-down"></i></li>
-                <li class="nav-link flex">Resources <i class="fa-solid fa-angle-down"></i></li>
-                <li class="nav-link flex">Pricing</li>
-            </ul>
-        </nav>
-        <nav class="navbar-right flex">
+            <nav class="navbar-left navbar flex">
+                <ul class="nav-links flex">
+                    <div class="nav-link-wrapper flex">
+                        <li class="nav-link flex">Product <i class="fa-solid fa-angle-down"></i></li><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="nav-link-wrapper flex">
+                        <li class="nav-link flex">Download <i class="fa-solid fa-angle-down"></i></li><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="nav-link-wrapper flex">
+                        <li class="nav-link flex">Solutions <i class="fa-solid fa-angle-down"></i></li><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="nav-link-wrapper flex">
+                        <li class="nav-link flex">Resources <i class="fa-solid fa-angle-down"></i></li><i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="nav-link-wrapper flex">
+                        <li class="nav-link flex">Pricing</li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <nav class="navbar-right navbar flex">
             <a href="#" class="demo-btn">Request a demo</a>
             <span class="vertical-line">|</span>
             <a href="#" class="login-btn">Log in</a>
             <a href="#" class="free-notion-btn">Get Notion free</a>
         </nav>
     </header>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>
