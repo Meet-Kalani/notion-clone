@@ -58,28 +58,6 @@ header .navbar-left .nav-link .fa-solid{
     margin-top: 6px;
 }
 
-/* header .navbar-left .product-container{
-    gap: 1rem;
-}
-
-header .navbar-left .product-wrapper .product-content{
-    align-items: center;
-    justify-content: center;
-    gap:0.8rem;
-}
-
-header .navbar-left .product-wrapper .product-content span{
-    display: block;
-}
-
-header .navbar-left .product-guide span{
-    display: block;
-}
-
-header .navbar-left .product-guide .product-guide-description{
-    color: #959595;
-} */
-
 header .navbar-right{
     align-items: center;
 }
