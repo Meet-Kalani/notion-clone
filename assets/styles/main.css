@@ -1,17 +1,22 @@
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
 /* Resetting default margin, padding, and box-sizing for all elements */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* utility classes */
-.flex{
+.flex {
     display: flex;
 }
 
 /* main styling */
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
 
@@ -23,76 +28,188 @@ header{
     font-size: 0.95rem;
 }
 
-header .logo{
+.logo {
     align-items: center;
     gap: 0.4rem;
     font-weight: 700;
     font-size: 1.05rem;
 }
 
-header .logo-img{
+.logo-img {
     transform: scale(1.2);
 }
 
-header .fa-bars,
-header .fa-angle-right{
+.fa-bars,
+.fa-angle-right {
     display: none;
 }
 
-header .navbar-left .nav-links{
+/* left navbar styles */
+.navbar-left .nav-links {
     list-style: none;
     align-items: center;
     margin-left: 1.2rem;
+    position: relative;
 }
 
-header .navbar-left .nav-link{
-    align-items:center;
+.navbar-left .nav-link {
+    align-items: center;
     cursor: pointer;
     gap: 0.4rem;
     border-radius: 5px;
     padding: 0.4rem 0.6rem;
 }
 
-header .navbar-left .nav-link:hover{
+.navbar-left .nav-link:hover {
     background-color: #0000000a;
 }
 
-header .navbar-left .nav-link .fa-solid{
+.navbar-left .nav-links .nav-link-wrapper:hover+.product-container,
+.navbar-left .product-container:hover,
+.navbar-left .nav-links .nav-link-wrapper:hover+.download-container,
+.navbar-left .download-container:hover,
+.navbar-left .nav-links .nav-link-wrapper:hover+.solution-container,
+.navbar-left .solution-container:hover,
+.navbar-left .nav-links .nav-link-wrapper:hover+.resource-container,
+.navbar-left .resource-container:hover {
+    display: flex;
+}
+
+.navbar-left .nav-link .fa-solid {
     font-size: 0.6rem;
     font-weight: 700;
     margin-top: 5px;
 }
 
-header .navbar-right{
+/* drop down */
+.navbar-left .product-container,
+.navbar-left .download-container,
+.navbar-left .solution-container,
+.navbar-left .resource-container {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+}
+
+.navbar-left .download-container {
+    left: 5.7rem;
+}
+
+.navbar-left .solution-container {
+    left: 12.3rem;
+}
+
+.navbar-left .resource-container {
+    left: 18.54rem;
+}
+
+.navbar-left .product-wrapper {
+    border-right: 1px solid #E5E5E5;
+    padding-right: 1rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.navbar-left .product-wrapper .product-content {
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.navbar-left .product-wrapper .product-content span,
+.navbar-left .solution-team-size .solution-content span,
+.navbar-left .product-guide span {
+    display: block;
+}
+
+.navbar-left .product-guide {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.navbar-left .product-guide .product-guide-description,
+.navbar-left .product-description {
+    color: #00000099;
+}
+
+.navbar-left .download-container,
+.navbar-left .solution-team-size,
+.navbar-left .solution-team-function,
+.navbar-left .solution-notion-for,
+.navbar-left .resource-container {
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.navbar-left .download-container .download-note {
+    color: #00000099;
+    font-size: 0.9rem;
+}
+
+.navbar-left .solution-title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 0.6rem;
+    width: 10rem;
+}
+
+.navbar-left .solution-team-size {
+    width: 18rem;
+    border-right: 1px solid #E5E5E5;
+}
+
+.navbar-left .solution-team-function {
+    padding-left: 1rem;
+    border-right: 1px solid #E5E5E5;
+}
+
+.navbar-left .solution-notion-for {
+    padding-left: 1rem;
+}
+
+.navbar-left .solution-team-size .solution-content {
+    align-items: center;
+    gap: 1rem;
+}
+
+/* right navbar styles */
+
+.navbar-right {
     align-items: center;
 }
 
-header .navbar-right a{
-    color: #000;
+.navbar-right a {
+    color: var(--black);
     text-decoration: none;
     border-radius: 5px;
     padding: 0.4rem 0.6rem;
     margin: 0 0.5rem;
 }
 
-header .navbar-right .vertical-line{
+.navbar-right .vertical-line {
     color: #E5E5E5;
 }
 
-header .navbar-right .demo-btn:hover,
-header .navbar-right .login-btn:hover{
+.navbar-right .demo-btn:hover,
+.navbar-right .login-btn:hover {
     background-color: #0000000a;
 }
 
-header .navbar-right .free-notion-btn{
-    background-color: #131213;
-    color: #fff;
+.navbar-right .free-notion-btn {
+    background-color: #121212;
+    color: var(--white);
     font-weight: 600;
     font-size: 0.85rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-header .navbar-right .free-notion-btn:hover{
+.navbar-right .free-notion-btn:hover {
     background-color: #333;
 }
 
@@ -103,31 +220,30 @@ header .navbar-right .free-notion-btn:hover{
         padding: 1rem 0.6rem;
     }
 
-    header .wrapper{
+    .wrapper {
         flex-direction: column;
     }
 
-    header .fa-angle-right
-    {
+    .fa-angle-right {
         display: block;
     }
 
-    header .fa-angle-down{
+    .fa-angle-down {
         display: none;
     }
 
-    header .mobile-navbar{
+    .mobile-navbar {
         border-bottom: 1px solid #E5E5E5;
-        padding-bottom:0.6rem ;
+        padding-bottom: 0.6rem;
     }
 
-    header .navbar-left,
-    header .navbar-right{
+    .navbar-left,
+    .navbar-right {
         width: 100%;
         font-weight: 700;
-    }  
+    }
 
-    header .navbar-left .nav-link-wrapper{
+    .navbar-left .nav-link-wrapper {
         justify-content: space-between;
         align-items: center;
         width: 100%;
@@ -135,53 +251,53 @@ header .navbar-right .free-notion-btn:hover{
         border-bottom: 1px solid #E5E5E5;
     }
 
-    header .navbar-left .nav-links{
+    .navbar-left .nav-links {
         flex-direction: column;
         align-items: start;
         width: 100%;
         margin-left: 0;
     }
-    
-    header .mobile-navbar{
+
+    .mobile-navbar {
         display: flex;
         justify-content: space-between;
     }
 
-    header .fa-bars{
+    .fa-bars {
         display: block;
         align-self: center;
         margin-top: 4px;
     }
 
-    header .navbar-right{
+    .navbar-right {
         flex-direction: column;
         align-items: start;
         gap: 1rem;
     }
 
-    header .navbar-right a{
+    .navbar-right a {
         margin: 0;
         width: 100%;
     }
 
-    header .navbar-right .vertical-line{
+    .navbar-right .vertical-line {
         display: none;
     }
 
-    header .navbar-right .demo-btn{
+    .navbar-right .demo-btn {
         padding: 1rem 0;
         text-decoration: none;
-        color: #000;
+        color: var(--black);
         border-bottom: 1px solid #E5E5E5;
-        padding:1.4rem 0.6rem;
+        padding: 1.4rem 0.6rem;
         margin-bottom: 1rem;
     }
 
-    header .navbar-right .free-notion-btn,
-    header .navbar-right .login-btn{
-        background-color: #000;
+    .navbar-right .free-notion-btn,
+    .navbar-right .login-btn {
+        background-color: var(--black);
         padding: 0.4rem 0.6rem;
-        color: #fff;
+        color: var(--white);
         text-align: center;
         text-decoration: none;
         font-weight: 600;
@@ -189,10 +305,69 @@ header .navbar-right .free-notion-btn:hover{
         font-size: 1rem;
     }
 
-    header .navbar-right .login-btn{
+    .navbar-right .login-btn {
         background-color: transparent;
         order: 2;
-        color: #000;
+        color: var(--black);
         border: 1px solid #EBEAEA;
     }
+
+
+    /* dropdown */
+    .navbar-left .product-container,
+    .navbar-left .download-container,
+    .navbar-left .solution-container,
+    .navbar-left .resource-container {
+        display: none;
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        padding: 1rem;
+        font-weight: 400;
+    }
+
+    .navbar-left .product-container,
+    .navbar-left .solution-container{
+        flex-direction: column;
+    }
+
+    .navbar-left .product-guide{
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .navbar-left .product-guide .product-guide-description{
+        display: none;
+    }
+
+    .navbar-left .product-wrapper{
+        align-items: start;
+    }
+
+    .navbar-left .product-wrapper .product-content .product-description,
+    .navbar-left .solution-container .solution-content .solution-description,
+    .navbar-left .solution-container .solution-content .solution-icon,
+    .navbar-left .download-container br{
+        display: none;
+    }
+
+    .navbar-left .solution-team-size,
+    .navbar-left .solution-team-function{
+        border: none;
+        margin-bottom: 1.6rem;
+        gap: 0.6rem;
+    }
+
+    .navbar-left .solution-team-function,
+    .navbar-left .solution-notion-for{
+        padding: 0;
+    }
+
+    .navbar-left .solution-title{
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
 }
