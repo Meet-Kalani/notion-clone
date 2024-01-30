@@ -24,23 +24,33 @@
     align-items: center;
 }
 
+button{
+    font-family: 'Inter', sans-serif;
+}
+
 /* main styling */
 body {
     font-family: 'Inter', sans-serif;
 }
+html{
+    font-size: 16px;
+}
 
 header{
+    top: 0;
     position: fixed;
     width: 100%;
     justify-content: space-between;
     padding: 1rem;
-    font-size: 0.95rem;
+    font-size: 15.2px;
+    background-color: var(--white);
+    z-index: 1;
 }
 
 .logo {
     gap: 0.4rem;
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 16px;
 }
 
 .logo-img {
@@ -208,6 +218,161 @@ header{
     background-color: #333;
 }
 
+/* navbar ends */
+
+/* hero starts */
+
+#hero-section{
+    width: min(90%,1024px);
+    margin: auto;
+}
+
+.hero{
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    height: 20rem;
+    position: relative;
+}
+
+.hero .hero-title{
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.hero .hero-description{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero button{
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hero .get-started-btn{
+    background-color: var(--black);
+    color: var(--white);
+    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+}
+
+.hero .signup-btn{
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.047) 0px 4px 9px 0px, rgba(0, 0, 0, 0.075) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px;
+    margin-left: 0.6rem;
+}
+
+.hero .hero-img{
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    width: 15rem;
+}
+
+.features{
+    gap: 1rem;
+}
+
+.features .feature{
+    background-color: #F6F5F4;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    flex: 1;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.features .feature:hover{
+    background-color: var(--white);
+    border: 2px solid #F6F5F4;
+    border-radius: 12px;
+}
+
+.features .feature-icon{
+    color: #9C34DB;
+    background-color: #F0E0F8;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+.features .feature-title{
+    display: block;
+    font-weight: 600;
+    margin: 0.8rem 0;
+    font-size: 1.5rem;
+}
+
+.features .feature-description{
+    font-size: 16px;
+}
+
+.slider-img{
+    margin: 1rem 0;
+    width: 100%;
+    height: 638px;
+}
+
+
+
+
+/* ai banner */
+.ai-banner{
+    padding: 2rem;
+    background-color: #F6F5F4;
+    position: relative;
+    width: min(90%,1024px);
+    margin: auto;
+    border-radius: 12px;
+}
+
+.ai-banner .ai-banner-icon{
+    color: #9C34DB;
+    background-color: #F0E0F8;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+.ai-banner .ai-banner-title{
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 0.4rem;
+}
+
+.ai-banner .ai-banner-description{
+    margin: 1.2rem 0;
+    width: 50%;
+}
+
+.ai-banner .ai-banner-btn{
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--black);
+    color: var(--white);    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+}
+
+.ai-banner-img{
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    width: 380px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px 0px, rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px 0px, rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px 0px, rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px 0px;
+}
+
+
+
+
+
 
 @media screen and (max-width: 1080px) {
     /* utility class */
@@ -263,6 +428,7 @@ header{
         display: block;
         align-self: center;
         margin-top: 4px;
+        font-size: 18px;
     }
 
     .navbar-right {
@@ -292,7 +458,7 @@ header{
         text-decoration: none;
         font-weight: 600;
         border-radius: 5px;
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .navbar-right .login-btn {
@@ -350,5 +516,83 @@ header{
     .navbar-left .solution-title{
         margin-bottom: 0;
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    html{
+        font-size: 12px;
+    }
+
+    .hero{
+        text-align: center;
+        height: auto;
+        padding-top: 56px;
+    }
+
+    .hero .hero-img{
+        margin: auto;
+        position: relative;
+        right: 0;
+    }
+
+    .slider-img{
+        height: auto;
+    }
+
+    .ai-banner{
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+
+    .ai-banner .ai-banner-title{
+        display: inline-block;
+    }
+
+    .ai-banner .ai-banner-description{
+        margin: 1rem auto;
+    }
+
+    .ai-banner .ai-banner-btn{
+        display: block;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .ai-banner .ai-banner-img{
+        position: relative;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* for horizonatlly scrolling of feature section */
+    .scrollable{
+        overflow: scroll;
+    }
+
+    .features{
+        width: 300%;
+    }
+
+    .ai-banner{
+        text-align: left;
+        padding:2rem 10% 0 10%;
+    }
+
+    .ai-banner .ai-banner-description{
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .ai-banner .ai-banner-btn{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .ai-banner .ai-banner-img{
+        width: 100%;
     }
 }
