@@ -15,6 +15,15 @@
     display: flex;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
 /* main styling */
 body {
     font-family: 'Inter', sans-serif;
@@ -29,7 +38,6 @@ header{
 }
 
 .logo {
-    align-items: center;
     gap: 0.4rem;
     font-weight: 700;
     font-size: 1.05rem;
@@ -47,13 +55,11 @@ header{
 /* left navbar styles */
 .navbar-left .nav-links {
     list-style: none;
-    align-items: center;
     margin-left: 1.2rem;
     position: relative;
 }
 
 .navbar-left .nav-link {
-    align-items: center;
     cursor: pointer;
     gap: 0.4rem;
     border-radius: 5px;
@@ -108,13 +114,10 @@ header{
 .navbar-left .product-wrapper {
     border-right: 1px solid #E5E5E5;
     padding-right: 1rem;
-    align-items: center;
-    flex-direction: column;
     gap: 0.6rem;
 }
 
 .navbar-left .product-wrapper .product-content {
-    align-items: center;
     justify-content: center;
     gap: 0.8rem;
 }
@@ -127,8 +130,6 @@ header{
 
 .navbar-left .product-guide {
     padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
     gap: 0.6rem;
 }
 
@@ -142,7 +143,6 @@ header{
 .navbar-left .solution-team-function,
 .navbar-left .solution-notion-for,
 .navbar-left .resource-container {
-    flex-direction: column;
     gap: 0.6rem;
 }
 
@@ -174,15 +174,10 @@ header{
 }
 
 .navbar-left .solution-team-size .solution-content {
-    align-items: center;
     gap: 1rem;
 }
 
 /* right navbar styles */
-
-.navbar-right {
-    align-items: center;
-}
 
 .navbar-right a {
     color: var(--black);
@@ -215,21 +210,26 @@ header{
 
 
 @media screen and (max-width: 1080px) {
-    header{
+    /* utility class */
+    .flex-column-media{
         flex-direction: column;
-        padding: 1rem 0.6rem;
     }
 
-    .wrapper {
-        flex-direction: column;
+    .w-100-media{
+        width: 100%;
+    }
+
+    .d-none-media{
+        display: none;
+    }
+
+    /* main styling */
+    header{
+        padding: 1rem 0.6rem;
     }
 
     .fa-angle-right {
         display: block;
-    }
-
-    .fa-angle-down {
-        display: none;
     }
 
     .mobile-navbar {
@@ -239,22 +239,18 @@ header{
 
     .navbar-left,
     .navbar-right {
-        width: 100%;
         font-weight: 700;
     }
 
     .navbar-left .nav-link-wrapper {
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         padding: 1rem 0;
         border-bottom: 1px solid #E5E5E5;
     }
 
     .navbar-left .nav-links {
-        flex-direction: column;
         align-items: start;
-        width: 100%;
         margin-left: 0;
     }
 
@@ -270,18 +266,12 @@ header{
     }
 
     .navbar-right {
-        flex-direction: column;
         align-items: start;
         gap: 1rem;
     }
 
     .navbar-right a {
         margin: 0;
-        width: 100%;
-    }
-
-    .navbar-right .vertical-line {
-        display: none;
     }
 
     .navbar-right .demo-btn {
@@ -318,19 +308,12 @@ header{
     .navbar-left .download-container,
     .navbar-left .solution-container,
     .navbar-left .resource-container {
-        display: none;
         position: relative;
-        width: 100%;
         top: 0;
         left: 0;
         box-shadow: none;
         padding: 1rem;
         font-weight: 400;
-    }
-
-    .navbar-left .product-container,
-    .navbar-left .solution-container{
-        flex-direction: column;
     }
 
     .navbar-left .product-guide{
@@ -344,12 +327,11 @@ header{
 
     .navbar-left .product-wrapper{
         align-items: start;
+        border-right: none;
     }
 
     .navbar-left .product-wrapper .product-content .product-description,
-    .navbar-left .solution-container .solution-content .solution-description,
-    .navbar-left .solution-container .solution-content .solution-icon,
-    .navbar-left .download-container br{
+    .navbar-left .solution-container .solution-content .solution-description{
         display: none;
     }
 
@@ -369,5 +351,4 @@ header{
         margin-bottom: 0;
         display: inline-block;
     }
-
 }

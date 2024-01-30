@@ -26,52 +26,53 @@
 </head>
 
 <body>
-    <header class="flex">
-        <div class="wrapper flex">
+    <header class="flex flex-column-media">
+        <div class="wrapper flex flex-column-media">
             <div class="mobile-navbar">
-                <div class="logo flex">
+                <div class="logo flex align-items-center">
                     <img src="assets/favicon.svg" class="logo-img" alt="notion logo">
                     <span>Notion</span>
                 </div>
                 <i class="fa-solid fa-bars" onclick="openNavbar()"></i>
             </div>
             <nav class="navbar-left navbar flex">
-                <ul class="nav-links flex">
-                    <li class="nav-link-wrapper flex">
-                        <span class="nav-link flex">Product <i class="fa-solid fa-angle-down"></i></span>
+                <ul class="nav-links flex flex-column-media w-100-media">
+                    <li class="nav-link-wrapper flex w-100-media">
+                        <span class="nav-link flex align-items-center">Product <i
+                                class="fa-solid fa-angle-down d-none-media"></i></span>
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="product-container flex">
-                        <div class="product-wrapper flex">
-                            <div class="product-content flex">
+                    <div class="product-container flex flex-column-media d-none-media">
+                        <div class="product-wrapper flex-column">
+                            <div class="product-content flex align-items-center">
                                 <i class="fa-solid fa-wand-magic-sparkles product-icon"></i>
                                 <div class="product-info">
                                     <span class="product-name">AI</span>
                                     <span class="product-description">Integrated AI assistant</span>
                                 </div>
                             </div>
-                            <div class="product-content flex">
+                            <div class="product-content flex align-items-center">
                                 <i class="fa-regular fa-file-lines product-icon"></i>
                                 <div class="product-info">
                                     <span class="product-name">Docs</span>
                                     <span class="product-description">Integrated AI assistant</span>
                                 </div>
                             </div>
-                            <div class="product-content flex">
+                            <div class="product-content flex align-items-center">
                                 <i class="fa-solid fa-book-open product-icon"></i>
                                 <div class="product-info">
                                     <span class="product-name">Wikis</span>
                                     <span class="product-description">Integrated AI assistant</span>
                                 </div>
                             </div>
-                            <div class="product-content flex">
+                            <div class="product-content flex align-items-center">
                                 <i class="fa-solid fa-bullseye product-icon"></i>
                                 <div class="product-info">
                                     <span class="product-name">Projects</span>
                                     <span class="product-description">Integrated AI assistant</span>
                                 </div>
                             </div>
-                            <div class="product-content flex">
+                            <div class="product-content flex align-items-center">
                                 <i class="fa-regular fa-calendar product-icon"></i>
                                 <div class="product-info">
                                     <span class="product-name">Calendar</span>
@@ -79,7 +80,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-guide">
+                        <div class="product-guide flex-column">
                             <div class="product-info">
                                 <span class="product-guide-title">Template gallery</span>
                                 <span class="product-guide-description">Setups to get you started</span>
@@ -94,54 +95,57 @@
                             </div>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex">
-                        <span class="nav-link flex">Download <i class="fa-solid fa-angle-down"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-media">
+                        <span class="nav-link flex align-items-center">Download <i
+                                class="fa-solid fa-angle-down d-none-media"></i></span><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="download-container flex">
+                    <div class="download-container flex-column d-none-media">
                         <span>iOS & Android</span>
                         <span>Mac & Windows</span>
                         <span>Calendar</span>
                         <span>Web Clipper</span>
-                        <span class="download-note">Notion is always at home<br> right <u>in your browser</u></span>
+                        <span class="download-note">Notion is always at home<br class="d-none-media"> right <u>in your
+                                browser</u></span>
                     </div>
-                    <li class="nav-link-wrapper flex">
-                        <span class="nav-link flex">Solutions <i class="fa-solid fa-angle-down"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-media">
+                        <span class="nav-link flex align-items-center">Solutions <i
+                                class="fa-solid fa-angle-down d-none-media"></i></span><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="solution-container flex">
-                        <div class="solution-team-size flex">
+                    <div class="solution-container flex flex-column-media d-none-media">
+                        <div class="solution-team-size flex-column">
                             <span class="solution-title">by team size</span>
-                            <div class="solution-content flex">
-                                <i class="fa-solid fa-hotel solution-icon"></i>
+                            <div class="solution-content flex align-items-center">
+                                <i class="fa-solid fa-hotel solution-icon d-none-media"></i>
                                 <div class="solution-info">
                                     <span class="solution-name">Enterprise</span>
                                     <span class="solution-description">Advanced features for your org</span>
                                 </div>
                             </div>
-                            <div class="solution-content flex">
-                                <i class="fa-solid fa-building solution-icon"></i>
+                            <div class="solution-content flex align-items-center">
+                                <i class="fa-solid fa-building solution-icon d-none-media"></i>
                                 <div class="solution-info">
                                     <span class="solution-name">Small business</span>
                                     <span class="solution-description">Run your team on one tool</span>
                                 </div>
                             </div>
-                            <div class="solution-content flex">
-                                <i class="fa-solid fa-store solution-icon"></i>
+                            <div class="solution-content flex align-items-center">
+                                <i class="fa-solid fa-store solution-icon d-none-media"></i>
                                 <div class="solution-info">
                                     <span class="solution-name">Personal</span>
                                     <span class="solution-description">Free for individuals</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="solution-team-function flex">
+                        <div class="solution-team-function flex-column">
                             <span class="solution-title">by team function</span>
                             <span>Design</span>
                             <span>Engineering</span>
                             <span>Product</span>
                             <span>Managers</span>
                         </div>
-                        <div class="solution-notion-for flex">
+                        <div class="solution-notion-for flex-column">
                             <span class="solution-title">notion for</span>
                             <span>Startups</span>
                             <span>Remote work</span>
@@ -149,11 +153,12 @@
                             <span>Nonprofits</span>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex">
-                        <span class="nav-link flex">Resources <i class="fa-solid fa-angle-down"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-media">
+                        <span class="nav-link flex align-items-center">Resources <i
+                                class="fa-solid fa-angle-down d-none-media"></i></span><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="resource-container flex">
+                    <div class="resource-container flex-column d-none-media">
                         <span>Blog</span>
                         <span>Notion Academy</span>
                         <span>Guides & tutorials</span>
@@ -163,19 +168,20 @@
                         <span>Community</span>
                         <span>Hire a consultant</span>
                     </div>
-                    <li class="nav-link-wrapper flex">
-                        <span class="nav-link flex">Pricing</span>
+                    <li class="nav-link-wrapper flex w-100-media">
+                        <span class="nav-link flex align-items-center">Pricing</span>
                     </li>
                 </ul>
             </nav>
         </div>
-        <nav class="navbar-right navbar flex">
-            <a href="#" class="demo-btn">Request a demo</a>
-            <span class="vertical-line">|</span>
-            <a href="#" class="login-btn">Log in</a>
-            <a href="#" class="free-notion-btn">Get Notion free</a>
+        <nav class="navbar-right navbar flex flex-column-media align-items-center">
+            <a href="#" class="demo-btn w-100-media">Request a demo</a>
+            <span class="vertical-line d-none-media">|</span>
+            <a href="#" class="login-btn w-100-media">Log in</a>
+            <a href="#" class="free-notion-btn w-100-media">Get Notion free</a>
         </nav>
     </header>
+
     <script src="assets/script/script.js"></script>
 </body>
 
