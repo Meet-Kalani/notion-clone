@@ -1,6 +1,7 @@
 :root {
     --white: #fff;
     --black: #000;
+    --banner-bg: #F6F5F4;
 }
 
 /* Resetting default margin, padding, and box-sizing for all elements */
@@ -280,7 +281,7 @@ header{
 }
 
 .features .feature{
-    background-color: #F6F5F4;
+    background-color: var(--banner-bg);
     padding: 1rem;
     border-radius: 12px;
     border: 2px solid transparent;
@@ -325,7 +326,7 @@ header{
 /* ai banner */
 .ai-banner{
     padding: 2rem;
-    background-color: #F6F5F4;
+    background-color: var(--banner-bg);
     position: relative;
     width: min(90%,1024px);
     margin: auto;
@@ -369,6 +370,97 @@ header{
     box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px 0px, rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px 0px, rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px 0px, rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px 0px;
 }
 
+
+
+/* qa section */
+
+#qa-section{
+    width: min(90%,1024px);
+    margin: auto;
+}
+
+.qa .qa-img{
+    position: relative;
+    top: 110px;
+    left: 24px;
+    width: 190px;
+}
+
+.qa .qa-title{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.qa-banner{
+    width: 100%;
+    background-color: var(--banner-bg);
+    border-radius: 12px;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.qa-banner .qa-banner-icon{
+    color: #9C34DB;
+    font-size: 20px;
+}
+
+.qa-banner .qa-banner-title{
+    font-weight: 600;
+    display: block;
+    margin: 0.8rem 0;
+    font-size: 18px;
+}
+
+.qa-banner .qa-banner-description{
+    width: 50%;
+    margin-bottom: 2rem;
+    font-size: 16px;
+}
+
+.qa-banner .qa-banner-video{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.qa-use-imgs{
+    margin-top: 28px;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qa-use-imgs img{
+    border-radius: 12px;
+    width: 322px;
+    background-color: var(--banner-bg);
+}
+
+.qa-testimonial{
+    margin-top: 2.2rem;
+}
+
+.qa-testimonial .qa-testimonial-description{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.qa-testimonial .qa-testimonial-img{
+    width: 96px;
+}
+
+.qa-testimonial .qa-testimonial-by span{
+    display: block;
+}
+
+.qa-testimonial .flex{
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
 
 
 
@@ -517,6 +609,24 @@ header{
         margin-bottom: 0;
         display: inline-block;
     }
+
+
+    /* QA section */
+
+    .qa-header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+    }
+
+    .qa-header .qa-img{
+        position: static;
+        order: 2;
+        margin-bottom: -14px;
+    }
+
+
+
 }
 
 @media screen and (max-width: 840px) {
@@ -565,6 +675,35 @@ header{
         right: 0;
         margin: auto;
     }
+
+
+    /* qa section */
+
+
+    .qa .qa-img{
+        width: 130px;
+        margin-bottom: -10px;
+    }
+
+    .qa-testimonial .qa-testimonial-description{
+        width: 100%;
+        font-size: 24px;
+        padding: 0 12px;
+    }
+
+    .qa-use-imgs{
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .qa-use-imgs img{
+        width: 100%;
+    }
+
+    .qa-banner .qa-banner-description{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -595,4 +734,17 @@ header{
     .ai-banner .ai-banner-img{
         width: 100%;
     }
+
+
+    /* qa-section */
+
+    .qa-testimonial .flex{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+
+
 }
