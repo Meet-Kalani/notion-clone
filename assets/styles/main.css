@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+h2{
+    font-size: 2.8rem;
+}
+
 button {
     font-family: 'Inter', sans-serif;
 }
@@ -380,7 +384,8 @@ header {
 #text-assist-section,
 #task-automation-section,
 #data-privacy-section,
-#template-section {
+#template-section,
+#faq-section {
     width: min(90%, 1024px);
     margin: auto;
 }
@@ -393,7 +398,6 @@ header {
 }
 
 .qa .qa-title {
-    font-size: 2.8rem;
     text-align: center;
     margin-bottom: 2.2rem;
 }
@@ -507,7 +511,6 @@ header {
 
 .text-assist-header .text-assist-title,
 .task-automation-header .task-automation-title {
-    font-size: 2.8rem;
     width: min(100%, 500px);
 }
 
@@ -592,7 +595,6 @@ header {
 
 .data-privacy-header .data-privacy-title,
 .template-header .template-title {
-    font-size: 2.8rem;
     margin-bottom: 18px;
 }
 
@@ -650,6 +652,70 @@ header {
 .template-feature .template-feature-link{
     font-size: 16px;
 }
+
+
+
+/* faq section */
+
+.faq{
+    margin-top: 120px !important;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.faq .faq-img{
+    width: 218px;
+}
+
+.faq .faq-description{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.faq .faq-btns{
+    gap: 12px;
+}
+
+.faq .faq-btns button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.faq .faq-get_started-btn{
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+}
+
+.faq .faq-signup_qa-btn{
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.047) 0px 4px 9px 0px, rgba(0, 0, 0, 0.075) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px;
+}
+
+.faq .faq-heading{
+    font-size: 2.4rem;
+    align-self: flex-start;
+}
+
+.faq-container{
+    width: 100%;
+}
+
+.faq .faq-question-container{
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid #E4E4E5;
+    border-bottom: 1px solid #E4E4E5;
+}
+
+.faq .faq-question-container .faq-question{
+    font-weight: 600;
+    font-size: 16px;
+}
+
 
 
 
