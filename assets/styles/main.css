@@ -597,6 +597,18 @@ header {
     margin-bottom: 32px;
 }
 
+.data-privacy-feature .data-privacy-feature-badge{
+    background-color: #8128B3;
+    padding: 2px 8px;
+    border-radius: 9px;
+    font-size: 12px;
+    color: var(--white);
+    margin-top: 0.8rem;
+    display: block;
+    width: fit-content;
+    font-weight: 600;
+}
+
 
 
 @media screen and (max-width: 1080px) {
