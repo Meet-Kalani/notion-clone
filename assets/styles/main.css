@@ -379,7 +379,8 @@ header {
 #qa-section,
 #text-assist-section,
 #task-automation-section,
-#data-privacy-section {
+#data-privacy-section,
+#template-section {
     width: min(90%, 1024px);
     margin: auto;
 }
@@ -490,14 +491,15 @@ header {
 
 .text-assist-header,
 .task-automation-header,
-.data-privacy-header {
+.data-privacy-header,
+.template-header {
     display: flex;
     margin-top: 160px;
 }
 
 .text-assist-header .text-assist-img,
 .task-automation-header .task-automation-img,
-.data-privacy-header .data-privacy-img {
+.template-header .template-header-img {
     width: 336px;
     height: auto;
     margin-left: auto;
@@ -519,7 +521,8 @@ header {
 
 .text-assist-features .text-assist-feature,
 .task-automation-features .task-automation-feature,
-.data-privacy-features .data-privacy-feature {
+.data-privacy-features .data-privacy-feature,
+.template-features .template-feature {
     width: 325px;
     padding: 24px 32px 0;
     background-color: var(--banner-bg);
@@ -528,14 +531,16 @@ header {
 
 .text-assist-feature .text-assist-feature-icon,
 .task-automation-feature .task-automation-feature-icon,
-.data-privacy-feature .data-privacy-feature-icon {
+.data-privacy-feature .data-privacy-feature-icon,
+.template-feature .template-feature-icon {
     color: var(--icon-color);
     font-size: 20px;
 }
 
 .text-assist-feature .text-assist-feature-title,
 .task-automation-feature .task-automation-feature-title,
-.data-privacy-feature .data-privacy-feature-title {
+.data-privacy-feature .data-privacy-feature-title,
+.template-feature .template-feature-title {
     font-weight: 600;
     font-size: 18px;
     display: block;
@@ -543,7 +548,8 @@ header {
 }
 
 .text-assist-feature .text-assist-feature-img,
-.task-automation-feature .task-automation-feature-img {
+.task-automation-feature .task-automation-feature-img,
+.template-feature .template-feature-img {
     width: 100%;
     margin-top: 3rem;
 }
@@ -557,7 +563,7 @@ header {
 }
 
 .task-automation-features .task-automation-feature,
-.data-privacy-features .data-privacy-feature {
+.template-features .template-feature{
     padding: 24px 0 0 32px;
 }
 
@@ -577,23 +583,27 @@ header {
     width: 100%;
 }
 
-.data-privacy-header .data-privacy-img {
+.data-privacy-header .data-privacy-img{
     width: 98px;
     height: fit-content;
     align-self: flex-end;
+    margin-left: auto;
 }
 
-.data-privacy-header .data-privacy-title {
+.data-privacy-header .data-privacy-title,
+.template-header .template-title {
     font-size: 2.8rem;
     margin-bottom: 18px;
 }
 
-.data-privacy-header .data-privacy-link{
+.data-privacy-header .data-privacy-link,
+.template-header .template-link{
     text-decoration: none;
     color: var(--icon-color);
 }
 
-.data-privacy-header .data-privacy-header-text{
+.data-privacy-header .data-privacy-header-text,
+.template-header .template-header-text{
     margin-bottom: 32px;
 }
 
@@ -608,6 +618,40 @@ header {
     width: fit-content;
     font-weight: 600;
 }
+
+
+/* template section */
+
+.template-features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 24px;
+}
+
+.template-features .template-feature {
+    width: 100%;
+}
+
+.template-feature .template-feature-link{
+    display: block;
+    margin-top: 32px;
+    text-decoration: none;
+    color: var(--icon-color);
+}
+
+.template-header .template-img {
+    width: 253px;
+    height: fit-content;
+    align-self: flex-end;
+}
+
+.template-feature .template-feature-description,
+.template-feature .template-feature-link{
+    font-size: 16px;
+}
+
+
 
 
 
@@ -859,7 +903,8 @@ header {
 
     .text-assist-header,
     .task-automation-header,
-    .data-privacy-header {
+    .data-privacy-header,
+    .template-header {
         flex-direction: column;
     }
 
@@ -869,15 +914,17 @@ header {
 
 
     /* task automation section */
-
-
-    /* task automation section */
     .task-automation-header .task-automation-img {
         width: 154px;
         margin-bottom: -8px;
     }
 
 
+    /* template section */
+
+    .template-header .template-img{
+        width: 178px;
+    }
 
 }
 
@@ -931,14 +978,16 @@ header {
 
     .text-assist-features .text-assist-feature,
     .task-automation-features .task-automation-feature,
-    .data-privacy-features .data-privacy-feature {
+    .data-privacy-features .data-privacy-feature,
+    .template-features .template-feature {
         width: 100%;
     }
 
 
     /* data privacy section */
 
-    .data-privacy-features{
+    .data-privacy-features,
+    .template-features{
         grid-template-columns: 100%;
     }
 
