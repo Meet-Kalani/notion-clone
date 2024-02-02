@@ -26,12 +26,23 @@
     align-items: center;
 }
 
+.rounded-border{
+    border-radius: 12px;
+}
+
+.semi-bold{
+    font-weight: 600;
+}
+
+
+/* general element styling  */
 h2{
     font-size: 2.8rem;
 }
 
 button {
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
 /* main styling */
@@ -68,6 +79,11 @@ header {
 .fa-angle-right {
     display: none;
 }
+
+
+
+
+
 
 /* left navbar styles */
 .navbar-left .nav-links {
@@ -113,7 +129,7 @@ header {
     position: absolute;
     top: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 1rem;
+    padding: 4px;
     background-color: var(--white);
 }
 
@@ -131,13 +147,16 @@ header {
 
 .navbar-left .product-wrapper {
     border-right: 1px solid #E5E5E5;
-    padding-right: 1rem;
-    gap: 0.6rem;
 }
 
 .navbar-left .product-wrapper .product-content {
-    justify-content: center;
     gap: 0.8rem;
+    padding:6px 14px;
+    cursor: pointer;
+}
+
+.navbar-left .product-wrapper .product-content:hover{
+    background-color: var(--banner-bg);
 }
 
 .navbar-left .product-wrapper .product-content span,
@@ -146,53 +165,91 @@ header {
     display: block;
 }
 
-.navbar-left .product-guide {
-    padding-left: 1rem;
-    gap: 0.6rem;
+.product-icon{
+    width: 20px;
+}
+
+.product-guide .product-info{
+    padding:6px 14px;
+    cursor: pointer;
+}
+
+.product-guide .product-info:hover{
+    background-color: var(--banner-bg);
 }
 
 .navbar-left .product-guide .product-guide-description,
 .navbar-left .product-description {
     color: #00000099;
+    font-size: 14px;
 }
 
-.navbar-left .download-container,
-.navbar-left .solution-team-size,
 .navbar-left .solution-team-function,
-.navbar-left .solution-notion-for,
-.navbar-left .resource-container {
-    gap: 0.6rem;
+.navbar-left .solution-notion-for {
+    padding: 4px;
+}
+
+
+
+.navbar-left .download-container .download-content,
+.navbar-left .resource-container span,
+.navbar-left .solution-container .solution-team-function .team-function-item,
+.navbar-left .solution-container .solution-notion-for .notion-for-item{
+    padding:6px;
+    cursor: pointer;
+}
+
+.navbar-left .solution-container .solution-title{
+    padding: 6px;
+}
+
+.navbar-left .download-container .download-content:hover,
+.navbar-left .resource-container span:hover,
+.navbar-left .solution-container .solution-team-function .team-function-item:hover,
+.navbar-left .solution-container .solution-notion-for .notion-for-item:hover{
+    background-color: var(--banner-bg);
 }
 
 .navbar-left .download-container .download-note {
     color: #00000099;
     font-size: 0.9rem;
+    padding: 6px;
 }
 
 .navbar-left .solution-title {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 300;
-    margin-bottom: 0.6rem;
     width: 10rem;
 }
 
 .navbar-left .solution-team-size {
-    width: 18rem;
+    width: 20rem;
     border-right: 1px solid #E5E5E5;
+}
+
+.navbar-left .solution-content .solution-description{
+    color: #00000099;
+    font-size: 14px;
 }
 
 .navbar-left .solution-team-function {
-    padding-left: 1rem;
     border-right: 1px solid #E5E5E5;
-}
-
-.navbar-left .solution-notion-for {
-    padding-left: 1rem;
 }
 
 .navbar-left .solution-team-size .solution-content {
     gap: 1rem;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.navbar-left .solution-team-size .solution-content:hover {
+    background-color: var(--banner-bg);
+}
+
+.navbar-left .solution-team-size .solution-icon{
+    width: 35px;
+    height: 35px;
 }
 
 /* right navbar styles */
@@ -217,7 +274,6 @@ header {
 .navbar-right .free-notion-btn {
     background-color: #121212;
     color: var(--white);
-    font-weight: 600;
     font-size: 0.85rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
@@ -252,14 +308,12 @@ header {
 
 .hero .hero-description {
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .hero button {
     padding: 0.6rem 1rem;
     border: none;
     border-radius: 5px;
-    font-weight: 600;
     font-size: 16px;
 }
 
@@ -270,10 +324,18 @@ header {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
 }
 
+.hero .get-started-btn:hover {
+    background-color: #333;
+}
+
 .hero .signup-btn {
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.047) 0px 4px 9px 0px, rgba(0, 0, 0, 0.075) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px;
     margin-left: 0.6rem;
+}
+
+.hero .signup-btn:hover {
+    background-color:#fcfcfc;
 }
 
 .hero .hero-img {
@@ -290,7 +352,6 @@ header {
 .features .feature {
     background-color: var(--banner-bg);
     padding: 1rem;
-    border-radius: 12px;
     border: 2px solid transparent;
     flex: 1;
     transition: 200ms;
@@ -299,7 +360,7 @@ header {
 
 .features .feature:hover {
     background-color: var(--white);
-    border: 2px solid #F6F5F4;
+    border: 2px solid var(--banner-bg);
     border-radius: 12px;
 }
 
@@ -312,7 +373,6 @@ header {
 
 .features .feature-title {
     display: block;
-    font-weight: 600;
     margin: 0.8rem 0;
     font-size: 1.5rem;
 }
@@ -337,7 +397,12 @@ header {
     position: relative;
     width: min(90%, 1024px);
     margin: auto;
-    border-radius: 12px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.ai-banner:hover{
+    background-color: #f1efee;
 }
 
 .ai-banner .ai-banner-icon {
@@ -348,7 +413,6 @@ header {
 }
 
 .ai-banner .ai-banner-title {
-    font-weight: 600;
     font-size: 24px;
     margin-left: 0.4rem;
 }
@@ -362,11 +426,14 @@ header {
     padding: 0.6rem 1rem;
     border: none;
     border-radius: 5px;
-    font-weight: 600;
     font-size: 16px;
     background-color: var(--black);
     color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+}
+
+.ai-banner .ai-banner-btn:hover{
+    background-color: #333;
 }
 
 .ai-banner-img {
@@ -408,7 +475,6 @@ header {
 .task-automation-banner {
     width: 100%;
     background-color: var(--banner-bg);
-    border-radius: 12px;
     padding: 2rem 2rem 0 2rem;
 }
 
@@ -422,7 +488,6 @@ header {
 .qa-banner .qa-banner-title,
 .text-assist-banner .text-assist-banner-title,
 .task-automation-banner .task-automation-banner-title {
-    font-weight: 600;
     display: block;
     margin: 0.8rem 0;
     font-size: 18px;
@@ -452,7 +517,6 @@ header {
 }
 
 .qa-use-imgs img {
-    border-radius: 12px;
     width: 322px;
     background-color: var(--banner-bg);
 }
@@ -473,12 +537,13 @@ header {
 
 .qa-testimonial .qa-testimonial-img,
 .text-assist-testimonial .text-assist-testimonial-img {
-    width: 96px;
+    width: 105px;
 }
 
 .qa-testimonial .qa-testimonial-by span,
 .text-assist-testimonial .text-assist-testimonial-by span {
     display: block;
+    font-size: 14px;
 }
 
 .qa-testimonial .flex,
@@ -530,7 +595,12 @@ header {
     width: 325px;
     padding: 24px 32px 0;
     background-color: var(--banner-bg);
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    transition: 100ms;
+}
+
+.template-features .template-feature:hover{
+    background-color: #f1efee;
 }
 
 .text-assist-feature .text-assist-feature-icon,
@@ -545,15 +615,17 @@ header {
 .task-automation-feature .task-automation-feature-title,
 .data-privacy-feature .data-privacy-feature-title,
 .template-feature .template-feature-title {
-    font-weight: 600;
     font-size: 18px;
     display: block;
     margin: 0.8rem 0;
 }
 
+.text-assist-feature .text-assist-feature-description{
+    font-size: 16px;
+}
+
 .text-assist-feature .text-assist-feature-img,
-.task-automation-feature .task-automation-feature-img,
-.template-feature .template-feature-img {
+.task-automation-feature .task-automation-feature-img{
     width: 100%;
     margin-top: 3rem;
 }
@@ -571,6 +643,9 @@ header {
     padding: 24px 0 0 32px;
 }
 
+.task-automation-feature .task-automation-feature-description{
+    font-size: 16px;
+}
 
 
 /* data privacy section */
@@ -603,6 +678,13 @@ header {
 .template-header .template-link{
     text-decoration: none;
     color: var(--icon-color);
+    font-size: 16px;
+}
+
+.data-privacy-header .data-privacy-link:hover,
+.template-header .template-link:hover{
+    color: #6e239a;
+    text-decoration: underline;
 }
 
 .data-privacy-header .data-privacy-header-text,
@@ -619,7 +701,6 @@ header {
     margin-top: 0.8rem;
     display: block;
     width: fit-content;
-    font-weight: 600;
 }
 
 
@@ -634,6 +715,8 @@ header {
 
 .template-features .template-feature {
     width: 100%;
+    justify-content: space-between;
+    gap: 36px;
 }
 
 .template-feature .template-feature-link{
@@ -641,6 +724,12 @@ header {
     margin-top: 32px;
     text-decoration: none;
     color: var(--icon-color);
+    width: fit-content;
+}
+
+.template-feature .template-feature-link:hover{
+    color: #6e239a;
+    text-decoration: underline;
 }
 
 .template-header .template-img {
@@ -654,6 +743,11 @@ header {
     font-size: 16px;
 }
 
+.template-feature .template-feature-img {
+    width: 100%;
+    border-radius: 12px 0 0;
+}
+
 
 
 /* faq section */
@@ -664,12 +758,15 @@ header {
     align-items: center;
 }
 
+.faq .faq-title{
+    font-size: 3.3rem;
+}
+
 .faq .faq-img{
     width: 218px;
 }
 
 .faq .faq-description{
-    font-weight: 600;
     font-size: 16px;
 }
 
@@ -687,8 +784,11 @@ header {
 .faq .faq-get_started-btn{
     background-color: var(--black);
     color: var(--white);
-    font-weight: 600;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px, rgba(0, 0, 0, 0.07) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.05) 0px 4px 9px 0px;
+}
+
+.faq .faq-get_started-btn:hover{
+    background-color: #333;
 }
 
 .faq .faq-signup_qa-btn{
@@ -696,8 +796,12 @@ header {
     box-shadow: rgba(0, 0, 0, 0.047) 0px 4px 9px 0px, rgba(0, 0, 0, 0.075) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px;
 }
 
+.faq .faq-signup_qa-btn:hover{
+    background-color: #fcfcfc;
+}
+
 .faq .faq-heading{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     align-self: flex-start;
 }
 
@@ -707,13 +811,24 @@ header {
 
 .faq .faq-question-container{
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 10px 0;
     border-top: 1px solid #E4E4E5;
     border-bottom: 1px solid #E4E4E5;
+    cursor: pointer;
+}
+
+.faq .faq-question-container .fa-plus{
+    padding: 10px;
+    transition: 100ms;
+}
+
+.faq .faq-question-container .fa-plus:hover{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .faq .faq-question-container .faq-question{
-    font-weight: 600;
+    padding: 10px 0;
     font-size: 16px;
 }
 
@@ -726,39 +841,138 @@ footer {
     margin-top:10rem ;
     padding: 80px 125px;
     border-top: 1px solid #E4E4E5;
+    font-size: 16px;
+}
+
+/* .footer-links{
+    flex: 1;
+} */
+
+.brand_info{
+    flex: 1;
 }
 
 .footer-links{
-    flex: 1;
+    display: grid;
+    flex: 3;
+    grid-template-areas:
+                'one three six'
+                'two four seven'
+                'two five seven';
+}
+
+.product-links{
+    grid-area: one;
+}
+
+.solution-links{
+    grid-area: two;
+}
+
+.download-links{
+    grid-area: three;
+}
+
+.build-links{
+    grid-area: four;
+}
+
+.learn-links{
+    grid-area: five;
+}
+
+.get_started-links{
+    grid-area: six;
+}
+
+.resource-links{
+    grid-area: seven;
 }
 
 footer .flex{
     flex: 3;
 }
 
-.footer-links .logo{
+.brand_info .logo{
     margin-top: 32px;
 }
 
-.footer-links .social_media-logos{
+.brand_info .social_media-logos{
     color: #676766;
     font-size: 20px;
     gap: 1rem;
     margin-top: 32px;
 }
 
-.footer-links .footer-links-title{
-    font-weight: 600;
+.language-dropdown{
+    margin-top: 32px;
+}
+
+/* .language-dropdown .language-select{
+    border: 1px solid #E4E4E5;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 18px;
+} */
+
+.language-dropdown .language-selected{
+    color: var(--black);
+    background-color: transparent;
+    border: 1px solid #E4E4E5;
+    border-radius: 5px;
+    padding: 6px 18px;
+    font-size: 16px;
+}
+
+.language-dropdown .fa-angle-down{
+    font-size: 10px;
+}
+
+.language-dropdown .language-container{
+    display: none;
+    width: 260px;
+    height: 350px;
+    overflow-y: scroll;
+    box-shadow: 0 4px 18px rgba(0,0,0,.04), 0 2.025px 7.84688px rgba(0,0,0,.027), 0 0.8px 2.925px rgba(0,0,0,.02), 0 0.175px 1.04062px rgba(0,0,0,.013);
+    padding: 4px;
+}
+
+.language-container span{
+    display: block;
+}
+
+.language-container .language-description{
+    font-size: 14px;
+}
+
+.language-container .language{
+    transition: 100ms;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.language-container .language:hover{
+    background-color: var(--banner-bg);
+}
+
+.footer-links-title{
     margin-top: 32px;
     display: block;
     line-height: 1.8;
 }
 
-.footer-links .footer-link{
+.footer-link{
     display: block;
     text-decoration: none;
     color: #676766;
     line-height: 1.8;
+    display: block;
+    width: fit-content;
+}
+
+.footer-link:hover{
+    color: var(--icon-color);
+    text-decoration: underline;
 }
 
 .spacer{
@@ -777,6 +991,14 @@ footer .flex{
     color: #999898;
 }
 
+.copyright .copyright-info_sharing-txt{
+    cursor: pointer;
+}
+
+.copyright .copyright-info_sharing-txt:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--icon-color);
+}
 
 @media screen and (max-width: 1080px) {
 
@@ -884,7 +1106,7 @@ footer .flex{
         top: 0;
         left: 0;
         box-shadow: none;
-        padding: 1rem;
+        padding: 2px;
         font-weight: 400;
     }
 
@@ -941,6 +1163,15 @@ footer .flex{
 
     footer{
         padding: 20px 40px;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+                    'one five'
+                    'two six'
+                    'three seven'
+                    'four seven';
     }
 
 }
@@ -1057,7 +1288,7 @@ footer .flex{
 
     /* for horizonatlly scrolling of feature section */
     .scrollable {
-        overflow: scroll;
+        overflow-x: scroll;
     }
 
     .features {
@@ -1114,6 +1345,10 @@ footer .flex{
     .data-privacy-features,
     .template-features{
         grid-template-columns: 100%;
+    }
+
+    footer{
+        padding: 20px;
     }
 
 }
