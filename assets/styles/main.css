@@ -114,6 +114,7 @@ header {
     top: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 1rem;
+    background-color: var(--white);
 }
 
 .navbar-left .download-container {
@@ -716,9 +717,65 @@ header {
     font-size: 16px;
 }
 
+/* footer */
 
 
+footer {
+    width: min(100%,1642px);
+    margin: auto;
+    margin-top:10rem ;
+    padding: 80px 125px;
+    border-top: 1px solid #E4E4E5;
+}
 
+.footer-links{
+    flex: 1;
+}
+
+footer .flex{
+    flex: 3;
+}
+
+.footer-links .logo{
+    margin-top: 32px;
+}
+
+.footer-links .social_media-logos{
+    color: #676766;
+    font-size: 20px;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+.footer-links .footer-links-title{
+    font-weight: 600;
+    margin-top: 32px;
+    display: block;
+    line-height: 1.8;
+}
+
+.footer-links .footer-link{
+    display: block;
+    text-decoration: none;
+    color: #676766;
+    line-height: 1.8;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.copyright{
+    flex: 3;
+    margin-top: 64px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.copyright .copyright-txt{
+    display: block;
+    color: #999898;
+}
 
 
 @media screen and (max-width: 1080px) {
@@ -882,7 +939,9 @@ header {
         margin-bottom: -14px;
     }
 
-
+    footer{
+        padding: 20px 40px;
+    }
 
 }
 
