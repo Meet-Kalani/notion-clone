@@ -34,24 +34,20 @@
     font-weight: 600;
 }
 
-
-/* general element styling  */
-h2{
-    font-size: 2.8rem;
-}
-
-button {
-    font-family: 'Inter', sans-serif;
+.clickable{
     cursor: pointer;
 }
 
-/* main styling */
-body {
-    font-family: 'Inter', sans-serif;
+
+/* general element styling  */
+h2{
+    font-size: 44px;
 }
 
-html {
-    font-size: 16px;
+/* main styling */
+body,
+button {
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -80,20 +76,15 @@ header {
     display: none;
 }
 
-
-
-
-
-
 /* left navbar styles */
 .navbar-left .nav-links {
     list-style: none;
-    margin-left: 1.2rem;
+    margin-left: 19px;
     position: relative;
 }
 
 .navbar-left .nav-link {
-    cursor: pointer;
+
     gap: 0.4rem;
     border-radius: 5px;
     padding: 0.4rem 0.6rem;
@@ -115,8 +106,7 @@ header {
 }
 
 .navbar-left .nav-link .fa-solid {
-    font-size: 0.6rem;
-    font-weight: 700;
+    font-size: 9.6px;
     margin-top: 5px;
 }
 
@@ -152,7 +142,6 @@ header {
 .navbar-left .product-wrapper .product-content {
     gap: 0.8rem;
     padding:6px 14px;
-    cursor: pointer;
 }
 
 .navbar-left .product-wrapper .product-content:hover{
@@ -171,7 +160,6 @@ header {
 
 .product-guide .product-info{
     padding:6px 14px;
-    cursor: pointer;
 }
 
 .product-guide .product-info:hover{
@@ -196,7 +184,6 @@ header {
 .navbar-left .solution-container .solution-team-function .team-function-item,
 .navbar-left .solution-container .solution-notion-for .notion-for-item{
     padding:6px;
-    cursor: pointer;
 }
 
 .navbar-left .solution-container .solution-title{
@@ -212,13 +199,13 @@ header {
 
 .navbar-left .download-container .download-note {
     color: #00000099;
-    font-size: 0.9rem;
+    font-size: 14px;
     padding: 6px;
 }
 
 .navbar-left .solution-title {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 14px;
     font-weight: 300;
     width: 10rem;
 }
@@ -240,7 +227,6 @@ header {
 .navbar-left .solution-team-size .solution-content {
     gap: 1rem;
     padding: 6px;
-    cursor: pointer;
 }
 
 .navbar-left .solution-team-size .solution-content:hover {
@@ -274,7 +260,7 @@ header {
 .navbar-right .free-notion-btn {
     background-color: #121212;
     color: var(--white);
-    font-size: 0.85rem;
+    font-size: 14px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
@@ -293,8 +279,6 @@ header {
 
 .hero {
     margin-top: 62px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 1.2rem;
     height: 20rem;
@@ -302,12 +286,12 @@ header {
 }
 
 .hero .hero-title {
-    font-size: 3.6rem;
+    font-size: 57px;
     font-weight: 700;
 }
 
 .hero .hero-description {
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .hero button {
@@ -355,7 +339,6 @@ header {
     border: 2px solid transparent;
     flex: 1;
     transition: 200ms;
-    cursor: pointer;
 }
 
 .features .feature:hover {
@@ -374,11 +357,7 @@ header {
 .features .feature-title {
     display: block;
     margin: 0.8rem 0;
-    font-size: 1.5rem;
-}
-
-.features .feature-description {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .slider-img {
@@ -397,7 +376,6 @@ header {
     position: relative;
     width: min(90%, 1024px);
     margin: auto;
-    cursor: pointer;
     transition: 200ms;
 }
 
@@ -498,7 +476,6 @@ header {
 .task-automation-banner .task-automation-banner-description {
     width: 50%;
     margin-bottom: 2rem;
-    font-size: 16px;
 }
 
 .qa-banner .qa-banner-video,
@@ -563,7 +540,6 @@ header {
 .task-automation-header,
 .data-privacy-header,
 .template-header {
-    display: flex;
     margin-top: 160px;
 }
 
@@ -620,10 +596,6 @@ header {
     margin: 0.8rem 0;
 }
 
-.text-assist-feature .text-assist-feature-description{
-    font-size: 16px;
-}
-
 .text-assist-feature .text-assist-feature-img,
 .task-automation-feature .task-automation-feature-img{
     width: 100%;
@@ -641,10 +613,6 @@ header {
 .task-automation-features .task-automation-feature,
 .template-features .template-feature{
     padding: 24px 0 0 32px;
-}
-
-.task-automation-feature .task-automation-feature-description{
-    font-size: 16px;
 }
 
 
@@ -678,7 +646,6 @@ header {
 .template-header .template-link{
     text-decoration: none;
     color: var(--icon-color);
-    font-size: 16px;
 }
 
 .data-privacy-header .data-privacy-link:hover,
@@ -702,7 +669,6 @@ header {
     display: block;
     width: fit-content;
 }
-
 
 /* template section */
 
@@ -738,11 +704,6 @@ header {
     align-self: flex-end;
 }
 
-.template-feature .template-feature-description,
-.template-feature .template-feature-link{
-    font-size: 16px;
-}
-
 .template-feature .template-feature-img {
     width: 100%;
     border-radius: 12px 0 0;
@@ -759,15 +720,11 @@ header {
 }
 
 .faq .faq-title{
-    font-size: 3.3rem;
+    font-size:52px;
 }
 
 .faq .faq-img{
     width: 218px;
-}
-
-.faq .faq-description{
-    font-size: 16px;
 }
 
 .faq .faq-btns{
@@ -801,7 +758,7 @@ header {
 }
 
 .faq .faq-heading{
-    font-size: 2.8rem;
+    font-size: 44px;
     align-self: flex-start;
 }
 
@@ -814,7 +771,6 @@ header {
     padding: 10px 0;
     border-top: 1px solid #E4E4E5;
     border-bottom: 1px solid #E4E4E5;
-    cursor: pointer;
 }
 
 .faq .faq-question-container .fa-plus{
@@ -829,7 +785,6 @@ header {
 
 .faq .faq-question-container .faq-question{
     padding: 10px 0;
-    font-size: 16px;
 }
 
 /* footer */
@@ -841,12 +796,7 @@ footer {
     margin-top:10rem ;
     padding: 80px 125px;
     border-top: 1px solid #E4E4E5;
-    font-size: 16px;
 }
-
-/* .footer-links{
-    flex: 1;
-} */
 
 .brand_info{
     flex: 1;
@@ -908,13 +858,6 @@ footer .flex{
     margin-top: 32px;
 }
 
-/* .language-dropdown .language-select{
-    border: 1px solid #E4E4E5;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 6px 18px;
-} */
-
 .language-dropdown .language-selected{
     color: var(--black);
     background-color: transparent;
@@ -948,7 +891,6 @@ footer .flex{
 .language-container .language{
     transition: 100ms;
     padding: 12px;
-    cursor: pointer;
 }
 
 .language-container .language:hover{
@@ -991,10 +933,6 @@ footer .flex{
     color: #999898;
 }
 
-.copyright .copyright-info_sharing-txt{
-    cursor: pointer;
-}
-
 .copyright .copyright-info_sharing-txt:hover{
     text-decoration: underline;
     text-decoration-color: var(--icon-color);
@@ -1024,11 +962,6 @@ footer .flex{
         display: block;
     }
 
-    .mobile-navbar {
-        border-bottom: 1px solid #E5E5E5;
-        padding-bottom: 0.6rem;
-    }
-
     .navbar-left,
     .navbar-right {
         font-weight: 700;
@@ -1049,6 +982,8 @@ footer .flex{
     .mobile-navbar {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #E5E5E5;
+        padding-bottom: 0.6rem;
     }
 
     .fa-bars {
@@ -1133,7 +1068,6 @@ footer .flex{
     .navbar-left .solution-team-function {
         border: none;
         margin-bottom: 1.6rem;
-        gap: 0.6rem;
     }
 
     .navbar-left .solution-team-function,
@@ -1177,8 +1111,8 @@ footer .flex{
 }
 
 @media screen and (max-width: 840px) {
-    html {
-        font-size: 12px;
+    h2{
+        font-size: 34px;
     }
 
     .hero {
