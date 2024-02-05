@@ -1,12 +1,15 @@
 let navbars = document.querySelectorAll(".navbar");
+let mobileNavbarBtn = document.querySelector(".mobile-navbar .free-notion-btn")
 let languageContainer = document.querySelector('.language-container')
 
 function openNavbar(){
     navbars.forEach(function(navbar) {
         if (navbar.style.display === "none" || navbar.style.display === "") {
             navbar.style.display = "flex";
+            mobileNavbarBtn.style.display = "none";
         } else {
             navbar.style.display = "none";
+            mobileNavbarBtn.style.display = "inline-block";
         }
     });
 }
@@ -23,8 +26,7 @@ window.addEventListener('resize', () => {
     navbars.forEach(function(navbar) {
         if (window.innerWidth > 1080) {
             navbar.style.display = "flex";
-        } else {
-            navbar.style.display = "none";
+            mobileNavbarBtn.style.display = "none";
         }
     });
 });

@@ -26,189 +26,192 @@
 </head>
 
 <body>
-    <header class="flex flex-column-media">
-        <div class="wrapper flex flex-column-media">
+    <header class="flex flex-column-media w-100">
+        <div class="flex flex-column-media">
             <div class="mobile-navbar">
                 <div class="logo flex align-items-center">
                     <img src="assets/favicon.svg" class="logo-img" alt="notion logo">
                     <span>Notion</span>
                 </div>
+                <a href="#" class="free-notion-btn small-text w-100-lg semi-bold">Get Notion free</a>
                 <i class="fa-solid fa-bars" onclick="openNavbar()"></i>
             </div>
             <nav class="navbar-left navbar flex">
-                <ul class="nav-links flex flex-column-media w-100-media">
-                    <li class="nav-link-wrapper flex w-100-media">
-                        <span class="nav-link clickable flex align-items-center">Product <i
-                                class="fa-solid fa-angle-down d-none-media"></i></span>
+                <ul class="nav-links flex flex-column-media w-100-lg">
+                    <li class="nav-link-wrapper flex w-100-lg">
+                        <a href="#" class="nav-link flex align-items-center">Product <i
+                                class="fa-solid fa-angle-down d-none-lg"></i></a>
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="product-container flex flex-column-media d-none-media">
+                    <div class="product-container flex flex-column-media d-none-lg">
                         <div class="product-wrapper flex-column">
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-wand-magic-sparkles product-icon"></i>
-                                <div class="product-info clickable">
+                                <i class="fa-solid fa-wand-magic-sparkles product-icon ai-icon"></i>
+                                <div class="product-info">
                                     <span class="product-name">AI</span>
-                                    <span class="product-description">Integrated AI assistant</span>
+                                    <span class="product-description small-text">Integrated AI assistant</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-regular fa-file-lines product-icon"></i>
-                                <div class="product-info clickable">
+                                <i class="fa-regular fa-file-lines product-icon docs-icon"></i>
+                                <div class="product-info">
                                     <span class="product-name">Docs</span>
-                                    <span class="product-description">Simple & Powerful</span>
+                                    <span class="product-description small-text">Simple & Powerful</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-book-open product-icon"></i>
-                                <div class="product-info clickable">
+                                <i class="fa-solid fa-book-open product-icon wikis-icon"></i>
+                                <div class="product-info">
                                     <span class="product-name">Wikis</span>
-                                    <span class="product-description">Centralize your knowledge</span>
+                                    <span class="product-description small-text">Centralize your knowledge</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-bullseye product-icon"></i>
-                                <div class="product-info clickable">
+                                <i class="fa-solid fa-bullseye product-icon projects-icon"></i>
+                                <div class="product-info">
                                     <span class="product-name">Projects</span>
-                                    <span class="product-description">For every team or size</span>
+                                    <span class="product-description small-text">For every team or size</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-regular fa-calendar product-icon"></i>
-                                <div class="product-info clickable">
-                                    <span class="product-name">Calendar</span>
-                                    <span class="product-description">Time and work, together</span>
+                                <i class="fa-regular fa-calendar product-icon calendar-icon"></i>
+                                <div class="product-info">
+                                    <div class="flex">
+                                        <span class="product-name">Calendar</span>
+                                    <span class="new-badge">New</span>
+                                    </div>
+                                    <span class="product-description small-text">Time and work, together</span>
                                 </div>
                             </div>
                         </div>
                         <div class="product-guide flex-column">
                             <div class="product-info clickable">
                                 <span class="product-guide-title">Template gallery</span>
-                                <span class="product-guide-description">Setups to get you started</span>
+                                <span class="product-guide-description small-text">Setups to get you started</span>
                             </div>
                             <div class="product-info clickable">
                                 <span class="product-guide-title">Customer stories</span>
-                                <span class="product-guide-description">See how teams use notion</span>
+                                <span class="product-guide-description small-text">See how teams use notion</span>
                             </div>
                             <div class="product-info clickable">
                                 <span class="product-guide-title">Connections</span>
-                                <span class="product-guide-description">Connect your tools to Notion</span>
+                                <span class="product-guide-description small-text">Connect your tools to Notion</span>
                             </div>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-media">
-                        <span class="nav-link clickable flex align-items-center">Download <i
-                                class="fa-solid fa-angle-down d-none-media"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-lg">
+                        <a href="#" class="nav-link flex align-items-center">Download <i
+                                class="fa-solid fa-angle-down d-none-lg"></i></a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="download-container flex-column d-none-media">
-                        <span class="download-content clickable">iOS & Android</span>
-                        <span class="download-content clickable">Mac & Windows</span>
-                        <span class="download-content clickable">Calendar</span>
-                        <span class="download-content clickable">Web Clipper</span>
-                        <span class="download-note">Notion is always at home<br class="d-none-media"> right <u>in your
-                                browser</u></span>
+                    <div class="download-container flex-column d-none-lg">
+                        <a href="#" class="download-content">iOS & Android</a>
+                        <a href="#" class="download-content">Mac & Windows</a>
+                        <a href="#" class="download-content">Calendar</a>
+                        <a href="#" class="download-content">Web Clipper</a>
+                        <span class="download-note small-text">Notion is always at home<br class="d-none-lg"> right <a href="#">in your
+                                browser</a></span>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-media">
-                        <span class="nav-link clickable flex align-items-center">Solutions <i
-                                class="fa-solid fa-angle-down d-none-media"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-lg">
+                        <a href="#" class="nav-link flex align-items-center">Solutions <i
+                                class="fa-solid fa-angle-down d-none-lg"></i></a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="solution-container flex flex-column-media d-none-media">
+                    <div class="solution-container flex flex-column-media d-none-lg">
                         <div class="solution-team-size flex-column">
-                            <span class="solution-title">by team size</span>
-                            <div class="solution-content clickable flex align-items-center">
-                                <!-- <i class="fa-solid fa-hotel solution-icon d-none-media"></i> -->
-                                <img src="assets/imgs/asset 0.png" class="solution-icon d-none-media" alt="">
+                            <span class="solution-title small-text">by team size</span>
+                            <div class="solution-content flex align-items-center">
+                                <img src="assets/imgs/asset 0.png" class="solution-icon d-none-lg" alt="">
                                 <div class="solution-info">
                                     <span class="solution-name">Enterprise</span>
-                                    <span class="solution-description">Advanced features for your org</span>
+                                    <span class="solution-description small-text">Advanced features for your org</span>
                                 </div>
                             </div>
-                            <div class="solution-content clickable flex align-items-center">
-                                <!-- <i class="fa-solid fa-building solution-icon d-none-media"></i> -->
-                                <img src="assets/imgs/asset 1.png" class="solution-icon d-none-media" alt="">
+                            <div class="solution-content flex align-items-center">
+                                <img src="assets/imgs/asset 1.png" class="solution-icon d-none-lg" alt="">
                                 <div class="solution-info">
                                     <span class="solution-name">Small business</span>
-                                    <span class="solution-description">Run your team on one tool</span>
+                                    <span class="solution-description small-text">Run your team on one tool</span>
                                 </div>
                             </div>
-                            <div class="solution-content clickable flex align-items-center">
-                                <!-- <i class="fa-solid fa-store solution-icon d-none-media"></i> -->
-                                <img src="assets/imgs/asset 2.png" class="solution-icon d-none-media" alt="">
+                            <div class="solution-content flex align-items-center">
+                                <img src="assets/imgs/asset 2.png" class="solution-icon d-none-lg" alt="">
                                 <div class="solution-info">
                                     <span class="solution-name">Personal</span>
-                                    <span class="solution-description">Free for individuals</span>
+                                    <span class="solution-description small-text">Free for individuals</span>
                                 </div>
                             </div>
                         </div>
                         <div class="solution-team-function flex-column">
-                            <span class="solution-title">by team function</span>
-                            <span class="team-function-item clickable">Design</span>
-                            <span class="team-function-item clickable">Engineering</span>
-                            <span class="team-function-item clickable">Product</span>
-                            <span class="team-function-item clickable">Managers</span>
+                            <span class="solution-title small-text">by team function</span>
+                            <a href="#" class="team-function-item">Design</a>
+                            <a href="#" class="team-function-item">Engineering</a>
+                            <a href="#" class="team-function-item">Product</a>
+                            <a href="#" class="team-function-item">Managers</a>
                         </div>
                         <div class="solution-notion-for flex-column">
-                            <span class="solution-title">notion for</span>
-                            <span class="notion-for-item clickable">Startups</span>
-                            <span class="notion-for-item clickable">Remote work</span>
-                            <span class="notion-for-item clickable">Education</span>
-                            <span class="notion-for-item clickable">Nonprofits</span>
+                            <span class="solution-title small-text">notion for</span>
+                            <a href="#" class="notion-for-item">Startups</a>
+                            <a href="#" class="notion-for-item">Remote work</a>
+                            <a href="#" class="notion-for-item">Education</a>
+                            <a href="#" class="notion-for-item">Nonprofits</a>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-media">
-                        <span class="nav-link clickable flex align-items-center">Resources <i
-                                class="fa-solid fa-angle-down d-none-media"></i></span><i
+                    <li class="nav-link-wrapper flex w-100-lg">
+                        <a href="#" class="nav-link flex align-items-center">Resources <i
+                                class="fa-solid fa-angle-down d-none-lg"></i></a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="resource-container flex-column d-none-media">
-                        <span class="clickable">Blog</span>
-                        <span class="clickable">Notion Academy</span>
-                        <span class="clickable">Guides & tutorials</span>
-                        <span class="clickable">Webinars</span>
-                        <span class="clickable">Help center</span>
-                        <span class="clickable">API docs</span>
-                        <span class="clickable">Community</span>
-                        <span class="clickable">Hire a consultant</span>
+                    <div class="resource-container flex-column d-none-lg">
+                        <a href="#">Blog</a>
+                        <a href="#">Notion Academy</a>
+                        <a href="#">Guides & tutorials</a>
+                        <a href="#">Webinars</a>
+                        <a href="#">Help center</a>
+                        <a href="#">API docs</a>
+                        <a href="#">Community</a>
+                        <a href="#">Hire a consultant</a>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-media">
-                        <span class="nav-link clickable flex align-items-center">Pricing</span>
+                    <li class="nav-link-wrapper flex w-100-lg">
+                        <a href="#" class="nav-link flex align-items-center">Pricing</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <nav class="navbar-right navbar flex flex-column-media align-items-center">
-            <a href="#" class="demo-btn w-100-media">Request a demo</a>
-            <span class="vertical-line d-none-media">|</span>
-            <a href="#" class="login-btn w-100-media">Log in</a>
-            <a href="#" class="free-notion-btn w-100-media semi-bold">Get Notion free</a>
+            <a href="#" class="demo-btn w-100-lg">Request a demo</a>
+            <span class="vertical-line d-none-lg">|</span>
+            <a href="#" class="login-btn w-100-lg">Log in</a>
+            <a href="#" class="free-notion-btn small-text w-100-lg semi-bold">Get Notion free</a>
         </nav>
     </header>
 
+    <main>
+    <!-- hero section -->
     <section id="hero-section">
-        <div class="hero flex-column">
+        <div class="hero-container flex-column">
             <h1 class="hero-title">Just ask Notion AI.</h1>
-            <span class="hero-description semi-bold">Knowledge, answers, ideas. One click away.</span>
+            <span class="hero-subtitle semi-bold">Knowledge, answers, ideas. One click away.</span>
             <div class="cta-btns">
-                <button type="button" class="get-started-btn semi-bold clickable">Get started</button>
+                <button type="button" class="start-btn semi-bold clickable">Get started</button>
                 <button type="button" class="signup-btn semi-bold clickable">Sign up for Q&A Waitlist</button>
             </div>
-            <img src="assets/imgs/asset 3.png" class="hero-img" alt="">
+            <img src="assets/imgs/asset 3.png" class="hero-img" alt="Hero Image">
         </div>
         <div class="scrollable">
-            <div class="features flex">
-                <div class="feature clickable rounded-border">
+            <div class="features-container flex">
+                <div class="feature-item clickable rounded-border">
                     <i class="fa-solid fa-comment-dots feature-icon"></i>
                     <span class="feature-title semi-bold">Get answers</span>
                     <p class="feature-description">Just ask Q&A, and find the info you need in seconds.</p>
                 </div>
-                <div class="feature clickable rounded-border">
+                <div class="feature-item clickable rounded-border">
                     <i class="fa-solid fa-lightbulb feature-icon"></i>
                     <span class="feature-title semi-bold">Write better</span>
                     <p class="feature-description">Get help writing and brainstorming in Notion, not in a separate
                         browser tab.</p>
                 </div>
-                <div class="feature clickable rounded-border">
+                <div class="feature-item clickable rounded-border">
                     <i class="fa-solid fa-list-check feature-icon"></i>
                     <span class="feature-title semi-bold">Autofill tables</span>
                     <p class="feature-description">Turn overwhelming data into clear, actionable information in seconds.
@@ -216,25 +219,23 @@
                 </div>
             </div>
         </div>
-        <img src="assets/imgs/asset 4.png" class="slider-img" alt="">
+        <img src="assets/imgs/asset 4.png" class="slider-img w-100" alt="Slider Image">
     </section>
 
-    <!-- AI banner -->
-    <div class="ai-banner clickable rounded-border">
-        <i class="fa-solid fa-wand-sparkles ai-banner-icon"></i>
-        <span class="ai-banner-title semi-bold">Notion AI add-on</span>
-        <p class="ai-banner-description">Add to any paid plan for $8 per member / month, billed annually. $10 per member
+    <!-- AI add-on section -->
+    <div class="ai-add-on clickable rounded-border">
+        <i class="fa-solid fa-wand-sparkles ai-add-on-icon"></i>
+        <span class="ai-add-on-title semi-bold">Notion AI add-on</span>
+        <p class="ai-add-on-description">Add to any paid plan for $8 per member / month, billed annually. $10 per member
             / month for monthly billing and Free plans.</p>
-        <button type="button" class="ai-banner-btn semi-bold clickable">Get started <i class="fa-solid fa-arrow-right"></i></button>
-
-        <img src="assets/imgs/asset 7.png" class="ai-banner-img" alt="">
-
+        <button type="button" class="ai-add-on-btn semi-bold clickable">Get started <i class="fa-solid fa-arrow-right"></i></button>
+        <img src="assets/imgs/asset 7.png" class="ai-add-on-img" alt="AI Add-on Image">
     </div>
 
     <!-- AI Q&A section -->
     <section id="qa-section" class="qa">
         <div class="qa-header">
-            <img src="assets/imgs/asset 8.png" class="qa-img" alt="">
+            <img src="assets/imgs/asset 8.png" class="qa-img" alt="Q&A Image">
             <h2 class="qa-title">Get the answer in seconds.</h2>
         </div>
         <div class="qa-banner rounded-border">
@@ -242,80 +243,80 @@
             <span class="qa-banner-title semi-bold">Help with any question</span>
             <p class="qa-banner-description">Q&A unblocks your work using information across your wikis, projects, and
                 docs. All you have to do is ask.</p>
-            <video autoplay muted loop class="qa-banner-video">
+            <video autoplay muted loop class="qa-banner-video w-100">
                 <source src="assets/imgs/notion-qa-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="qa-use-imgs flex">
-            <img src="assets/imgs/asset 9.png" class="ask-process-img rounded-border" alt="">
-            <img src="assets/imgs/asset 10.png" class="ask-meeting-img rounded-border" alt="">
-            <img src="assets/imgs/asset 11.png" class="ask-projects-img rounded-border" alt="">
+            <img src="assets/imgs/asset 9.png" class="ask-process-img rounded-border" alt="Ask Process Image">
+            <img src="assets/imgs/asset 10.png" class="ask-meeting-img rounded-border" alt="Ask Meeting Image">
+            <img src="assets/imgs/asset 11.png" class="ask-projects-img rounded-border" alt="Ask Projects Image">
         </div>
         <div class="qa-testimonial">
             <p class="qa-testimonial-description">&quot;Q&A can change the landscape completely for any size company.
                 It&#39;s been central to actually making sense of all the data we already have.&quot;</p>
             <div class="flex">
-                <img src="assets/imgs/asset 12.png" class="qa-testimonial-img" alt="">
+                <img src="assets/imgs/asset 12.png" class="qa-testimonial-img" alt="Q&A Image of Organization">
                 <div class="qa-testimonial-by">
-                    <span class="qa-testimonial-name semi-bold">Scott Entwistle</span>
-                    <span class="qa-testimonial-designation">Senior Recruiter, remote.com</span>
+                    <span class="qa-testimonial-name semi-bold small-text">Scott Entwistle</span>
+                    <span class="qa-testimonial-designation small-text">Senior Recruiter, remote.com</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AI Text Assist section -->
-    <section id="text-assist-section" class="text-assist">
-        <div class="text-assist-header flex">
-            <h2 class="text-assist-title">Find the right words, right now.</h2>
-            <img src="assets/imgs/asset 13.png" class="text-assist-img" alt="">
+    <!-- AI Content Assist section -->
+    <section id="content-assist-section" class="content-assist">
+        <div class="content-assist-header flex">
+            <h2 class="content-assist-title">Find the right words, right now.</h2>
+            <img src="assets/imgs/asset 13.png" class="content-assist-img" alt="">
         </div>
-        <div class="text-assist-banner rounded-border">
-            <i class="fa-solid fa-comment-dots text-assist-banner-icon"></i>
-            <span class="text-assist-banner-title semi-bold">Help with writing, right where you need it</span>
-            <p class="text-assist-banner-description">Get rid of blank pages and writer's block. Let Notion handle the
+        <div class="content-assist-banner rounded-border">
+            <i class="fa-solid fa-comment-dots content-assist-banner-icon"></i>
+            <span class="content-assist-banner-title semi-bold">Help with writing, right where you need it</span>
+            <p class="content-assist-banner-description">Get rid of blank pages and writer's block. Let Notion handle the
                 first draft.</p>
-            <video autoplay muted loop class="text-assist-banner-video">
+            <video autoplay muted loop class="content-assist-banner-video w-100">
                 <source src="assets/imgs/notion-text-assist-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="text-assist-features flex">
-            <div class="text-assist-feature rounded-border">
-                <i class="fa-solid fa-wrench text-assist-feature-icon"></i>
-                <span class="text-assist-feature-title semi-bold">Explain</span>
-                <span class="text-assist-feature-description">Technical jargon, rewritten for everyone.</span>
-                <img src="assets/imgs/asset 14.png" class="text-assist-feature-img" alt="">
+        <div class="content-assist-features-container flex">
+            <div class="content-assist-feature-item rounded-border">
+                <i class="fa-solid fa-wrench content-assist-feature-icon"></i>
+                <span class="content-assist-feature-title semi-bold">Explain</span>
+                <span class="content-assist-feature-description">Technical jargon, rewritten for everyone.</span>
+                <img src="assets/imgs/asset 14.png" class="content-assist-feature-img w-100" alt="">
             </div>
-            <div class="text-assist-feature rounded-border">
-                <i class="fa-solid fa-language text-assist-feature-icon"></i>
-                <span class="text-assist-feature-title semi-bold">Translate</span>
-                <span class="text-assist-feature-description">Now you can write in Japanese, Spanish, German and
+            <div class="content-assist-feature-item rounded-border">
+                <i class="fa-solid fa-language content-assist-feature-icon"></i>
+                <span class="content-assist-feature-title semi-bold">Translate</span>
+                <span class="content-assist-feature-description">Now you can write in Japanese, Spanish, German and
                     more.</span>
-                <img src="assets/imgs/asset 15.png" class="text-assist-feature-img" alt="">
+                <img src="assets/imgs/asset 15.png" class="content-assist-feature-img w-100" alt="">
             </div>
-            <div class="text-assist-feature rounded-border">
-                <i class="fa-solid fa-microphone text-assist-feature-icon"></i>
-                <span class="text-assist-feature-title semi-bold">Edit voice & tone</span>
-                <span class="text-assist-feature-description">Rewrite your proposal with the confidence of a CEO.</span>
-                <img src="assets/imgs/asset 16.png" class="text-assist-feature-img" alt="">
+            <div class="content-assist-feature-item rounded-border">
+                <i class="fa-solid fa-microphone content-assist-feature-icon"></i>
+                <span class="content-assist-feature-title semi-bold">Edit voice & tone</span>
+                <span class="content-assist-feature-description">Rewrite your proposal with the confidence of a CEO.</span>
+                <img src="assets/imgs/asset 16.png" class="content-assist-feature-img w-100" alt="">
             </div>
         </div>
-        <div class="text-assist-testimonial">
-            <p class="text-assist-testimonial-description">&quot;It&#39;s the slickest, most practical implementation of
+        <div class="content-assist-testimonial">
+            <p class="content-assist-testimonial-description">&quot;It&#39;s the slickest, most practical implementation of
                 generative AI for text that I&#39;ve used to date.&quot;</p>
             <div class="flex">
-                <img src="assets/imgs/asset 17.png" class="text-assist-testimonial-img" alt="">
-                <div class="text-assist-testimonial-by">
-                    <span class="text-assist-testimonial-name semi-bold">Alex Heath</span>
-                    <span class="text-assist-testimonial-designation">Deputy Editor, The Verge</span>
+                <img src="assets/imgs/asset 17.png" class="content-assist-testimonial-img" alt="">
+                <div class="content-assist-testimonial-by">
+                    <span class="content-assist-testimonial-name small-text semi-bold">Alex Heath</span>
+                    <span class="content-assist-testimonial-designation small-text">Deputy Editor, The Verge</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- task automation section -->
+    <!-- Task Automation section -->
     <section id="task-automation-section" class="task-automation">
         <div class="task-automation-header flex">
             <h2 class="task-automation-title">Never write a progress update again.</h2>
@@ -326,37 +327,37 @@
             <span class="task-automation-banner-title semi-bold">Turn databases of any size into actionable insights</span>
             <p class="task-automation-banner-description">Autofill runs through hundreds of docs in minutes, then writes
                 up insights, summaries, and more.</p>
-            <video autoplay muted loop class="task-automation-banner-video">
+            <video autoplay muted loop class="task-automation-banner-video w-100">
                 <source src="assets/imgs/notion-task-automation-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="task-automation-features flex">
-            <div class="task-automation-feature rounded-border">
+        <div class="task-automation-features-container flex">
+            <div class="task-automation-feature-item rounded-border">
                 <i class="fa-solid fa-list-check task-automation-feature-icon"></i>
                 <span class="task-automation-feature-title semi-bold">Action items</span>
                 <span class="task-automation-feature-description">Analyze meeting notes to generate next steps,
                     instantly.</span>
-                <img src="assets/imgs/asset 19.png" class="task-automation-feature-img" alt="">
+                <img src="assets/imgs/asset 19.png" class="task-automation-feature-img w-100" alt="">
             </div>
-            <div class="task-automation-feature rounded-border">
+            <div class="task-automation-feature-item rounded-border">
                 <i class="fa-solid fa-pencil task-automation-feature-icon"></i>
                 <span class="task-automation-feature-title semi-bold">Summaries</span>
                 <span class="task-automation-feature-description">Generate a TL;DR across hundreds of items, all at
                     once.</span>
-                <img src="assets/imgs/asset 20.png" class="task-automation-feature-img" alt="">
+                <img src="assets/imgs/asset 20.png" class="task-automation-feature-img w-100" alt="">
             </div>
-            <div class="task-automation-feature rounded-border">
+            <div class="task-automation-feature-item rounded-border">
                 <i class="fa-solid fa-lightbulb task-automation-feature-icon"></i>
                 <span class="task-automation-feature-title semi-bold">Insights</span>
                 <span class="task-automation-feature-description">See the takeaways from sales calls, research sessions
                     & more.</span>
-                <img src="assets/imgs/asset 21.png" class="task-automation-feature-img" alt="">
+                <img src="assets/imgs/asset 21.png" class="task-automation-feature-img w-100" alt="">
             </div>
         </div>
     </section>
 
-    <!-- data privacy section -->
+    <!-- Data Privacy section -->
     <section id="data-privacy-section" class="data-privacy">
         <div class="data-privacy-header flex">
             <div class="data-privacy-header-text">
@@ -366,58 +367,58 @@
             </div>
             <img src="assets/imgs/asset 22.png" class="data-privacy-img" alt="">
         </div>
-        <div class="data-privacy-features">
-            <div class="data-privacy-feature rounded-border">
+        <div class="data-privacy-features-container">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-shield data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">No training on your data</span>
                 <span class="data-privacy-feature-description">We have contractual agreements with our AI subprocessors
                     that prohibit the use of customer data to train their models.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-lock data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">Secure encryption</span>
                 <span class="data-privacy-feature-description">When you use Notion AI, your data is encrypted in-transit
                     using TLS 1.2 or greater.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-user-check data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">Advanced permissions</span>
                 <span class="data-privacy-feature-description">Specify who can do and create what, with granular
                     precision.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-circle-check data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">GDPR & CCPA</span>
                 <span class="data-privacy-feature-description">We have mapped our privacy program to the GDPR and other
                     global privacy regulations.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-shield data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">SOC 2 (Type 2)</span>
                 <span class="data-privacy-feature-description">Our report certifies that our security policies and
                     controls continuously meet the highest industry standards.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-brush data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">ISO 27001</span>
                 <span class="data-privacy-feature-description">Notion is ISO 27001 certified, showing our commitment to
                     the highest requirements of information security.</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-comment-dots data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">SCIM user provisioning</span>
                 <span class="data-privacy-feature-description">Easily create, remove, add, update, or retrieve any user
                     or group.</span>
                 <span class="data-privacy-feature-badge semi-bold">Enterprise Plan</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-wrench data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">Security & admin tools</span>
                 <span class="data-privacy-feature-description">Keep your workspace safe with security, compliance,
                     analytics, and auditing tools.</span>
                 <span class="data-privacy-feature-badge semi-bold">Enterprise Plan</span>
             </div>
-            <div class="data-privacy-feature rounded-border">
+            <div class="data-privacy-feature-item rounded-border">
                 <i class="fa-solid fa-circle-check data-privacy-feature-icon"></i>
                 <span class="data-privacy-feature-title semi-bold">SAML single sign-on</span>
                 <span class="data-privacy-feature-description">Give employees access to Notion through your identity
@@ -436,8 +437,8 @@
             </div>
             <img src="assets/imgs/asset 23.png" class="template-img" alt="">
         </div>
-        <div class="template-features">
-            <div class="template-feature flex-column rounded-border">
+        <div class="template-features-container">
+            <div class="template-feature-item flex-column rounded-border">
                 <div>
                     <i class="fa-solid fa-file template-feature-icon"></i>
                     <span class="template-feature-title semi-bold">Recruiting outreach</span>
@@ -445,9 +446,9 @@
                         attention of your top candidates. Get some ideas with Notion AI.</span>
                     <a href="#" class="template-feature-link">Try template <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 24.png" class="template-feature-img" alt="">
+                <img src="assets/imgs/asset 24.png" class="template-feature-img w-100" alt="">
             </div>
-            <div class="template-feature flex-column rounded-border">
+            <div class="template-feature-item flex-column rounded-border">
                 <div>
                     <i class="fa-solid fa-file template-feature-icon"></i>
                     <span class="template-feature-title semi-bold">Meeting summaries</span>
@@ -457,9 +458,9 @@
                         you.</span>
                     <a href="#" class="template-feature-link">Try template <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 25.png" class="template-feature-img" alt="">
+                <img src="assets/imgs/asset 25.png" class="template-feature-img w-100" alt="">
             </div>
-            <div class="template-feature flex-column rounded-border">
+            <div class="template-feature-item flex-column rounded-border">
                 <div>
                     <i class="fa-solid fa-file template-feature-icon"></i>
                     <span class="template-feature-title semi-bold">Weekly meal prep</span>
@@ -468,9 +469,9 @@
                         eat, and Notion AI will handle the rest. It'll even preparing a shopping list for you!</span>
                     <a href="#" class="template-feature-link">Try template <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 26.png" class="template-feature-img" alt="">
+                <img src="assets/imgs/asset 26.png" class="template-feature-img w-100" alt="">
             </div>
-            <div class="template-feature flex-column rounded-border">
+            <div class="template-feature-item flex-column rounded-border">
                 <div>
                     <i class="fa-solid fa-file template-feature-icon"></i>
                     <span class="template-feature-title semi-bold">Video script generator</span>
@@ -478,7 +479,7 @@
                         Generate your first draft with Notion AI.</span>
                     <a href="#" class="template-feature-link">Try template <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 27.png" class="template-feature-img" alt="">
+                <img src="assets/imgs/asset 27.png" class="template-feature-img w-100 w-100" alt="">
             </div>
         </div>
     </section>
@@ -490,50 +491,51 @@
         <h2 class="faq-title">Try Notion AI for free</h2>
         <span class="faq-description semi-bold">Tap into the power of AI right inside your wikis, docs, and projects today.</span>
         <div class="faq-btns flex">
-            <button type="button" class="faq-get_started-btn semi-bold clickable">Get started</button>
+            <button type="button" class="faq-start-btn semi-bold clickable">Get started</button>
             <button type="button" class="faq-signup_qa-btn clickable">Sign up for Q&A Waitlist</button>
         </div>
         <h3 class="faq-heading">Questions & answers</h3>
-        <div class="faq-container">
-            <div class="faq-question-container clickable flex">
-                <span class="faq-question semi-bold">How do I activate Notion AI?</span>
+        <div class="faq-questions-container w-100">
+            <div class="faq-question-item clickable flex">
+                <span class="faq-question-title semi-bold">How do I activate Notion AI?</span>
                 <i class="fa-solid fa-plus"></i>
             </div>
-            <div class="faq-question-container clickable flex">
-                <span class="faq-question semi-bold">How is Notion AI different from other AI tools?</span>
+            <div class="faq-question-item clickable flex">
+                <span class="faq-question-title semi-bold">How is Notion AI different from other AI tools?</span>
                 <i class="fa-solid fa-plus"></i>
             </div>
-            <div class="faq-question-container clickable flex">
-                <span class="faq-question semi-bold">How does Notion AI use my data?</span>
+            <div class="faq-question-item clickable flex">
+                <span class="faq-question-title semi-bold">How does Notion AI use my data?</span>
                 <i class="fa-solid fa-plus"></i>
             </div>
-            <div class="faq-question-container clickable flex">
-                <span class="faq-question semi-bold">How much usage is included with the Notion AI add-on plan?</span>
+            <div class="faq-question-item clickable flex">
+                <span class="faq-question-title semi-bold">How much usage is included with the Notion AI add-on plan?</span>
                 <i class="fa-solid fa-plus"></i>
             </div>
-            <div class="faq-question-container clickable flex">
-                <span class="faq-question semi-bold">Is there a free trial for Notion AI?</span>
+            <div class="faq-question-item clickable flex">
+                <span class="faq-question-title semi-bold">Is there a free trial for Notion AI?</span>
                 <i class="fa-solid fa-plus"></i>
             </div>
         </div>
     </section>
+</main>
 
 
     <!-- footer section -->
 
     <footer>
         <div class="flex flex-column-media">
-            <div class="brand_info">
+            <div class="brand-info">
                 <div class="logo flex align-items-center">
                     <img src="assets/favicon.svg" class="logo-img" alt="notion logo">
                     <span>Notion</span>
                 </div>
-                <div class="flex social_media-logos">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-youtube"></i>
+                <div class="flex social-media-logos">
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-linkedin-in"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
                 <div class="language-dropdown">
                     <div class="language-select">
@@ -546,35 +548,35 @@
                     <div class="language-container">
                         <div class="language clickable">
                             <span class="language-title">English</span>
-                            <span class="language-description">English (US)</span>
+                            <span class="language-description small-text">English (US)</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">Français (France)</span>
-                            <span class="language-description">French</span>
+                            <span class="language-description small-text">French</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">Deutsch</span>
-                            <span class="language-description">German</span>
+                            <span class="language-description small-text">German</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">日本語</span>
-                            <span class="language-description">Japanese</span>
+                            <span class="language-description small-text">Japanese</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">한국어</span>
-                            <span class="language-description">Korean</span>
+                            <span class="language-description small-text">Korean</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">Português (Brasil)</span>
-                            <span class="language-description">Portuguese (Brazil)</span>
+                            <span class="language-description small-text">Portuguese (Brazil)</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">Español (Latinoamérica)</span>
-                            <span class="language-description">Spanish (Latin America)</span>
+                            <span class="language-description small-text">Spanish (Latin America)</span>
                         </div>
                         <div class="language clickable">
                             <span class="language-title">Español (España)</span>
-                            <span class="language-description">Spanish (Spain)</span>
+                            <span class="language-description small-text">Spanish (Spain)</span>
                         </div>
                     </div>
                 </div>
@@ -655,8 +657,8 @@
         </div>
         <div class="flex flex-column-media">
             <div class="spacer"></div> <!-- for spacing -->
-            <div class="copyright">
-                <span class="copyright-info_sharing-txt clickable">Do Not Sell or Share My Info</span>
+            <div class="copyright small-text">
+                <a href="#" class="copyright-info-sharing-txt">Do Not Sell or Share My Info</a>
                 <span class="copyright-txt">&copy; 2024 Notion Labs, Inc.</span>
             </div>
         </div>
@@ -666,7 +668,3 @@
 </body>
 
 </html>
-
-
-
-<!-- NOTE: fix footer section-->
