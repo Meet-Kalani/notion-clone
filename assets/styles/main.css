@@ -88,40 +88,45 @@ header {
     display: none;
 }
 
+.mobile-navbar{
+    padding: 0;
+    border-bottom: none;
+}
+
 /* left navbar styles */
-.navbar-left .nav-links {
+.main-links-container .nav-links {
     list-style: none;
     margin-left: 19px;
     position: relative;
 }
 
-.navbar-left .nav-link {
+.main-links-container .nav-link {
     gap: 0.4rem;
     border-radius: 5px;
     padding: 0.4rem 0.6rem;
 }
 
-.navbar-left .nav-links .nav-link-wrapper:hover+.product-container,
-.navbar-left .product-container:hover,
-.navbar-left .nav-links .nav-link-wrapper:hover+.download-container,
-.navbar-left .download-container:hover,
-.navbar-left .nav-links .nav-link-wrapper:hover+.solution-container,
-.navbar-left .solution-container:hover,
-.navbar-left .nav-links .nav-link-wrapper:hover+.resource-container,
-.navbar-left .resource-container:hover {
+.main-links-container .nav-links .nav-link-wrapper:hover+.product-container,
+.main-links-container .product-container:hover,
+.main-links-container .nav-links .nav-link-wrapper:hover+.download-container,
+.main-links-container .download-container:hover,
+.main-links-container .nav-links .nav-link-wrapper:hover+.solution-container,
+.main-links-container .solution-container:hover,
+.main-links-container .nav-links .nav-link-wrapper:hover+.resource-container,
+.main-links-container .resource-container:hover {
     display: flex;
 }
 
-.navbar-left .nav-link .fa-solid {
+.main-links-container .nav-link .fa-solid {
     font-size: 10px;
     margin-top: 5px;
 }
 
 /* drop down */
-.navbar-left .product-container,
-.navbar-left .download-container,
-.navbar-left .solution-container,
-.navbar-left .resource-container {
+.main-links-container .product-container,
+.main-links-container .download-container,
+.main-links-container .solution-container,
+.main-links-container .resource-container {
     display: none;
     position: absolute;
     top: 2rem;
@@ -130,46 +135,46 @@ header {
     background-color: var(--white);
 }
 
-.navbar-left .download-container {
+.main-links-container .download-container {
     left: 5.7rem;
 }
 
-.navbar-left .solution-container {
+.main-links-container .solution-container {
     left: 12.3rem;
 }
 
-.navbar-left .resource-container {
+.main-links-container .resource-container {
     left: 18.54rem;
 }
 
-.navbar-left .product-wrapper {
+.main-links-container .product-wrapper {
     border-right: 1px solid #E5E5E5;
 }
 
-.navbar-left .product-wrapper .product-content {
+.main-links-container .product-wrapper .product-content {
     gap: 0.8rem;
     padding: 6px 14px;
 }
 
 /* hover effect background */
-.navbar-left .product-wrapper .product-content:hover,
-.navbar-left .product-guide .product-info:hover,
-.navbar-left .solution-team-size .solution-content:hover,
-.navbar-left .download-container .download-content:hover,
-.navbar-left .resource-container a:hover,
-.navbar-left .solution-container .solution-team-function .team-function-item:hover,
-.navbar-left .solution-container .solution-notion-for .notion-for-item:hover,
+.main-links-container .product-wrapper .product-content:hover,
+.main-links-container .product-guide .product-info:hover,
+.main-links-container .solution-team-size .solution-content:hover,
+.main-links-container .download-container .download-content:hover,
+.main-links-container .resource-container a:hover,
+.main-links-container .solution-container .solution-team-function .team-function-item:hover,
+.main-links-container .solution-container .solution-notion-for .notion-for-item:hover,
 .language-container .language:hover{
     background-color: var(--banner-bg);
 }
 
-.navbar-left .product-wrapper .product-content span,
-.navbar-left .solution-team-size .solution-content span,
-.navbar-left .product-guide span {
+.main-links-container .product-wrapper .product-content span,
+.main-links-container .solution-team-size .solution-content span,
+.main-links-container .product-guide span {
     display: block;
 }
 
-.navbar-left .product-content .new-badge{
+.main-links-container .product-content .new-badge{
     color: #F8792A;
     font-size: 12px;
     margin-left: 4px;
@@ -206,58 +211,58 @@ header {
     padding:6px 14px;
 }
 
-.navbar-left .solution-team-function,
-.navbar-left .solution-notion-for {
+.main-links-container .solution-team-function,
+.main-links-container .solution-notion-for {
     padding: 4px;
 }
 
-.navbar-left .download-container .download-content,
-.navbar-left .resource-container a,
-.navbar-left .solution-container .solution-team-function .team-function-item,
-.navbar-left .solution-container .solution-notion-for .notion-for-item,
-.navbar-left .solution-container .solution-title{
+.main-links-container .download-container .download-content,
+.main-links-container .resource-container a,
+.main-links-container .solution-container .solution-team-function .team-function-item,
+.main-links-container .solution-container .solution-notion-for .notion-for-item,
+.main-links-container .solution-container .solution-title{
     padding: 6px;
 }
 
-.navbar-left .download-container .download-note {
+.main-links-container .download-container .download-note {
     color: #00000099;
     padding: 6px;
 }
 
-.navbar-left .solution-title {
+.main-links-container .solution-title {
     text-transform: uppercase;
     font-weight: 300;
     width: 160px;
 }
 
-.navbar-left .solution-team-size {
+.main-links-container .solution-team-size {
     width: 320px;
     border-right: 1px solid #E5E5E5;
 }
 
-.navbar-left .solution-content .solution-description,
-.navbar-left .product-guide .product-guide-description,
-.navbar-left .product-description{
+.main-links-container .solution-content .solution-description,
+.main-links-container .product-guide .product-guide-description,
+.main-links-container .product-description{
     color: #00000099;
 }
 
-.navbar-left .solution-team-function {
+.main-links-container .solution-team-function {
     border-right: 1px solid #E5E5E5;
 }
 
-.navbar-left .solution-team-size .solution-content {
+.main-links-container .solution-team-size .solution-content {
     gap: 1rem;
     padding: 6px;
 }
 
-.navbar-left .solution-team-size .solution-icon{
+.main-links-container .solution-team-size .solution-icon{
     width: 35px;
     height: 35px;
 }
 
 /* right navbar styles */
 
-.navbar-right a {
+.action-links-container a {
     color: var(--black);
     text-decoration: none;
     border-radius: 5px;
@@ -265,24 +270,24 @@ header {
     margin: 0 8px;
 }
 
-.navbar-right .vertical-line {
+.action-links-container .vertical-line {
     color: #E5E5E5;
 }
 
-.navbar-left .nav-link:hover,
-.navbar-right .demo-btn:hover,
-.navbar-right .login-btn:hover {
+.main-links-container .nav-link:hover,
+.action-links-container .demo-btn:hover,
+.action-links-container .login-btn:hover {
     background-color: #0000000a;
 }
 
-.navbar-right .free-notion-btn,
+.action-links-container .free-notion-btn,
 .mobile-navbar .free-notion-btn {
     background-color: #121212;
     color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.navbar-right .free-notion-btn:hover,
+.action-links-container .free-notion-btn:hover,
 .mobile-navbar .free-notion-btn:hover,
 .hero-container .start-btn:hover,
 .ai-add-on .ai-add-on-btn:hover,
@@ -935,7 +940,7 @@ footer .flex{
 
 @media screen and (max-width: 1080px) {
     /* utility class */
-    .flex-column-media {
+    .flex-column-lg {
         flex-direction: column;
     }
 
@@ -956,19 +961,23 @@ footer .flex{
         display: block;
     }
 
-    .navbar-left,
-    .navbar-right {
+    .mobile-navbar .free-notion-btn{
+        display: inline-block;
+    }
+
+    .main-links-container,
+    .action-links-container {
         font-weight: 700;
     }
 
-    .navbar-left .nav-link-wrapper {
+    .main-links-container .nav-link-wrapper {
         justify-content: space-between;
         align-items: center;
         padding: 16px 0;
         border-bottom: 1px solid #E5E5E5;
     }
 
-    .navbar-left .nav-links {
+    .main-links-container .nav-links {
         align-items: start;
         margin-left: 0;
     }
@@ -976,8 +985,6 @@ footer .flex{
     .mobile-navbar {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid #E5E5E5;
-        padding-bottom: 10px;
     }
 
     .fa-bars {
@@ -988,16 +995,16 @@ footer .flex{
         cursor: pointer;
     }
 
-    .navbar-right {
+    .action-links-container {
         align-items: start;
         gap: 16px;
     }
 
-    .navbar-right a {
+    .action-links-container a {
         margin: 0;
     }
 
-    .navbar-right .demo-btn {
+    .action-links-container .demo-btn {
         text-decoration: none;
         color: var(--black);
         border-bottom: 1px solid #E5E5E5;
@@ -1005,8 +1012,8 @@ footer .flex{
         margin-bottom: 16px;
     }
 
-    .navbar-right .free-notion-btn,
-    .navbar-right .login-btn {
+    .action-links-container .free-notion-btn,
+    .action-links-container .login-btn {
         background-color: var(--black);
         padding: 6px 10px;
         color: var(--white);
@@ -1017,7 +1024,7 @@ footer .flex{
         font-size: 16px;
     }
 
-    .navbar-right .login-btn {
+    .action-links-container .login-btn {
         background-color: transparent;
         order: 2;
         color: var(--black);
@@ -1025,10 +1032,10 @@ footer .flex{
     }
 
     /* dropdown */
-    .navbar-left .product-container,
-    .navbar-left .download-container,
-    .navbar-left .solution-container,
-    .navbar-left .resource-container {
+    .main-links-container .product-container,
+    .main-links-container .download-container,
+    .main-links-container .solution-container,
+    .main-links-container .resource-container {
         position: relative;
         top: 0;
         left: 0;
@@ -1037,34 +1044,34 @@ footer .flex{
         font-weight: 400;
     }
 
-    .navbar-left .product-guide {
+    .main-links-container .product-guide {
         padding-left: 0;
         margin-top: 16px;
     }
 
-    .navbar-left .product-wrapper {
+    .main-links-container .product-wrapper {
         align-items: start;
         border-right: none;
     }
 
-    .navbar-left .product-wrapper .product-content .product-description,
-    .navbar-left .product-guide .product-guide-description,
-    .navbar-left .solution-container .solution-content .solution-description {
+    .main-links-container .product-wrapper .product-content .product-description,
+    .main-links-container .product-guide .product-guide-description,
+    .main-links-container .solution-container .solution-content .solution-description {
         display: none;
     }
 
-    .navbar-left .solution-team-size,
-    .navbar-left .solution-team-function {
+    .main-links-container .solution-team-size,
+    .main-links-container .solution-team-function {
         border: none;
         margin-bottom: 26px;
     }
 
-    .navbar-left .solution-team-function,
-    .navbar-left .solution-notion-for {
+    .main-links-container .solution-team-function,
+    .main-links-container .solution-notion-for {
         padding: 0;
     }
 
-    .navbar-left .solution-title {
+    .main-links-container .solution-title {
         margin-bottom: 0;
         display: inline-block;
     }

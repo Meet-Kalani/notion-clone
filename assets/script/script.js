@@ -27,6 +27,14 @@ window.addEventListener('resize', () => {
         if (window.innerWidth > 1080) {
             navbar.style.display = "flex";
             mobileNavbarBtn.style.display = "none";
+        } else {
+            navbar.style.display = "none";
         }
     });
+});
+
+window.addEventListener('click', function(event) {
+    if (!languageContainer.contains(event.target) && event.target.tagName !== 'BUTTON') {
+      languageContainer.style.display = 'none';
+    }
 });
