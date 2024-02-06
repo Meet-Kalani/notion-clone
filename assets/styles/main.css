@@ -264,8 +264,6 @@ header {
 
 /* action navbar styles */
 .action-links-container a {
-    color: var(--black);
-    text-decoration: none;
     border-radius: 5px;
     padding: 6px 10px;
     margin: 0 8px;
@@ -332,7 +330,8 @@ main{
     font-size: 24px;
 }
 
-.hero-container button {
+.hero-container button,
+.faq .faq-btns button {
     padding: 10px 16px;
     border: none;
     border-radius: 5px;
@@ -641,7 +640,6 @@ main{
 
 .data-privacy-header .data-privacy-link,
 .template-header .template-link{
-    text-decoration: none;
     color: var(--icon-color);
 }
 
@@ -684,7 +682,6 @@ main{
 .template-feature-item .template-feature-link{
     display: block;
     margin-top: 32px;
-    text-decoration: none;
     color: var(--icon-color);
     width: fit-content;
 }
@@ -727,13 +724,6 @@ main{
 
 .faq .faq-btns{
     gap: 12px;
-}
-
-.faq .faq-btns button{
-    padding: 10px 16px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
 }
 
 .faq .faq-signup_qa-btn{
@@ -909,7 +899,6 @@ footer .flex{
 }
 
 .footer-link{
-    text-decoration: none;
     color: #676766;
     line-height: 1.8;
     display: block;
@@ -1010,8 +999,6 @@ footer .flex{
     }
 
     .action-links-container .demo-btn {
-        text-decoration: none;
-        color: var(--black);
         border-bottom: 1px solid #E5E5E5;
         padding: 22px 10px;
         margin-bottom: 16px;
@@ -1023,7 +1010,6 @@ footer .flex{
         padding: 6px 10px;
         color: var(--white);
         text-align: center;
-        text-decoration: none;
         font-weight: 600;
         border-radius: 5px;
         font-size: 16px;
