@@ -24,6 +24,10 @@
     flex-direction: column;
 }
 
+.block {
+    display: block;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -171,12 +175,6 @@ header {
 .main-links-container .solution-container .solution-notion-for .notion-for-item:hover,
 .language-container .language:hover{
     background-color: var(--banner-bg);
-}
-
-.main-links-container .product-wrapper .product-content span,
-.main-links-container .solution-team-size .solution-content span,
-.main-links-container .product-guide span {
-    display: block;
 }
 
 .main-links-container .product-content .new-badge{
@@ -388,7 +386,6 @@ main{
 }
 
 .features-container .feature-title {
-    display: block;
     margin: 13px 0;
     font-size: 24px;
 }
@@ -473,7 +470,6 @@ main{
 .qa-banner .qa-banner-title,
 .content-assist-banner .content-assist-banner-title,
 .task-automation-banner .task-automation-banner-title {
-    display: block;
     margin: 13px 0;
     font-size: 18px;
 }
@@ -520,11 +516,6 @@ main{
 .qa-testimonial .qa-testimonial-img,
 .content-assist-testimonial .content-assist-testimonial-img {
     width: 105px;
-}
-
-.qa-testimonial .qa-testimonial-by span,
-.content-assist-testimonial .content-assist-testimonial-by span {
-    display: block;
 }
 
 .qa-testimonial .flex,
@@ -590,7 +581,6 @@ main{
 .data-privacy-feature-item .data-privacy-feature-title,
 .template-feature-item .template-feature-title {
     font-size: 18px;
-    display: block;
     margin: 13px 0;
 }
 
@@ -658,7 +648,6 @@ main{
     font-size: 12px;
     color: var(--white);
     margin-top: 14px;
-    display: block;
     width: fit-content;
 }
 
@@ -677,7 +666,6 @@ main{
 }
 
 .template-feature-item .template-feature-link{
-    display: block;
     margin-top: 32px;
     color: var(--icon-color);
     width: fit-content;
@@ -878,10 +866,6 @@ footer .flex{
     padding: 4px;
 }
 
-.language-container span{
-    display: block;
-}
-
 .language-container .language{
     transition: 100ms;
     padding: 12px;
@@ -889,14 +873,12 @@ footer .flex{
 
 .footer-links-title{
     margin-top: 32px;
-    display: block;
     line-height: 1.8;
 }
 
 .footer-link{
     color: #676766;
     line-height: 1.8;
-    display: block;
     width: fit-content;
 }
 
@@ -916,7 +898,6 @@ footer .flex{
 }
 
 .copyright .copyright-txt{
-    display: block;
     color: #999898;
 }
 
