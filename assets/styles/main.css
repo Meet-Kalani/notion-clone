@@ -32,6 +32,10 @@
     border-radius: 12px;
 }
 
+.rounded-border-small{
+    border-radius: 5px;
+}
+
 .semi-bold{
     font-weight: 600;
 }
@@ -105,7 +109,6 @@ header {
 
 .main-links-container .nav-link {
     gap: 6px;
-    border-radius: 5px;
     padding: 6px 10px;
 }
 
@@ -264,7 +267,6 @@ header {
 
 /* action navbar styles */
 .action-links-container a {
-    border-radius: 5px;
     padding: 6px 10px;
     margin: 0 8px;
 }
@@ -300,7 +302,6 @@ header {
     align-self: center;
     margin-left: auto;
     margin-right: 24px;
-    border-radius: 5px;
     padding: 6px 10px;
     font-size: 14px;
 }
@@ -334,7 +335,6 @@ main{
 .faq .faq-btns button {
     padding: 10px 16px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
 }
 
@@ -385,7 +385,6 @@ main{
     color: var(--icon-color);
     background-color: #F0E0F8;
     padding: 10px;
-    border-radius: 6px;
 }
 
 .features-container .feature-title {
@@ -415,7 +414,6 @@ main{
     color: var(--icon-color);
     background-color: #F0E0F8;
     padding: 10px;
-    border-radius: 6px;
 }
 
 .ai-add-on .ai-add-on-title  {
@@ -431,7 +429,6 @@ main{
 .ai-add-on .ai-add-on-btn {
     padding: 10px 16px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
     background-color: var(--black);
     color: var(--white);
@@ -829,7 +826,6 @@ footer .flex{
     color: #676766;
     transition: 200ms;
     padding: 4px;
-    border-radius: 4px;
 }
 
 .social-media-logos a:hover{
@@ -865,7 +861,6 @@ footer .flex{
     color: var(--black);
     background-color: transparent;
     border: 1px solid #E4E4E5;
-    border-radius: 5px;
     padding: 6px 18px;
     font-size: 16px;
 }
@@ -1011,7 +1006,6 @@ footer .flex{
         color: var(--white);
         text-align: center;
         font-weight: 600;
-        border-radius: 5px;
         font-size: 16px;
     }
 
