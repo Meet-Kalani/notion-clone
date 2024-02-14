@@ -188,12 +188,13 @@ header {
     background-color: #FCE7D9;
 }
 
-.product-icon {
-    width: 20px;
+.product-container svg{
+    width: 22px;
+    height: 22px;
 }
 
 .ai-icon {
-    color: #BD73E8;
+    fill: #BD73E8;
 }
 
 .docs-icon {
@@ -209,7 +210,9 @@ header {
 }
 
 .calendar-icon {
-    color: #F8792A;
+    fill: #F8792A;
+    width: 22px;
+    height: 22px;
 }
 
 .product-guide .product-info {
@@ -229,14 +232,16 @@ header {
     padding: 6px;
 }
 
-.main-links-container .download-container .download-note {
-    color: #00000099;
+.main-links-container .download-container .download-note,
+.main-links-container .download-container .download-note a {
+    color: grey;
     padding: 6px;
 }
 
 .main-links-container .solution-title {
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 11px;
     width: 160px;
 }
 
@@ -303,13 +308,13 @@ header {
     margin-left: auto;
     margin-right: 24px;
     padding: 6px 10px;
-    font-size: 14px;
+    font-size: 13.5px;
 }
 
 /* navbar ends */
 
 main {
-    width: min(90%, 1024px);
+    width: min(85%, 1024px);
     margin: auto;
 }
 
@@ -324,8 +329,13 @@ main {
 
 .hero-container .hero-title {
     font-size: 61px;
-    font-weight: 700;
     letter-spacing: -2px;
+    line-height: 1;
+}
+
+.hero-title br,
+.hero-subtitle br {
+    display: none;
 }
 
 .hero-container .hero-subtitle {
@@ -334,7 +344,7 @@ main {
 
 .hero-container button,
 .faq .faq-btns button {
-    padding: 10px 16px;
+    padding: 8px 16px;
     border: none;
     font-size: 16px;
     font-weight: 600;
@@ -349,7 +359,8 @@ main {
 
 .hero-container .signup-btn {
     background-color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.047) 0px 4px 9px 0px, rgba(0, 0, 0, 0.075) 0px 1.54074px 2.86667px 0px, rgba(0, 0, 0, 0.12) 0px 0.325926px 0.733333px 0px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, .047), 0 1.54074px 2.86667px rgba(0, 0, 0, .073), 0 0.325926px 0.733333px rgba(0, 0, 0, .12);
+    border: 1px solid rgba(0, 0, 0, .1);
     margin-left: 10px;
 }
 
@@ -386,7 +397,9 @@ main {
 .features-container .feature-icon {
     color: var(--icon-color);
     background-color: #F0E0F8;
-    padding: 10px;
+    padding: 4px;
+    width: fit-content;
+    transform: scale(1.3);
 }
 
 .features-container .feature-title {
@@ -394,8 +407,9 @@ main {
     font-size: 24px;
 }
 
-.features-container .feature-description{
+.features-container .feature-description {
     font-size: 14px;
+    text-wrap: initial;
 }
 
 .slider-img {
@@ -405,7 +419,8 @@ main {
 
 /* AI Add-on section */
 .ai-add-on {
-    padding: 32px;
+    padding: 28px 40px;
+    height: 246px;
     background-color: var(--banner-bg);
     position: relative;
     transition: 200ms;
@@ -416,9 +431,11 @@ main {
 }
 
 .ai-add-on .ai-add-on-icon {
-    color: var(--icon-color);
+    fill: var(--icon-color);
     background-color: #F0E0F8;
-    padding: 10px;
+    padding: 6px;
+    width: 26px;
+    height: 26px;
 }
 
 .ai-add-on .ai-add-on-title {
@@ -427,13 +444,13 @@ main {
 }
 
 .ai-add-on .ai-add-on-description {
-    margin: 20px 0;
-    width: 50%;
+    margin: 20px 0 40px 0;
+    max-width: 380px;
     font-size: 15px;
 }
 
 .ai-add-on .ai-add-on-btn {
-    padding: 10px 16px;
+    padding: 8px 14px;
     border: none;
     font-size: 16px;
     background-color: var(--black);
@@ -443,10 +460,10 @@ main {
 
 .ai-add-on-img {
     position: absolute;
-    right: 32px;
-    bottom: 0;
+    right: 40px;
+    bottom: 1px;
     width: 380px;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px 0px, rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px 0px, rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px 0px, rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px 0px;
+    box-shadow: 0px 4px 18px rgb(0 0 0/4%), 0px 2.025px 7.84688px rgba(0, 0, 0, .027), 0px 0.8px 2.925px rgb(0 0 0/2%), 0px 0.175px 1.04062px rgba(0, 0, 0, .013);
 }
 
 /* qa section */
@@ -469,13 +486,6 @@ main {
     padding: 32px 32px 0 32px;
 }
 
-.qa-banner .qa-banner-icon,
-.content-assist-banner .content-assist-banner-icon,
-.task-automation-banner .task-automation-banner-icon {
-    color: var(--icon-color);
-    font-size: 20px;
-}
-
 .qa-banner .qa-banner-title,
 .content-assist-banner .content-assist-banner-title,
 .task-automation-banner .task-automation-banner-title {
@@ -486,7 +496,7 @@ main {
 .qa-banner .qa-banner-description,
 .content-assist-banner .content-assist-banner-description,
 .task-automation-banner .task-automation-banner-description {
-    width: 50%;
+    width: 512px;
     margin-bottom: 32px;
 }
 
@@ -494,18 +504,19 @@ main {
 .content-assist-banner .content-assist-banner-video,
 .task-automation-banner .task-automation-banner-video {
     border-radius: 12px 12px 0px 0px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .04), 0 2.025px 7.84688px rgba(0, 0, 0, .027), 0 0.8px 2.925px rgba(0, 0, 0, .02), 0 0.175px 1.04062px rgba(0, 0, 0, .013), 0 0 1px hsla(0, 0%, 100%, .6);
+    margin-bottom: -2px;
 }
 
 .qa-use-imgs {
     margin-top: 24px;
     gap: 24px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .qa-use-imgs img {
-    width: 322px;
+    max-width: 100%;
     background-color: var(--banner-bg);
 }
 
@@ -516,7 +527,7 @@ main {
 
 .qa-testimonial .qa-testimonial-description,
 .content-assist-testimonial .content-assist-testimonial-description {
-    width: 70%;
+    max-width: 700px;
     margin: auto;
     text-align: center;
     font: 30px Georgia, 'Times New Roman', Times, serif;
@@ -540,10 +551,11 @@ main {
 .data-privacy-header,
 .template-header {
     margin-top: 160px;
+    justify-content: space-between;
 }
 
 .content-assist-header .content-assist-img,
-.task-automation-header .task-automation-img{
+.task-automation-header .task-automation-img {
     width: 336px;
     height: auto;
     margin-left: auto;
@@ -551,26 +563,28 @@ main {
 }
 
 .content-assist-header .content-assist-title,
-.task-automation-header .task-automation-title {
-    width: min(100%, 500px);
+.task-automation-header .task-automation-title,
+.template .template-title {
+    max-width: 600px;
 }
 
 .content-assist-features-container,
 .task-automation-features-container {
     margin-top: 24px;
     gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .content-assist-features-container .content-assist-feature-item,
 .task-automation-features-container .task-automation-feature-item,
 .data-privacy-features-container .data-privacy-feature-item,
 .template-features-container .template-feature-item {
-    width: 325px;
     padding: 24px 32px 0;
     background-color: var(--banner-bg);
     transition: 100ms;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .template-features-container .template-feature-item:hover {
@@ -580,10 +594,16 @@ main {
 .content-assist-feature-item .content-assist-feature-icon,
 .task-automation-feature-item .task-automation-feature-icon,
 .data-privacy-feature-item .data-privacy-feature-icon,
-.template-feature-item .template-feature-icon {
+.template-feature-item .template-feature-icon,
+.qa-banner .qa-banner-icon,
+.content-assist-banner .content-assist-banner-icon,
+.task-automation-banner .task-automation-banner-icon {
     color: var(--icon-color);
-    font-size: 20px;
+    fill: var(--icon-color);
+    width: 26px;
+    height: 26px;
 }
+
 
 .content-assist-feature-item .content-assist-feature-title,
 .task-automation-feature-item .task-automation-feature-title,
@@ -593,9 +613,19 @@ main {
     margin: 13px 0;
 }
 
-.content-assist-feature-item .content-assist-feature-img,
+.content-assist-feature-item .content-assist-feature-img {
+    margin-top: 44px;
+}
+
 .task-automation-feature-item .task-automation-feature-img {
-    margin-top: 48px;
+    margin-bottom: 2px;
+    width: calc(100% - 1px);
+    border-radius: 0 0 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px 0px,
+        rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px 0px,
+        rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px 0px,
+        rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px 0px,
+        rgba(255, 255, 255, 0.6) 0px 0px 1px 0px;
 }
 
 /* task automation section */
@@ -612,7 +642,7 @@ main {
 /* data privacy section */
 .data-privacy-features-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 24px;
 }
@@ -694,12 +724,14 @@ main {
 }
 
 .template-feature-item .template-feature-img {
-    border-radius: 12px 0 0;
+    border-radius: 12px 0px 10px;
+    margin: 0 2px 2px 0;
+    width: calc(100% - 2px);
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 18px 0px, rgba(0, 0, 0, 0.027) 0px 2.025px 7.84688px 0px, rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px 0px, rgba(0, 0, 0, 0.01) 0px 0.175px 1.04062px 0px, rgba(255, 255, 255, 0.6) 0px 0px 1px 0px;
 }
 
 /* faq section */
 .faq {
-    /* margin-top: 120px !important; */
     margin: 120px 0 160px 0;
     gap: 26px;
     align-items: center;
@@ -758,7 +790,7 @@ main {
     padding: 10px 0;
 }
 
-.horizontal-line{
+.horizontal-line {
     height: 1px;
     background-color: #E4E4E5;
     display: block;
@@ -867,6 +899,14 @@ footer .flex {
     border: 1px solid #E4E4E5;
     padding: 6px 18px;
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.language-globe-icon{
+    width: 16px;
+    height: 16px;
 }
 
 .language-dropdown .fa-angle-down {
@@ -915,6 +955,7 @@ footer .flex {
     flex: 3;
     margin-top: 32px;
     line-height: 1.8;
+    font-size: 13.5px;
 }
 
 .copyright .copyright-txt {
@@ -946,6 +987,8 @@ footer .flex {
         width: 100%;
         padding: 16px;
         margin: 0;
+        font-size: 16px;
+        justify-content: flex-start;
     }
 
     .fa-angle-right {
@@ -965,7 +1008,7 @@ footer .flex {
     .main-links-container .nav-link-wrapper {
         justify-content: space-between;
         align-items: center;
-        padding: 16px 0;
+        padding: 20px 0;
         border-bottom: 1px solid var(--border-color);
     }
 
@@ -975,21 +1018,71 @@ footer .flex {
     }
 
     .main-links-container .nav-link {
-        padding: 0px 10px;
+        padding: 0px;
     }
 
     .mobile-navbar {
         display: flex;
         justify-content: space-between;
-        /* border-bottom: 1px solid #E4E4E5; */
-        /* padding-bottom: 16px; */
+    }
+
+    .main-links-container .product-wrapper .product-content {
+        padding: 6px 14px 6px 0;
+    }
+
+    .product-guide .product-info {
+        padding: 6px 14px 6px 0;
+    }
+
+    .product-link {
+        order: 1;
+    }
+
+    .product-container {
+        order: 2;
+    }
+
+    .solution-link {
+        order: 3;
+    }
+
+    .solution-container {
+        order: 4;
+    }
+
+    .resource-link {
+        order: 5;
+    }
+
+    .resource-container {
+        order: 6;
+    }
+
+    .download-link {
+        order: 7;
+    }
+
+    .download-container {
+        order: 8;
+    }
+
+    .pricing-link {
+        order: 9;
+    }
+
+    .main-links-container .download-container .download-content,
+    .main-links-container .download-container .download-note,
+    .main-links-container .resource-container a,
+    .main-links-container .solution-team-size .solution-content,
+    .main-links-container .solution-container .solution-title,
+    .main-links-container .solution-container .solution-team-function .team-function-item,
+    .main-links-container .solution-container .solution-notion-for .notion-for-item {
+        padding: 6px 0;
     }
 
     .fa-bars {
         display: block;
         align-self: center;
-        margin-top: 4px;
-        font-size: 18px;
         cursor: pointer;
     }
 
@@ -1005,7 +1098,7 @@ footer .flex {
 
     .action-links-container .demo-btn {
         border-bottom: 1px solid #E5E5E5;
-        padding: 16px 10px;
+        padding: 16px 0px;
         margin-bottom: 16px;
     }
 
@@ -1071,11 +1164,31 @@ footer .flex {
         display: inline-block;
     }
 
+    .features-container .feature-description {
+        text-wrap: balance;
+    }
+
+    /* ai add on section */
+    .ai-add-on .ai-add-on-description {
+        margin-bottom: 36px;
+    }
+
+    /* task automation section */
+    .task-automation-header .task-automation-title {
+        margin-bottom: 40px;
+    }
+
+    .task-automation-header .task-automation-img {
+        object-fit: contain;
+        align-self: flex-end;
+    }
+
     /* QA section */
     .qa-header {
         display: flex;
         flex-direction: column;
         margin-top: 180px;
+        gap: 28px;
     }
 
     .qa-header .qa-img {
@@ -1084,9 +1197,17 @@ footer .flex {
         margin-bottom: -14px;
     }
 
-    .qa .qa-title{
-        width: 350px;
+    .qa .qa-title {
+        width: 400px;
         margin: auto;
+        text-wrap: balance;
+    }
+
+    .content-assist-header .content-assist-title,
+    .task-automation-header .task-automation-title,
+    .template .template-title,
+    .data-privacy-header .data-privacy-title {
+        max-width: 400px;
     }
 
     /* footer section */
@@ -1099,36 +1220,36 @@ footer .flex {
     }
 
     .footer-links {
-        /* grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-                    'product learn'
-                    'solutions get_started'
-                    'download resources'
-                    'build resources'; */
         column-count: 2;
         width: 100%;
     }
-
 
     footer nav {
         gap: 36px;
     }
 }
 
-@media screen and (max-width: 840px) {
-    h2 {
-        font-size: 34px;
-    }
+@media screen and (max-width: 912px) {
 
+    .qa-use-imgs,
+    .content-assist-features-container,
+    .task-automation-features-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 840px) {
     /* hero section */
     .hero-container {
         text-align: center;
         height: auto;
         padding-top: 56px;
+        gap: 16px;
     }
 
     .hero-container .hero-title {
-        font-size: 50px;
+        font-size: 53px;
     }
 
     .hero-container .hero-img,
@@ -1138,15 +1259,35 @@ footer .flex {
         right: 0;
     }
 
+    .feature-item .flex-column {
+        gap: 8px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .features-container .feature-title {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .features-container .feature-description {
+        margin-top: 8px;
+    }
+
     .slider-img {
         height: auto;
     }
 
     /* AI add-on section */
     .ai-add-on {
+        height: auto;
         text-align: center;
         font-size: 14px;
         padding-bottom: 0;
+    }
+
+    .ai-add-on .flex {
+        justify-content: center;
     }
 
     .ai-add-on .ai-add-on-title {
@@ -1168,23 +1309,12 @@ footer .flex {
         margin-bottom: -10px;
     }
 
-    .qa-testimonial .qa-testimonial-description,
-    .content-assist-testimonial .content-assist-testimonial-description {
-        font-size: 24px;
-        padding: 0 12px;
-    }
-
     .qa-use-imgs {
         margin-top: 16px;
         gap: 16px;
     }
 
-    .qa-use-imgs img,
-    .qa-banner .qa-banner-description,
-    .qa-testimonial .qa-testimonial-description,
-    .content-assist-testimonial .content-assist-testimonial-description,
-    .content-assist-banner .content-assist-banner-description,
-    .task-automation-banner .task-automation-banner-description {
+    .qa-use-imgs img {
         width: 100%;
     }
 
@@ -1206,9 +1336,25 @@ footer .flex {
         margin-bottom: -8px;
     }
 
+    .task-automation-feature-item .task-automation-feature-description,
+    .template-feature-item .template-feature-description {
+        width: 238px;
+        display: block;
+        hyphens: auto;
+    }
+
     /* template section */
     .template-header .template-img {
         width: 178px;
+    }
+
+    /* data privacy section */
+    .data-privacy-features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .data-privacy-header .data-privacy-img {
+        width: 68px;
     }
 
     footer {
@@ -1217,6 +1363,10 @@ footer .flex {
 }
 
 @media screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 36px;
+    }
 
     /* for horizonatlly scrolling of feature section */
     .scrollable {
@@ -1227,11 +1377,19 @@ footer .flex {
     /* hero section */
     .hero-container .hero-title,
     .faq .faq-title {
-        font-size: 42px;
+        font-size: 45px;
+        line-height: 1;
+    }
+
+    .hero-title br,
+    .hero-subtitle br {
+        display: block;
     }
 
     .hero-container .hero-subtitle {
         font-size: 18px;
+        text-wrap: balance;
+        display: block;
     }
 
     .features-container {
@@ -1241,7 +1399,11 @@ footer .flex {
     /* AI add-on section */
     .ai-add-on {
         text-align: left;
-        padding: 32px 10% 0 10%;
+        padding: 24px 28px 0;
+    }
+
+    .ai-add-on .flex {
+        justify-content: flex-start;
     }
 
     .ai-add-on .ai-add-on-description {
@@ -1270,8 +1432,45 @@ footer .flex {
         text-align: center;
     }
 
-    .qa .qa-title{
+    .qa .qa-title {
         width: 100%;
+    }
+
+    .qa-banner,
+    .content-assist-banner,
+    .task-automation-banner {
+        padding: 20px 24px 0 24px;
+    }
+
+    .qa-use-imgs,
+    .content-assist-features-container,
+    .task-automation-features-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .qa-banner .qa-banner-description,
+    .content-assist-banner .content-assist-banner-description,
+    .task-automation-banner .task-automation-banner-description {
+        width: 100%;
+    }
+
+    .qa-testimonial .qa-testimonial-description,
+    .content-assist-testimonial .content-assist-testimonial-description {
+        font-size: 24px;
+    }
+
+    .content-assist-header .content-assist-title,
+    .task-automation-header .task-automation-title,
+    .template .template-title,
+    .data-privacy-header .data-privacy-title {
+        text-wrap: balance;
+    }
+
+    .content-assist-features-container .content-assist-feature-item,
+    .task-automation-features-container .task-automation-feature-item,
+    .template-features-container .template-feature-item {
+        padding: 20px 24px 0 24px;
     }
 
     /* data privacy section */
@@ -1280,9 +1479,18 @@ footer .flex {
         grid-template-columns: 100%;
     }
 
+    .data-privacy-header .data-privacy-link {
+        width: 80%;
+        display: block;
+    }
+
     /* FAQ section */
     .faq .faq-heading {
         font-size: 36px;
+    }
+
+    .faq .faq-btns button{
+        padding: 8px 12px;
     }
 
     /* footer section */
@@ -1294,7 +1502,19 @@ footer .flex {
 @media screen and (max-width: 390px) {
 
     /* hero section */
-    .hero-container .signup-btn {
-        margin-top: 16px;
+    .hero-container button {
+        padding: 8px 12px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .faq .faq-question-item .faq-question-title{
+        width: 80%;
+    }
+
+    footer{
+        padding: 36px 16px;
     }
 }

@@ -33,12 +33,13 @@
                     <img src="assets/favicon.svg" class="logo-img" alt="Company Logo">
                     <span>Notion</span>
                 </div>
-                <a href="#" class="free-notion-btn small-text w-100-lg semi-bold rounded-border-small">Get Notion free</a>
-                <i class="fa-solid fa-bars" onclick="openNavbar()"></i>
+                <a href="#" class="free-notion-btn small-text w-100-lg semi-bold rounded-border-small">Get Notion
+                    free</a>
+                <img src="assets/imgs/menu-icon.png" class="fa-bars" onclick="openNavbar()" alt="">
             </div>
             <nav class="main-links-container navbar flex">
                 <ul class="nav-links flex flex-column-lg w-100-lg">
-                    <li class="nav-link-wrapper flex w-100-lg">
+                    <li class="nav-link-wrapper product-link flex w-100-lg">
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Product <i
                                 class="fa-solid fa-angle-down d-none-lg"></i></a>
                         <i class="fa-solid fa-angle-right"></i>
@@ -46,35 +47,92 @@
                     <div class="product-container flex flex-column-lg d-none-lg">
                         <div class="product-wrapper flex-column">
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-wand-magic-sparkles product-icon ai-icon"></i>
+                                <svg class="ai-icon" viewBox="0 0 24 23">
+                                    <g>
+                                        <path
+                                            d="M10.4563 5.72844C10.9113 5.57094 10.9113 5.29094 10.4563 5.11594L7.98881 4.17094C7.55131 4.01344 7.04381 3.50594 6.86881 3.05094L5.92381 0.583437C5.76631 0.128438 5.48631 0.128438 5.31131 0.583437L4.36631 3.05094C4.20881 3.48844 3.70131 3.99594 3.24631 4.17094L0.778811 5.11594C0.323811 5.27344 0.323811 5.55344 0.778811 5.72844L3.24631 6.67344C3.68381 6.83094 4.19131 7.33844 4.36631 7.79344L5.31131 10.2609C5.46881 10.7159 5.74881 10.7159 5.92381 10.2609L6.86881 7.79344C7.02631 7.35594 7.53381 6.84844 7.98881 6.67344L10.4563 5.72844Z">
+                                        </path>
+                                        <path
+                                            d="M22.4788 14.3734C23.8788 14.0234 23.8788 13.4459 22.4788 13.0959L19.3813 12.3259C17.9813 11.9759 16.5463 10.5409 16.1963 9.14091L15.4263 6.04341C15.0763 4.64341 14.4988 4.64341 14.1488 6.04341L13.3788 9.14091C13.0288 10.5409 11.5938 11.9759 10.1938 12.3259L7.09631 13.0959C5.69631 13.4459 5.69631 14.0234 7.09631 14.3734L10.1938 15.1434C11.5938 15.4934 13.0288 16.9284 13.3788 18.3284L14.1488 21.4259C14.4988 22.8259 15.0763 22.8259 15.4263 21.4259L16.1963 18.3284C16.5463 16.9284 17.9813 15.4934 19.3813 15.1434L22.4788 14.3734Z">
+                                        </path>
+                                    </g>
+                                </svg>
                                 <div class="product-info">
                                     <span class="product-name block">AI</span>
                                     <span class="product-description small-text block">Integrated AI assistant</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-regular fa-file-lines product-icon docs-icon"></i>
+                                <svg class="docs-icon" viewBox="0 0 49 49">
+                                    <path
+                                        d="m40.22 14.512-12.33-9.99c-.72-.6-1.65-.93-2.61-.93H11.36c-2.28 0-4.11 1.83-4.11 4.11v33.78c0 2.28 1.86 4.11 4.11 4.11h26.28c2.28 0 4.11-1.83 4.11-4.11v-23.76c0-1.23-.57-2.43-1.53-3.21Zm-13.11-6.81 10.38 9.06c.42.36.18 1.05-.39 1.05h-8.88c-.6 0-1.11-.48-1.11-1.11v-9Zm8.85 33.75H13.01c-.69 0-1.26-.57-1.26-1.29v-31.2c0-.69.57-1.26 1.26-1.26h10.35v10.14c0 2.07 1.68 3.75 3.75 3.75h10.11v18.6c0 .69-.57 1.26-1.26 1.26Z"
+                                        fill="currentColor"></path>
+                                    <path d="M17.75 27.232h13.5M17.75 34.402h13.5" stroke="currentColor"
+                                        stroke-width="1.824" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
                                 <div class="product-info">
                                     <span class="product-name block">Docs</span>
                                     <span class="product-description small-text block">Simple & Powerful</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-book-open product-icon wikis-icon"></i>
+                                <svg class="wikis-icon" viewBox="0 0 48 48">
+                                    <path
+                                        d="M21 40.86H6.09c-1.08 0-1.98-.9-1.98-1.98V20.22c0-1.17.6-1.83 1.74-1.83h.9v-3.36H4.89c-2.49 0-4.5 2.01-4.5 4.5v20.25c0 2.49 2.01 4.5 4.5 4.5H21v-3.42ZM43.14 15h-1.86v3.36h.99c1.08 0 1.62.63 1.62 1.62v18.93c0 1.08-.87 1.98-1.98 1.98H27v3.36h16.14c2.49 0 4.5-2.01 4.5-4.5V19.5c0-2.49-2.01-4.5-4.5-4.5Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M39.39 4.5c-5.19.69-11.4 2.73-15.36 5.16-3.99-2.43-10.2-4.47-15.36-5.16v30.75c4.26.51 8.67 1.5 13.14 3.24l2.25.99 2.25-.99c4.47-1.74 8.88-2.76 13.14-3.24V4.5h-.06ZM13.14 31.89V9.69c3.21.57 6.93 2.01 8.64 3.39v21.24c-2.49-1.02-5.97-1.95-8.64-2.43Zm21.75 0c-2.64.48-6.15 1.41-8.64 2.43V13.08c1.68-1.41 5.43-2.82 8.64-3.39v22.2Z"
+                                        fill="currentColor"></path>
+                                </svg>
                                 <div class="product-info">
                                     <span class="product-name block">Wikis</span>
                                     <span class="product-description small-text block">Centralize your knowledge</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-solid fa-bullseye product-icon projects-icon"></i>
+                                <svg class="projects-icon" viewBox="0 0 49 49">
+                                    <path clip-rule="evenodd"
+                                        d="m48.2037 9.1569-6.1556 6.2475-.0306-.0613c-3.0319 3.0932-5.2982 3.7975-9.7082 3.3382l-3.1543 3.185c1.1025 2.0212.8268 4.6244-.8575 6.3394-2.0519 2.1131-5.4513 2.1131-7.5644.0612s-2.1438-5.4512-.0613-7.5644c1.6844-1.715 4.2569-2.0212 6.3088-.9494l3.1544-3.185c-.5207-4.41.1225-6.6762 3.1543-9.76933l6.1557-6.2475 1.715 7.04375zm-14.5467 12.7706h.8269v.0612c1.1331 0 2.1438-.1225 3.0931-.3369.2144.9494.3369 1.8988.3369 2.9094 0 7.4113-6.0025 13.4138-13.4137 13.4138-7.4113 0-13.4138-6.0025-13.4138-13.4138 0-7.4112 6.0025-13.4137 13.4138-13.4137.9187 0 1.8375.0918 2.695.2756-.245 1.1944-.3369 2.4806-.245 3.92-.7963-.2144-1.5925-.3675-2.45-.3675-5.2675 0-9.555 4.2875-9.555 9.555s4.2875 9.555 9.555 9.555 9.555-4.2875 9.555-9.555c0-.9188-.1532-1.7763-.3982-2.6031zm8.483-2.5419c.7044-.5206 1.3781-1.1331 2.0825-1.8375l1.5925-1.6231c1.0413 2.6644 1.6538 5.5431 1.6538 8.575 0 12.6787-10.2901 22.9688-22.9688 22.9688-12.6788 0-22.96875-10.2901-22.96875-22.9688 0-12.6788 10.28995-22.96875 22.96875-22.96875 2.8787 0 5.635.55125 8.1769 1.53125l-1.5619 1.5925c-.7044.70438-1.2863 1.40875-1.8069 2.11313-1.5312-.39813-3.1544-.64313-4.8081-.64313-10.1369 0-18.375 8.2381-18.375 18.375s8.2381 18.375 18.375 18.375 18.375-8.2381 18.375-18.375c0-1.7763-.2756-3.4913-.735-5.1144z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
                                 <div class="product-info">
                                     <span class="product-name block">Projects</span>
                                     <span class="product-description small-text block">For every team or size</span>
                                 </div>
                             </div>
                             <div class="product-content clickable flex align-items-center">
-                                <i class="fa-regular fa-calendar product-icon calendar-icon"></i>
+                                <svg class="calendar-icon"
+                                    viewBox="0 0 610.398 610.398">
+                                    <g>
+                                        <g>
+                                            <path d="M159.567,0h-15.329c-1.956,0-3.811,0.411-5.608,0.995c-8.979,2.912-15.616,12.498-15.616,23.997v10.552v27.009v14.052
+			c0,2.611,0.435,5.078,1.066,7.44c2.702,10.146,10.653,17.552,20.158,17.552h15.329c11.724,0,21.224-11.188,21.224-24.992V62.553
+			V35.544V24.992C180.791,11.188,171.291,0,159.567,0z" />
+                                            <path d="M461.288,0h-15.329c-11.724,0-21.224,11.188-21.224,24.992v10.552v27.009v14.052c0,13.804,9.5,24.992,21.224,24.992
+			h15.329c11.724,0,21.224-11.188,21.224-24.992V62.553V35.544V24.992C482.507,11.188,473.007,0,461.288,0z" />
+                                            <path d="M539.586,62.553h-37.954v14.052c0,24.327-18.102,44.117-40.349,44.117h-15.329c-22.247,0-40.349-19.79-40.349-44.117
+			V62.553H199.916v14.052c0,24.327-18.102,44.117-40.349,44.117h-15.329c-22.248,0-40.349-19.79-40.349-44.117V62.553H70.818
+			c-21.066,0-38.15,16.017-38.15,35.764v476.318c0,19.784,17.083,35.764,38.15,35.764h468.763c21.085,0,38.149-15.984,38.149-35.764
+			V98.322C577.735,78.575,560.671,62.553,539.586,62.553z M527.757,557.9l-446.502-0.172V173.717h446.502V557.9z" />
+                                            <path d="M353.017,266.258h117.428c10.193,0,18.437-10.179,18.437-22.759s-8.248-22.759-18.437-22.759H353.017
+			c-10.193,0-18.437,10.179-18.437,22.759C334.58,256.074,342.823,266.258,353.017,266.258z" />
+                                            <path d="M353.017,348.467h117.428c10.193,0,18.437-10.179,18.437-22.759c0-12.579-8.248-22.758-18.437-22.758H353.017
+			c-10.193,0-18.437,10.179-18.437,22.758C334.58,338.288,342.823,348.467,353.017,348.467z" />
+                                            <path d="M353.017,430.676h117.428c10.193,0,18.437-10.18,18.437-22.759s-8.248-22.759-18.437-22.759H353.017
+			c-10.193,0-18.437,10.18-18.437,22.759S342.823,430.676,353.017,430.676z" />
+                                            <path d="M353.017,512.89h117.428c10.193,0,18.437-10.18,18.437-22.759c0-12.58-8.248-22.759-18.437-22.759H353.017
+			c-10.193,0-18.437,10.179-18.437,22.759C334.58,502.71,342.823,512.89,353.017,512.89z" />
+                                            <path d="M145.032,266.258H262.46c10.193,0,18.436-10.179,18.436-22.759s-8.248-22.759-18.436-22.759H145.032
+			c-10.194,0-18.437,10.179-18.437,22.759C126.596,256.074,134.838,266.258,145.032,266.258z" />
+                                            <path d="M145.032,348.467H262.46c10.193,0,18.436-10.179,18.436-22.759c0-12.579-8.248-22.758-18.436-22.758H145.032
+			c-10.194,0-18.437,10.179-18.437,22.758C126.596,338.288,134.838,348.467,145.032,348.467z" />
+                                            <path d="M145.032,430.676H262.46c10.193,0,18.436-10.18,18.436-22.759s-8.248-22.759-18.436-22.759H145.032
+			c-10.194,0-18.437,10.18-18.437,22.759S134.838,430.676,145.032,430.676z" />
+                                            <path d="M145.032,512.89H262.46c10.193,0,18.436-10.18,18.436-22.759c0-12.58-8.248-22.759-18.436-22.759H145.032
+			c-10.194,0-18.437,10.179-18.437,22.759C126.596,502.71,134.838,512.89,145.032,512.89z" />
+                                        </g>
+                                    </g>
+                                </svg>
                                 <div class="product-info">
                                     <div class="flex">
                                         <span class="product-name block">Calendar</span>
@@ -87,7 +145,8 @@
                         <div class="product-guide flex-column">
                             <div class="product-info clickable">
                                 <span class="product-guide-title block">Template gallery</span>
-                                <span class="product-guide-description small-text block">Setups to get you started</span>
+                                <span class="product-guide-description small-text block">Setups to get you
+                                    started</span>
                             </div>
                             <div class="product-info clickable">
                                 <span class="product-guide-title block">Customer stories</span>
@@ -95,24 +154,24 @@
                             </div>
                             <div class="product-info clickable">
                                 <span class="product-guide-title block">Connections</span>
-                                <span class="product-guide-description small-text block">Connect your tools to Notion</span>
+                                <span class="product-guide-description small-text block">Connect your tools to
+                                    Notion</span>
                             </div>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-lg">
+                    <li class="nav-link-wrapper download-link flex w-100-lg">
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Download <i
                                 class="fa-solid fa-angle-down d-none-lg"></i></a><i class="fa-solid fa-angle-right"></i>
                     </li>
                     <div class="download-container flex-column d-none-lg">
-                        <a href="#" class="download-content">iOS & Android</a>
-                        <a href="#" class="download-content">Mac & Windows</a>
+                        <a href="#" class="download-content">Notion</a>
                         <a href="#" class="download-content">Calendar</a>
                         <a href="#" class="download-content">Web Clipper</a>
                         <span class="download-note small-text">Notion is always at home<br class="d-none-lg"> right <a
                                 href="#"><u>in your
                                     browser</u></a></span>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-lg">
+                    <li class="nav-link-wrapper solution-link flex w-100-lg">
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Solutions <i
                                 class="fa-solid fa-angle-down d-none-lg"></i></a><i class="fa-solid fa-angle-right"></i>
                     </li>
@@ -120,21 +179,25 @@
                         <div class="solution-team-size flex-column">
                             <span class="solution-title small-text">by team size</span>
                             <div class="solution-content flex align-items-center clickable">
-                                <img src="assets/imgs/asset 0.png" class="solution-icon d-none-lg" alt="Icon representing a solution for large screens">
+                                <img src="assets/imgs/asset 0.png" class="solution-icon d-none-lg"
+                                    alt="Icon representing a solution for large screens">
                                 <div class="solution-info">
                                     <span class="solution-name block">Enterprise</span>
-                                    <span class="solution-description small-text block">Advanced features for your org</span>
+                                    <span class="solution-description small-text block">Advanced features for your
+                                        org</span>
                                 </div>
                             </div>
                             <div class="solution-content flex align-items-center clickable">
-                                <img src="assets/imgs/asset 1.png" class="solution-icon d-none-lg" alt="Icon representing a solution for large screens">
+                                <img src="assets/imgs/asset 1.png" class="solution-icon d-none-lg"
+                                    alt="Icon representing a solution for large screens">
                                 <div class="solution-info">
                                     <span class="solution-name block">Small business</span>
                                     <span class="solution-description small-text block">Run your team on one tool</span>
                                 </div>
                             </div>
                             <div class="solution-content flex align-items-center clickable">
-                                <img src="assets/imgs/asset 2.png" class="solution-icon d-none-lg" alt=Icon representing a solution for large screens">
+                                <img src="assets/imgs/asset 2.png" class="solution-icon d-none-lg" alt=Icon representing
+                                    a solution for large screens">
                                 <div class="solution-info">
                                     <span class="solution-name block">Personal</span>
                                     <span class="solution-description small-text block">Free for individuals</span>
@@ -156,7 +219,7 @@
                             <a href="#" class="notion-for-item">Nonprofits</a>
                         </div>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-lg">
+                    <li class="nav-link-wrapper resource-link flex w-100-lg">
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Resources <i
                                 class="fa-solid fa-angle-down d-none-lg"></i></a><i class="fa-solid fa-angle-right"></i>
                     </li>
@@ -170,7 +233,7 @@
                         <a href="#">Community</a>
                         <a href="#">Hire a consultant</a>
                     </div>
-                    <li class="nav-link-wrapper flex w-100-lg">
+                    <li class="nav-link-wrapper pricing-link flex w-100-lg">
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Pricing</a>
                     </li>
                 </ul>
@@ -189,30 +252,53 @@
         <!-- hero section -->
         <section id="hero-section">
             <div class="hero-container flex-column">
-                <h1 class="hero-title">Just ask Notion AI.</h1>
-                <span class="hero-subtitle semi-bold">Knowledge, answers, ideas. One click away.</span>
+                <h1 class="hero-title">Just ask <br> Notion AI.</h1>
+                <span class="hero-subtitle semi-bold">Knowledge, answers, <br> ideas. One click away.</span>
                 <div class="cta-btns">
-                    <button type="button" class="start-btn semi-bold clickable rounded-border-small">Get started</button>
-                    <button type="button" class="signup-btn semi-bold clickable rounded-border-small">Sign up for Q&A Waitlist</button>
+                    <button type="button" class="start-btn semi-bold clickable rounded-border-small">Get
+                        started</button>
+                    <button type="button" class="signup-btn semi-bold clickable rounded-border-small">Sign up for Q&A
+                        Waitlist</button>
                 </div>
                 <img src="assets/imgs/asset 3.png" class="hero-img" alt="Illustration of a person">
             </div>
             <div class="scrollable">
                 <div class="features-container flex">
                     <div class="feature-item clickable rounded-border">
-                        <i class="fa-solid fa-comment-dots feature-icon rounded-border-small"></i>
-                        <span class="feature-title semi-bold block">Get answers</span>
+                        <div class="flex-column">
+                            <svg viewBox="0 0 64 64" width="1em"
+                                class="feature-icon rounded-border-small">
+                                <path
+                                    d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="feature-title semi-bold block">Get answers</span>
+                        </div>
                         <p class="feature-description">Just ask Q&A, and find the info you need in seconds.</p>
                     </div>
                     <div class="feature-item clickable rounded-border">
-                        <i class="fa-solid fa-lightbulb feature-icon rounded-border-small"></i>
-                        <span class="feature-title semi-bold block">Write better</span>
+                        <div class="flex-column">
+                            <svg viewBox="0 0 64 64" width="1em"
+                                class="feature-icon rounded-border-small">
+                                <path
+                                    d="m32,6c-9.94,0-18,8.06-18,18,0,4.8,1.91,9.41,5.3,12.8l2.93,2.93c1.13,1.13,1.77,2.67,1.77,4.27h16c0-1.6.64-3.14,1.77-4.27l2.93-2.93c3.4-3.4,5.3-8,5.3-12.8,0-9.94-8.06-18-18-18Zm8,18h-6v14h-4v-14h-6v-4h16v4Zm-16,24h16v4l-6,6h-4l-6-6v-4Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="feature-title semi-bold block">Write better</span>
+                        </div>
                         <p class="feature-description">Get help writing and brainstorming in Notion, not in a separate
                             browser tab.</p>
                     </div>
                     <div class="feature-item clickable rounded-border">
-                        <i class="fa-solid fa-list-check feature-icon rounded-border-small"></i>
-                        <span class="feature-title semi-bold block">Autofill tables</span>
+                        <div class="flex-column">
+                            <svg viewBox="0 0 64 64" width="1em"
+                                class="feature-icon rounded-border-small">
+                                <path
+                                    d="m21.76,6l4.24,4.24-13.24,13.24L4,14.73l4.24-4.24,4.52,4.52,9-9Zm-9,25l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9Zm0,16l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9ZM28,13v6h28v-6h-28Zm0,22h28v-6h-28v6Zm0,16h28v-6h-28v6Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="feature-title semi-bold block">Autofill tables</span>
+                        </div>
                         <p class="feature-description">Turn overwhelming data into clear, actionable information in
                             seconds.
                         </p>
@@ -224,8 +310,10 @@
 
         <!-- AI add-on section -->
         <div class="ai-add-on clickable rounded-border">
-            <i class="fa-solid fa-wand-sparkles ai-add-on-icon rounded-border-small"></i>
-            <span class="ai-add-on-title semi-bold">Notion AI add-on</span>
+            <div class="flex align-items-center">
+                <svg class="ai-add-on-icon rounded-border-small" viewBox="0 0 24 23" ><g><path d="M10.4563 5.72844C10.9113 5.57094 10.9113 5.29094 10.4563 5.11594L7.98881 4.17094C7.55131 4.01344 7.04381 3.50594 6.86881 3.05094L5.92381 0.583437C5.76631 0.128438 5.48631 0.128438 5.31131 0.583437L4.36631 3.05094C4.20881 3.48844 3.70131 3.99594 3.24631 4.17094L0.778811 5.11594C0.323811 5.27344 0.323811 5.55344 0.778811 5.72844L3.24631 6.67344C3.68381 6.83094 4.19131 7.33844 4.36631 7.79344L5.31131 10.2609C5.46881 10.7159 5.74881 10.7159 5.92381 10.2609L6.86881 7.79344C7.02631 7.35594 7.53381 6.84844 7.98881 6.67344L10.4563 5.72844Z"></path><path d="M22.4788 14.3734C23.8788 14.0234 23.8788 13.4459 22.4788 13.0959L19.3813 12.3259C17.9813 11.9759 16.5463 10.5409 16.1963 9.14091L15.4263 6.04341C15.0763 4.64341 14.4988 4.64341 14.1488 6.04341L13.3788 9.14091C13.0288 10.5409 11.5938 11.9759 10.1938 12.3259L7.09631 13.0959C5.69631 13.4459 5.69631 14.0234 7.09631 14.3734L10.1938 15.1434C11.5938 15.4934 13.0288 16.9284 13.3788 18.3284L14.1488 21.4259C14.4988 22.8259 15.0763 22.8259 15.4263 21.4259L16.1963 18.3284C16.5463 16.9284 17.9813 15.4934 19.3813 15.1434L22.4788 14.3734Z"></path></g></svg>
+                <span class="ai-add-on-title semi-bold">Notion AI add-on</span>
+            </div>
             <p class="ai-add-on-description">Add to any paid plan for $8 per member / month, billed annually. $10 per
                 member
                 / month for monthly billing and Free plans.</p>
@@ -241,7 +329,12 @@
                 <h2 class="qa-title">Get the answer in seconds.</h2>
             </div>
             <div class="qa-banner rounded-border">
-                <i class="fa-solid fa-comment-dots qa-banner-icon"></i>
+                <svg viewBox="0 0 64 64" width="1em"
+                    class="rounded-border-small qa-banner-icon">
+                    <path
+                        d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z"
+                        fill="currentColor"></path>
+                </svg>
                 <span class="qa-banner-title semi-bold block">Help with any question</span>
                 <p class="qa-banner-description">Q&A unblocks your work using information across your wikis, projects,
                     and
@@ -251,17 +344,21 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="qa-use-imgs flex">
-                <img src="assets/imgs/asset 9.png" class="ask-process-img rounded-border" alt="Image of Ask-Process-Image functionality">
-                <img src="assets/imgs/asset 10.png" class="ask-meeting-img rounded-border" alt="Image of Ask-Meeting-Image functionality">
-                <img src="assets/imgs/asset 11.png" class="ask-projects-img rounded-border" alt="Image of Ask-Projects-Image functionality">
+            <div class="qa-use-imgs">
+                <img src="assets/imgs/asset 9.png" class="ask-process-img rounded-border"
+                    alt="Image of Ask-Process-Image functionality">
+                <img src="assets/imgs/asset 10.png" class="ask-meeting-img rounded-border"
+                    alt="Image of Ask-Meeting-Image functionality">
+                <img src="assets/imgs/asset 11.png" class="ask-projects-img rounded-border"
+                    alt="Image of Ask-Projects-Image functionality">
             </div>
             <div class="qa-testimonial">
                 <p class="qa-testimonial-description">&quot;Q&A can change the landscape completely for any size
                     company.
                     It&#39;s been central to actually making sense of all the data we already have.&quot;</p>
                 <div class="flex">
-                    <img src="assets/imgs/asset 12.png" class="qa-testimonial-img" alt="Image of Organization which used Q&A and gave feedback">
+                    <img src="assets/imgs/asset 12.png" class="qa-testimonial-img"
+                        alt="Image of Organization which used Q&A and gave feedback">
                     <div class="qa-testimonial-by">
                         <span class="qa-testimonial-name semi-bold small-text block">Scott Entwistle</span>
                         <span class="qa-testimonial-designation small-text block">Senior Recruiter, remote.com</span>
@@ -274,11 +371,13 @@
         <section id="content-assist-section" class="content-assist">
             <div class="content-assist-header flex">
                 <h2 class="content-assist-title">Find the right words, right now.</h2>
-                <img src="assets/imgs/asset 13.png" class="content-assist-img" alt="Illustration representing Content Assist">
+                <img src="assets/imgs/asset 13.png" class="content-assist-img"
+                    alt="Illustration representing Content Assist">
             </div>
             <div class="content-assist-banner rounded-border">
-                <i class="fa-solid fa-comment-dots content-assist-banner-icon"></i>
-                <span class="content-assist-banner-title semi-bold block">Help with writing, right where you need it</span>
+                <svg class="content-assist-banner-icon" viewBox="0 0 64 64"><path d="m17,51.5c0,2.49-2.01,4.5-4.5,4.5s-4.5-2.01-4.5-4.5,2.01-4.5,4.5-4.5,4.5,2.01,4.5,4.5Zm41-15.5c0,7.73-6.27,14-14,14-1,0-1.97-.11-2.91-.31-2.55,2.65-6.12,4.31-10.09,4.31-6.35,0-11.7-4.23-13.42-10.02-6.43-.22-11.58-5.49-11.58-11.98,0-4.86,2.89-9.03,7.05-10.92.48-8.41,7.43-15.08,15.95-15.08,4.43,0,8.43,1.8,11.33,4.7,1.14-.45,2.37-.7,3.67-.7,5.52,0,10,4.48,10,10,0,1.83-.5,3.53-1.35,5,3.25,2.56,5.35,6.53,5.35,11Zm-34-6c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Zm12,0c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Zm12,0c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Z" fill="currentColor"></path></svg>
+                <span class="content-assist-banner-title semi-bold block">Help with writing, right where you need
+                    it</span>
                 <p class="content-assist-banner-description">Get rid of blank pages and writer's block. Let Notion
                     handle the
                     first draft.</p>
@@ -287,26 +386,29 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="content-assist-features-container flex">
+            <div class="content-assist-features-container">
                 <div class="content-assist-feature-item rounded-border">
-                    <i class="fa-solid fa-wrench content-assist-feature-icon"></i>
+                    <svg class="content-assist-feature-icon" viewBox="0 0 64 64"><path d="m56,24c0,8.84-7.16,16-16,16-2.22,0-4.33-.45-6.25-1.27l-15.3,15.3c-2.62,2.62-5.87,2.62-8.49,0-2.62-2.62-2.62-5.87,0-8.49l15.3-15.3c-.82-1.92-1.27-4.03-1.27-6.25,0-8.84,7.16-16,16-16,1.38,0,2.72.19,4,.53v2.99l-8,8,1.79,6.69,6.69,1.79h0s8-8,8-8h2.99c.33,1.28.53,2.62.53,4Z" fill="currentColor"></path></svg>
                     <span class="content-assist-feature-title block block semi-bold">Explain</span>
                     <span class="content-assist-feature-description">Technical jargon, rewritten for everyone.</span>
-                    <img src="assets/imgs/asset 14.png" class="content-assist-feature-img w-100" alt="Illustration of complex terms simplified for universal understanding">
+                    <img src="assets/imgs/asset 14.png" class="content-assist-feature-img w-100"
+                        alt="Illustration of complex terms simplified for universal understanding">
                 </div>
                 <div class="content-assist-feature-item rounded-border">
-                    <i class="fa-solid fa-language content-assist-feature-icon"></i>
+                    <svg class="content-assist-feature-icon" viewBox="0 0 64 64"><path d="m21.32,7h-6.32L6,31h6.32l1.5-4h10.35l1.5,4h6.32L23,7h-1.68Zm-5.25,14l2.93-7.8,2.93,7.8h-5.85Zm4.61,22.31c3.12,3.12,7.22,4.69,11.31,4.69v6c-5.63,0-11.26-2.15-15.56-6.44l-2.44-2.44v8.89h-6v-19h19v6h-8.63l2.31,2.31Zm22.63-22.63c-3.12-3.12-7.22-4.69-11.31-4.69v-6c5.63,0,11.26,2.15,15.56,6.44l2.44,2.44v-8.89h6v19h-19v-6h8.63l-2.31-2.31Zm16.69,20.31v-6h-10v-3h-6v3h-10v6h3.98c.79,2.72,2.22,5.19,4.23,7.33-4.14,1.87-8.21,2.05-8.21,2.05l2.11,5.62c4.26-.76,7.9-2.09,10.89-3.87,2.99,1.78,6.63,3.11,10.89,3.87l2.11-5.62s-4.06-.19-8.21-2.05c2.01-2.14,3.44-4.61,4.23-7.33h3.98Zm-13,4.15c-1.15-1.13-2.15-2.49-2.84-4.15h5.69c-.7,1.66-1.69,3.02-2.84,4.15Z" fill="currentColor"></path></svg>
                     <span class="content-assist-feature-title block block semi-bold">Translate</span>
                     <span class="content-assist-feature-description">Now you can write in Japanese, Spanish, German and
                         more.</span>
-                    <img src="assets/imgs/asset 15.png" class="content-assist-feature-img w-100" alt="Illustration of language translation capabilities">
+                    <img src="assets/imgs/asset 15.png" class="content-assist-feature-img w-100"
+                        alt="Illustration of language translation capabilities">
                 </div>
                 <div class="content-assist-feature-item rounded-border">
-                    <i class="fa-solid fa-microphone content-assist-feature-icon"></i>
+                    <svg class="content-assist-feature-icon" viewBox="0 0 64 64"><path d="m35,45.8v4.2h9v6h-24v-6h9v-4.2c-9.33-1.15-15-7.74-15-17.8h6c0,7.4,4.6,12,12,12s12-4.6,12-12h6c0,10.06-5.67,16.65-15,17.8Zm-3-9.8c4.94,0,8-3.06,8-8v-14c0-4.94-3.06-8-8-8s-8,3.06-8,8v14c0,4.94,3.06,8,8,8Z" fill="currentColor"></path></svg>
                     <span class="content-assist-feature-title block block semi-bold">Edit voice & tone</span>
                     <span class="content-assist-feature-description">Rewrite your proposal with the confidence of a
                         CEO.</span>
-                    <img src="assets/imgs/asset 16.png" class="content-assist-feature-img w-100" alt="Illustration representing voice and tone editing">
+                    <img src="assets/imgs/asset 16.png" class="content-assist-feature-img w-100"
+                        alt="Illustration representing voice and tone editing">
                 </div>
             </div>
             <div class="content-assist-testimonial">
@@ -314,10 +416,12 @@
                     implementation of
                     generative AI for text that I&#39;ve used to date.&quot;</p>
                 <div class="flex">
-                    <img src="assets/imgs/asset 17.png" class="content-assist-testimonial-img" alt="Image of Organization which used Content-Assist Feature and gave feedback">
+                    <img src="assets/imgs/asset 17.png" class="content-assist-testimonial-img"
+                        alt="Image of Organization which used Content-Assist Feature and gave feedback">
                     <div class="content-assist-testimonial-by">
                         <span class="content-assist-testimonial-name small-text semi-bold block">Alex Heath</span>
-                        <span class="content-assist-testimonial-designation small-text block">Deputy Editor, The Verge</span>
+                        <span class="content-assist-testimonial-designation small-text block">Deputy Editor, The
+                            Verge</span>
                     </div>
                 </div>
             </div>
@@ -327,10 +431,11 @@
         <section id="task-automation-section" class="task-automation">
             <div class="task-automation-header flex">
                 <h2 class="task-automation-title">Never write a progress update again.</h2>
-                <img src="assets/imgs/asset 18.png" class="task-automation-img" alt="Illustration representing task automation">
+                <img src="assets/imgs/asset 18.png" class="task-automation-img"
+                    alt="Illustration representing task automation">
             </div>
             <div class="task-automation-banner rounded-border">
-                <i class="fa-solid fa-comment-dots task-automation-banner-icon"></i>
+                <svg class="task-automation-banner-icon" viewBox="0 0 64 64"><path d="m17,51.5c0,2.49-2.01,4.5-4.5,4.5s-4.5-2.01-4.5-4.5,2.01-4.5,4.5-4.5,4.5,2.01,4.5,4.5Zm41-15.5c0,7.73-6.27,14-14,14-1,0-1.97-.11-2.91-.31-2.55,2.65-6.12,4.31-10.09,4.31-6.35,0-11.7-4.23-13.42-10.02-6.43-.22-11.58-5.49-11.58-11.98,0-4.86,2.89-9.03,7.05-10.92.48-8.41,7.43-15.08,15.95-15.08,4.43,0,8.43,1.8,11.33,4.7,1.14-.45,2.37-.7,3.67-.7,5.52,0,10,4.48,10,10,0,1.83-.5,3.53-1.35,5,3.25,2.56,5.35,6.53,5.35,11Zm-34-6c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Zm12,0c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Zm12,0c0-2.21-1.79-4-4-4s-4,1.79-4,4,1.79,4,4,4,4-1.79,4-4Z" fill="currentColor"></path></svg>
                 <span class="task-automation-banner-title semi-bold block">Turn databases of any size into actionable
                     insights</span>
                 <p class="task-automation-banner-description">Autofill runs through hundreds of docs in minutes, then
@@ -342,27 +447,37 @@
                 </video>
             </div>
             <div class="task-automation-features-container flex">
-                <div class="task-automation-feature-item rounded-border">
-                    <i class="fa-solid fa-list-check task-automation-feature-icon"></i>
-                    <span class="task-automation-feature-title block block semi-bold">Action items</span>
-                    <span class="task-automation-feature-description">Analyze meeting notes to generate next steps,
-                        instantly.</span>
-                    <img src="assets/imgs/asset 19.png" class="task-automation-feature-img w-100" alt="Illustration representing action items generation">
+                <div class="task-automation-feature-item rounded-border flex-column">
+                    <div>
+                        <svg class="task-automation-feature-icon" viewBox="0 0 64 64"><path d="m21.76,6l4.24,4.24-13.24,13.24L4,14.73l4.24-4.24,4.52,4.52,9-9Zm-9,25l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9Zm0,16l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9ZM28,13v6h28v-6h-28Zm0,22h28v-6h-28v6Zm0,16h28v-6h-28v6Z" fill="currentColor"></path></svg>
+                        <span class="task-automation-feature-title block block semi-bold">Action items</span>
+                        <span class="task-automation-feature-description">Analyze meeting notes to generate next steps,
+                            instantly.</span>
+                    </div>
+                    <img src="assets/imgs/asset 19.png" class="task-automation-feature-img w-100"
+                        alt="Illustration representing action items generation">
                 </div>
-                <div class="task-automation-feature-item rounded-border">
-                    <i class="fa-solid fa-pencil task-automation-feature-icon"></i>
-                    <span class="task-automation-feature-title block block semi-bold">Summaries</span>
-                    <span class="task-automation-feature-description">Generate a TL;DR across hundreds of items, all at
-                        once.</span>
-                    <img src="assets/imgs/asset 20.png" class="task-automation-feature-img w-100" alt="Illustration representing summaries generation">
+                <div class="task-automation-feature-item rounded-border flex-column">
+                    <div>
+                        <svg class="task-automation-feature-icon" viewBox="0 0 64 64"><path d="m39.17,17.76l7.07,7.07-27.17,27.17-9.66,4-1.41-1.41,4-9.66,27.17-27.17Zm9.76-9.76l-6.93,6.93,7.07,7.07,6.93-6.93-7.07-7.07Z" fill="currentColor"></path></svg>
+                        <span class="task-automation-feature-title block block semi-bold">Summaries</span>
+                        <span class="task-automation-feature-description">Generate a TL;DR across hundreds of items, all
+                            at
+                            once.</span>
+                    </div>
+                    <img src="assets/imgs/asset 20.png" class="task-automation-feature-img w-100"
+                        alt="Illustration representing summaries generation">
                 </div>
-                <div class="task-automation-feature-item rounded-border">
-                    <i class="fa-solid fa-lightbulb task-automation-feature-icon"></i>
-                    <span class="task-automation-feature-title block block semi-bold">Insights</span>
-                    <span class="task-automation-feature-description">See the takeaways from sales calls, research
-                        sessions
-                        & more.</span>
-                    <img src="assets/imgs/asset 21.png" class="task-automation-feature-img w-100" alt="Illustration representing insights visualization">
+                <div class="task-automation-feature-item rounded-border flex-column">
+                    <div>
+                        <svg class="task-automation-feature-icon" viewBox="0 0 64 64"><path d="m32,6c-9.94,0-18,8.06-18,18,0,4.8,1.91,9.41,5.3,12.8l2.93,2.93c1.13,1.13,1.77,2.67,1.77,4.27h16c0-1.6.64-3.14,1.77-4.27l2.93-2.93c3.4-3.4,5.3-8,5.3-12.8,0-9.94-8.06-18-18-18Zm8,18h-6v14h-4v-14h-6v-4h16v4Zm-16,24h16v4l-6,6h-4l-6-6v-4Z" fill="currentColor"></path></svg>
+                        <span class="task-automation-feature-title block block semi-bold">Insights</span>
+                        <span class="task-automation-feature-description">See the takeaways from sales calls, research
+                            sessions
+                            & more.</span>
+                    </div>
+                    <img src="assets/imgs/asset 21.png" class="task-automation-feature-img w-100"
+                        alt="Illustration representing insights visualization">
                 </div>
             </div>
         </section>
@@ -375,51 +490,52 @@
                     <a href="#" class="data-privacy-link">Learn more about Notion AI security practices <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 22.png" class="data-privacy-img" alt="Illustration representing data privacy">
+                <img src="assets/imgs/asset 22.png" class="data-privacy-img"
+                    alt="Illustration representing data privacy">
             </div>
             <div class="data-privacy-features-container">
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-shield data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m52,14v24.11c0,6.77-2.79,11.28-8.84,14.31l-11.16,5.58-11.16-5.58c-6.06-3.03-8.84-7.54-8.84-14.31V14h6.16c3.53,0,5.94-.73,8.88-2.69l4.97-3.31,4.97,3.31c2.94,1.96,5.35,2.69,8.88,2.69h6.16Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">No training on your data</span>
                     <span class="data-privacy-feature-description">We have contractual agreements with our AI
                         subprocessors
                         that prohibit the use of customer data to train their models.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-lock data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m44,26v-6c0-7.4-4.6-12-12-12s-12,4.6-12,12v6h-8v30h40v-30h-8Zm-18-6c0-4.09,1.91-6,6-6s6,1.91,6,6v6h-12v-6Zm11,28v2h-10v-2l2.51-6.69c-1.49-.86-2.51-2.46-2.51-4.31,0-2.76,2.24-5,5-5s5,2.24,5,5c0,1.85-1.02,3.45-2.51,4.31l2.51,6.69Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">Secure encryption</span>
                     <span class="data-privacy-feature-description">When you use Notion AI, your data is encrypted
                         in-transit
                         using TLS 1.2 or greater.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-user-check data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m63,26.24l-18,18-11-11,4.24-4.24,6.76,6.76,13.76-13.76,4.24,4.24Zm-45,1.76c4.94,0,8-3.06,8-8s-3.06-8-8-8-8,3.06-8,8,3.06,8,8,8Zm0,4c-9.87,0-16,6.13-16,16h32c0-9.87-6.13-16-16-16Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">Advanced permissions</span>
                     <span class="data-privacy-feature-description">Specify who can do and create what, with granular
                         precision.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-circle-check data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 18 18"><path d="M4.259 15.128h1.567c.147 0 .242.03.344.14l1.114 1.105c.96.96 1.853.952 2.805 0l1.113-1.106a.42.42 0 0 1 .344-.14h1.568c1.347 0 1.985-.636 1.985-1.991v-1.568a.45.45 0 0 1 .146-.344l1.106-1.113c.96-.952.952-1.846 0-2.798l-1.106-1.12a.435.435 0 0 1-.146-.338V4.288c0-1.348-.63-1.992-1.985-1.992h-1.568a.443.443 0 0 1-.344-.14L10.09 1.052c-.952-.96-1.846-.96-2.805 0L6.17 2.157a.423.423 0 0 1-.344.139H4.26c-1.348 0-1.985.63-1.985 1.992v1.567c0 .14-.037.235-.14.337L1.03 7.313c-.96.952-.952 1.846 0 2.798l1.106 1.113c.102.103.139.205.139.344v1.568c0 1.347.637 1.992 1.985 1.992Zm3.618-2.798c-.286 0-.505-.124-.718-.388L5.372 9.767a.814.814 0 0 1-.205-.528c0-.38.3-.688.681-.688.227 0 .41.088.593.33l1.407 1.78 3.025-4.835c.16-.256.366-.388.6-.388.366 0 .703.264.703.645 0 .168-.08.358-.19.52l-3.428 5.332c-.168.256-.403.395-.681.395Z"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">GDPR & CCPA</span>
                     <span class="data-privacy-feature-description">We have mapped our privacy program to the GDPR and
                         other
                         global privacy regulations.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-shield data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m52,14v24.11c0,6.77-2.79,11.28-8.84,14.31l-11.16,5.58-11.16-5.58c-6.06-3.03-8.84-7.54-8.84-14.31V14h6.16c3.53,0,5.94-.73,8.88-2.69l4.97-3.31,4.97,3.31c2.94,1.96,5.35,2.69,8.88,2.69h6.16Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">SOC 2 (Type 2)</span>
                     <span class="data-privacy-feature-description">Our report certifies that our security policies and
                         controls continuously meet the highest industry standards.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-brush data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m12,50h40v6H12v-6Zm36-20h-12v-4c0-5.29,4-8.71,4-14,0-4.94-3.06-8-8-8s-8,3.06-8,8c0,5.29,4,8.71,4,14v4h-12c-4.94,0-8,3.06-8,8v8h48v-8c0-4.94-3.06-8-8-8Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">ISO 27001</span>
                     <span class="data-privacy-feature-description">Notion is ISO 27001 certified, showing our commitment
                         to
                         the highest requirements of information security.</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-comment-dots data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">SCIM user provisioning</span>
                     <span class="data-privacy-feature-description">Easily create, remove, add, update, or retrieve any
                         user
@@ -427,14 +543,14 @@
                     <span class="data-privacy-feature-badge semi-bold block">Enterprise Plan</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-wrench data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 64 64"><path d="m56,24c0,8.84-7.16,16-16,16-2.22,0-4.33-.45-6.25-1.27l-15.3,15.3c-2.62,2.62-5.87,2.62-8.49,0-2.62-2.62-2.62-5.87,0-8.49l15.3-15.3c-.82-1.92-1.27-4.03-1.27-6.25,0-8.84,7.16-16,16-16,1.38,0,2.72.19,4,.53v2.99l-8,8,1.79,6.69,6.69,1.79h0s8-8,8-8h2.99c.33,1.28.53,2.62.53,4Z" fill="currentColor"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">Security & admin tools</span>
                     <span class="data-privacy-feature-description">Keep your workspace safe with security, compliance,
                         analytics, and auditing tools.</span>
                     <span class="data-privacy-feature-badge semi-bold block">Enterprise Plan</span>
                 </div>
                 <div class="data-privacy-feature-item rounded-border">
-                    <i class="fa-solid fa-circle-check data-privacy-feature-icon"></i>
+                    <svg class="data-privacy-feature-icon" viewBox="0 0 18 18"><path d="M4.259 15.128h1.567c.147 0 .242.03.344.14l1.114 1.105c.96.96 1.853.952 2.805 0l1.113-1.106a.42.42 0 0 1 .344-.14h1.568c1.347 0 1.985-.636 1.985-1.991v-1.568a.45.45 0 0 1 .146-.344l1.106-1.113c.96-.952.952-1.846 0-2.798l-1.106-1.12a.435.435 0 0 1-.146-.338V4.288c0-1.348-.63-1.992-1.985-1.992h-1.568a.443.443 0 0 1-.344-.14L10.09 1.052c-.952-.96-1.846-.96-2.805 0L6.17 2.157a.423.423 0 0 1-.344.139H4.26c-1.348 0-1.985.63-1.985 1.992v1.567c0 .14-.037.235-.14.337L1.03 7.313c-.96.952-.952 1.846 0 2.798l1.106 1.113c.102.103.139.205.139.344v1.568c0 1.347.637 1.992 1.985 1.992Zm3.618-2.798c-.286 0-.505-.124-.718-.388L5.372 9.767a.814.814 0 0 1-.205-.528c0-.38.3-.688.681-.688.227 0 .41.088.593.33l1.407 1.78 3.025-4.835c.16-.256.366-.388.6-.388.366 0 .703.264.703.645 0 .168-.08.358-.19.52l-3.428 5.332c-.168.256-.403.395-.681.395Z"></path></svg>
                     <span class="data-privacy-feature-title block block semi-bold">SAML single sign-on</span>
                     <span class="data-privacy-feature-description">Give employees access to Notion through your identity
                         provider using SAML-based SSO.</span>
@@ -450,12 +566,13 @@
                     <h2 class="template-title">Start with a template. Build anything.</h2>
                     <a href="#" class="template-link">Explore all templates <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                <img src="assets/imgs/asset 23.png" class="template-img" alt="Illustration representing template selection">
+                <img src="assets/imgs/asset 23.png" class="template-img"
+                    alt="Illustration representing template selection">
             </div>
             <div class="template-features-container">
                 <div class="template-feature-item flex-column rounded-border">
                     <div>
-                        <i class="fa-solid fa-file template-feature-icon"></i>
+                        <svg viewBox="0 0 64 64" width="1.3em" class="template-feature-icon"><path d="m30,30h22v26H12V8h18v22Zm8-22h-4v18h18v-4l-14-14Z" fill="currentColor"></path></svg>
                         <span class="template-feature-title block block semi-bold">Recruiting outreach</span>
                         <span class="template-feature-description">You never know what email headline is going to grab
                             the
@@ -463,11 +580,12 @@
                         <a href="#" class="template-feature-link block">Try template <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img src="assets/imgs/asset 24.png" class="template-feature-img w-100" alt="Recruiting outreach template">
+                    <img src="assets/imgs/asset 24.png" class="template-feature-img w-100"
+                        alt="Recruiting outreach template">
                 </div>
                 <div class="template-feature-item flex-column rounded-border">
                     <div>
-                        <i class="fa-solid fa-file template-feature-icon"></i>
+                        <svg viewBox="0 0 64 64" width="1.3em" class="template-feature-icon"><path d="m30,30h22v26H12V8h18v22Zm8-22h-4v18h18v-4l-14-14Z" fill="currentColor"></path></svg>
                         <span class="template-feature-title block block semi-bold">Meeting summaries</span>
                         <span class="template-feature-description">Meeting follow-ups are always the same: someone
                             writes
@@ -477,11 +595,12 @@
                         <a href="#" class="template-feature-link block">Try template <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img src="assets/imgs/asset 25.png" class="template-feature-img w-100" alt="Meeting summaries template">
+                    <img src="assets/imgs/asset 25.png" class="template-feature-img w-100"
+                        alt="Meeting summaries template">
                 </div>
                 <div class="template-feature-item flex-column rounded-border">
                     <div>
-                        <i class="fa-solid fa-file template-feature-icon"></i>
+                        <svg viewBox="0 0 64 64" width="1.3em" class="template-feature-icon"><path d="m30,30h22v26H12V8h18v22Zm8-22h-4v18h18v-4l-14-14Z" fill="currentColor"></path></svg>
                         <span class="template-feature-title block semi-bold">Weekly meal prep</span>
                         <span class="template-feature-description">Tell us what you have in your fridge, the flavors you
                             want to
@@ -490,11 +609,12 @@
                         <a href="#" class="template-feature-link block">Try template <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img src="assets/imgs/asset 26.png" class="template-feature-img w-100" alt="Weekly meal prep template">
+                    <img src="assets/imgs/asset 26.png" class="template-feature-img w-100"
+                        alt="Weekly meal prep template">
                 </div>
                 <div class="template-feature-item flex-column rounded-border">
                     <div>
-                        <i class="fa-solid fa-file template-feature-icon"></i>
+                        <svg viewBox="0 0 64 64" width="1.3em" class="template-feature-icon"><path d="m30,30h22v26H12V8h18v22Zm8-22h-4v18h18v-4l-14-14Z" fill="currentColor"></path></svg>
                         <span class="template-feature-title block semi-bold">Video script generator</span>
                         <span class="template-feature-description">Writing scripts for your idea can be hard to get
                             right.
@@ -502,7 +622,8 @@
                         <a href="#" class="template-feature-link block">Try template <i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <img src="assets/imgs/asset 27.png" class="template-feature-img w-100 w-100" alt="Video script generator template">
+                    <img src="assets/imgs/asset 27.png" class="template-feature-img w-100 w-100"
+                        alt="Video script generator template">
                 </div>
             </div>
         </section>
@@ -514,8 +635,10 @@
             <span class="faq-description semi-bold">Tap into the power of AI right inside your wikis, docs, and projects
                 today.</span>
             <div class="faq-btns flex">
-                <button type="button" class="faq-start-btn semi-bold clickable rounded-border-small">Get started</button>
-                <button type="button" class="faq-signup_qa-btn clickable rounded-border-small">Sign up for Q&A Waitlist</button>
+                <button type="button" class="faq-start-btn semi-bold clickable rounded-border-small">Get
+                    started</button>
+                <button type="button" class="faq-signup_qa-btn clickable rounded-border-small">Sign up for Q&A
+                    Waitlist</button>
             </div>
             <h3 class="faq-heading">Questions & answers</h3>
             <div class="faq-questions-container w-100">
@@ -543,6 +666,7 @@
             </div>
         </section>
     </main>
+
     <div class="horizontal-line"></div>
     <!-- Footer section -->
     <footer>
@@ -561,8 +685,9 @@
                 </div>
                 <div class="language-dropdown">
                     <div class="language-select">
-                        <button class="language-selected semi-bold clickable rounded-border-small" onclick="toggleLanguage()">
-                            <i class="fa-solid fa-globe"></i>
+                        <button class="language-selected semi-bold clickable rounded-border-small"
+                            onclick="toggleLanguage()">
+                            <svg viewBox="0 0 14 14" class="language-globe-icon"><path d="M7.12 12.8223C10.4305 12.8223 13.1727 10.0859 13.1727 6.76953C13.1727 3.45898 10.4305 0.716797 7.11414 0.716797C3.80359 0.716797 1.06726 3.45898 1.06726 6.76953C1.06726 10.0859 3.80945 12.8223 7.12 12.8223ZM3.59265 3.08398C4.17859 2.52734 4.88757 2.09961 5.67859 1.86523C5.26257 2.28125 4.91101 2.86719 4.64734 3.58203C4.23718 3.45312 3.88562 3.2832 3.59265 3.08398ZM8.56726 1.87109C9.35242 2.10547 10.0614 2.52734 10.6415 3.08398C10.3544 3.28906 10.0028 3.45312 9.59265 3.58789C9.32898 2.86719 8.97742 2.28125 8.56726 1.87109ZM7.53015 2.05859C8.01648 2.29297 8.46179 2.92578 8.7782 3.78711C8.39148 3.85742 7.97546 3.89844 7.53015 3.91602V2.05859ZM5.46179 3.78711C5.78406 2.92578 6.22351 2.29297 6.70984 2.05859V3.91602C6.26453 3.89844 5.84851 3.85742 5.46179 3.78711ZM2.02234 6.35938C2.10437 5.36328 2.47937 4.44336 3.05359 3.6875C3.41101 3.95117 3.8739 4.17969 4.41296 4.34961C4.26062 4.95898 4.16101 5.63867 4.13171 6.35938H2.02234ZM10.1083 6.35938C10.079 5.63867 9.97937 4.95898 9.82703 4.34961C10.3661 4.17969 10.829 3.95703 11.1805 3.6875C11.7606 4.44336 12.1356 5.36328 12.2177 6.35938H10.1083ZM4.9696 6.35938C4.9989 5.7207 5.08679 5.11133 5.22156 4.56055C5.69031 4.6543 6.18835 4.71289 6.70984 4.73633V6.35938H4.9696ZM7.53015 6.35938V4.73633C8.05164 4.71289 8.54968 4.6543 9.01843 4.56055C9.1532 5.11133 9.24109 5.7207 9.27039 6.35938H7.53015ZM2.02234 7.17969H4.13171C4.16101 7.91211 4.26062 8.59766 4.41296 9.21289C3.87976 9.38281 3.42273 9.60547 3.07117 9.86914C2.48523 9.10742 2.10437 8.18164 2.02234 7.17969ZM4.9696 7.17969H6.70984V8.83203C6.19421 8.85547 5.69031 8.91406 5.22742 9.00195C5.08679 8.44531 4.99304 7.82422 4.9696 7.17969ZM7.53015 8.83203V7.17969H9.27039C9.24695 7.82422 9.1532 8.44531 9.01257 9.00195C8.54968 8.91406 8.05164 8.85547 7.53015 8.83203ZM9.82703 9.21289C9.98523 8.59766 10.079 7.91211 10.1083 7.17969H12.2177C12.1356 8.18164 11.7548 9.10742 11.1688 9.86914C10.8173 9.60547 10.3602 9.38281 9.82703 9.21289ZM7.53015 9.65234C7.9696 9.66992 8.38562 9.71094 8.76648 9.78125C8.45007 10.625 8.01062 11.252 7.53015 11.4805V9.65234ZM5.47351 9.78125C5.85437 9.71094 6.27039 9.66992 6.70984 9.65234V11.4805C6.22937 11.252 5.78992 10.625 5.47351 9.78125ZM3.61023 10.4727C3.89734 10.2734 4.2489 10.1094 4.6532 9.98047C4.91687 10.6836 5.26257 11.2578 5.66687 11.668C4.89343 11.4336 4.19031 11.0176 3.61023 10.4727ZM9.58679 9.98047C9.99109 10.1094 10.3427 10.2734 10.6298 10.4727C10.0497 11.0176 9.34656 11.4336 8.57312 11.668C8.97742 11.2578 9.32312 10.6836 9.58679 9.98047Z" fill="currentColor"></path></svg>
                             English
                             <i class="fa-solid fa-angle-down"></i>
                         </button>
@@ -679,7 +804,7 @@
         </nav>
         <div class="flex flex-column-lg">
             <div class="spacer"></div> <!-- for spacing -->
-            <div class="copyright small-text">
+            <div class="copyright">
                 <a href="#" class="copyright-info-sharing-txt">Do Not Sell or Share My Info</a>
                 <span class="copyright-txt block">&copy; 2024 Notion Labs, Inc.</span>
             </div>
