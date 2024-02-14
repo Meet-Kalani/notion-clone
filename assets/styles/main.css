@@ -1194,7 +1194,8 @@ footer .flex {
     .qa-header .qa-img {
         position: static;
         order: 2;
-        margin-bottom: -14px;
+        /* margin-bottom: -14px; */
+        margin: 0 0 -14px 24px;
     }
 
     .qa .qa-title {
@@ -1203,6 +1204,7 @@ footer .flex {
         text-wrap: balance;
     }
 
+    /* content assist section */
     .content-assist-header .content-assist-title,
     .task-automation-header .task-automation-title,
     .template .template-title,
@@ -1318,6 +1320,11 @@ footer .flex {
         width: 100%;
     }
 
+    /* content assist section */
+    .content-assist-header .content-assist-img {
+        width: 234px;
+    }
+
     .content-assist-header,
     .task-automation-header,
     .data-privacy-header,
@@ -1325,9 +1332,15 @@ footer .flex {
         flex-direction: column;
     }
 
-    /* content assist section */
-    .content-assist-header .content-assist-img {
-        width: 234px;
+    .content-assist-header .content-assist-img,
+     .task-automation-header .task-automation-img,
+     .data-privacy-header .data-privacy-img,
+     .template-header .template-img {
+        margin-right: 20px;
+    }
+
+    .qa-header .qa-img{
+        margin-left: 18px;
     }
 
     /* task automation section */
@@ -1460,6 +1473,7 @@ footer .flex {
         font-size: 24px;
     }
 
+    /* content assist section */
     .content-assist-header .content-assist-title,
     .task-automation-header .task-automation-title,
     .template .template-title,
@@ -1471,6 +1485,17 @@ footer .flex {
     .task-automation-features-container .task-automation-feature-item,
     .template-features-container .template-feature-item {
         padding: 20px 24px 0 24px;
+    }
+
+    .content-assist-header .content-assist-img,
+     .task-automation-header .task-automation-img,
+     .data-privacy-header .data-privacy-img,
+     .template-header .template-img {
+        margin-right: 10px;
+    }
+
+    .qa-header .qa-img {
+        margin-left: 10px;
     }
 
     /* data privacy section */
