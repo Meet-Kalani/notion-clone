@@ -1332,6 +1332,10 @@ footer .flex {
         flex-direction: column;
     }
 
+    .content-assist-header{
+        gap: 26px;
+    }
+
     .content-assist-header .content-assist-img,
      .task-automation-header .task-automation-img,
      .data-privacy-header .data-privacy-img,
