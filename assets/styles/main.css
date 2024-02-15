@@ -77,23 +77,27 @@ header {
     top: 0;
     position: fixed;
     justify-content: space-between;
-    padding: 16px 0;
-    font-size: 15.2px;
+    padding: 15px 16px;
+    font-size: 15px;
     background-color: var(--white);
     z-index: 1;
-    border-bottom: 1px solid var(--border-color);
-    width: calc(100% - 32px);
-    margin: 0 16px;
+    border-bottom: 1px solid transparent;
+    width: 100%;
+    transition: border-bottom .3s ease;
+}
+
+.header-border{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    gap: 6px;
+    gap: 10px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
 }
 
-.logo-img {
-    transform: scale(1.2);
+.logo .logo-svg{
+    height: 32px;
 }
 
 .fa-bars,
@@ -109,14 +113,57 @@ header {
 /* main navbar styles */
 .main-links-container .nav-links {
     list-style: none;
-    margin-left: 19px;
+    margin-left: 12px;
     position: relative;
 }
 
 .main-links-container .nav-link {
     gap: 6px;
     padding: 6px 10px;
+    /* padding: 0 24px 0 10px; */
+    font-size: 15px;
+    color: #050505;
 }
+
+.main-links-container .nav-link{
+    padding: 0 24px 0 10px;
+    height: 30px;
+    line-height: 31px;
+    display: block;
+}
+
+.main-links-container .nav-link-wrapper{
+    position: relative;
+}
+
+.main-links-container .nav-link::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background: url(https://www.notion.so/front-static/shared/icons/nav-caret.svg);
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+}
+
+.main-links-container .no-caret::after{
+    content: none;
+}
+
+/* 
+.main-links-container .nav-link::after{
+    content: "";
+    display: block;
+    width: 8px;
+    height: 6px;
+    background: url("https://www.notion.so/front-static/shared/icons/nav-caret.svg");
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 10px;
+} */
 
 .main-links-container .nav-links .nav-link-wrapper:hover+.product-container,
 .main-links-container .product-container:hover,
@@ -142,13 +189,30 @@ header {
     display: none;
     position: absolute;
     top: 32px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 4px;
+    box-shadow: 0px 4px 18px rgb(0 0 0/4%), 0px 2.025px 7.84688px rgba(0, 0, 0, .027), 0px 0.8px 2.925px rgb(0 0 0/2%), 0px 0.175px 1.04062px rgba(0, 0, 0, .013);
+    ;
+    /* padding: 4px; */
     background-color: var(--white);
+    border-radius: 5px;
+}
+
+.main-links-container .product-container {
+    width: 480px;
+}
+
+.main-links-container .product-guide {
+    flex: 1;
+    padding: 4px;
 }
 
 .main-links-container .download-container {
     left: 5.7rem;
+    width: 220px;
+    padding: 4px 4px 8px 4px;
+}
+
+.main-links-container .download-container .download-content {
+    padding: 6px 8px;
 }
 
 .main-links-container .solution-container {
@@ -157,15 +221,24 @@ header {
 
 .main-links-container .resource-container {
     left: 18.54rem;
+    padding: 4px;
+    min-width: 180px;
+}
+
+.main-links-container .resource-container a {
+    padding: 6px 8px;
+    color: #050505;
 }
 
 .main-links-container .product-wrapper {
     border-right: 1px solid var(--border-color);
+    flex: 1;
+    padding: 4px;
 }
 
 .main-links-container .product-wrapper .product-content {
-    gap: 14px;
-    padding: 6px 14px;
+    gap: 10px;
+    padding: 5px 8px;
 }
 
 .main-links-container .product-wrapper .product-content:hover,
@@ -176,7 +249,8 @@ header {
 .main-links-container .solution-container .solution-team-function .team-function-item:hover,
 .main-links-container .solution-container .solution-notion-for .notion-for-item:hover,
 .language-container .language:hover {
-    background-color: var(--banner-bg);
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
 }
 
 .main-links-container .product-content .new-badge {
@@ -186,11 +260,17 @@ header {
     padding: 2px 8px;
     border-radius: 8px;
     background-color: #FCE7D9;
+    font-weight: 600;
 }
 
-.product-container svg{
+.main-links-container .product-container svg {
     width: 22px;
     height: 22px;
+}
+
+.main-links-container .product-name,
+.main-links-container .product-guide-title {
+    color: #050505;
 }
 
 .ai-icon {
@@ -216,19 +296,17 @@ header {
 }
 
 .product-guide .product-info {
-    padding: 6px 14px;
+    padding: 4px 8px;
 }
 
 .main-links-container .solution-team-function,
 .main-links-container .solution-notion-for {
     padding: 4px;
+    min-width: 180px;
 }
 
-.main-links-container .download-container .download-content,
-.main-links-container .resource-container a,
 .main-links-container .solution-container .solution-team-function .team-function-item,
-.main-links-container .solution-container .solution-notion-for .notion-for-item,
-.main-links-container .solution-container .solution-title {
+.main-links-container .solution-container .solution-notion-for .notion-for-item {
     padding: 6px;
 }
 
@@ -236,17 +314,24 @@ header {
 .main-links-container .download-container .download-note a {
     color: grey;
     padding: 6px;
+    line-height: 1.4;
 }
 
-.main-links-container .solution-title {
+.main-links-container .solution-container .solution-title {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 11px;
     width: 160px;
+    color: #00000099;
+    line-height: 1;
+    letter-spacing: .06em;
+    padding: 0 8px;
+    margin: 8px 0;
 }
 
 .main-links-container .solution-team-size {
-    width: 320px;
+    width: 300px;
+    padding: 4px;
     border-right: 1px solid var(--border-color);
 }
 
@@ -261,19 +346,24 @@ header {
 }
 
 .main-links-container .solution-team-size .solution-content {
-    gap: 16px;
-    padding: 6px;
+    gap: 6px;
+    padding: 4px 8px;
+    /* width: 180px; */
 }
 
 .main-links-container .solution-team-size .solution-icon {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 /* action navbar styles */
+.action-links-container {
+    gap: 8px;
+}
+
 .action-links-container a {
     padding: 6px 10px;
-    margin: 0 8px;
+    /* margin: 0 8px; */
 }
 
 .action-links-container .vertical-line {
@@ -290,7 +380,9 @@ header {
 .mobile-navbar .free-notion-btn {
     background-color: #121212;
     color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    min-height: 30px;
+    font-weight: 554;
+    box-shadow: 0 0.3259259164px 0.7333333492px 0 rgba(0, 0, 0, .12), 0 1.5407407284px 2.8666665554px 0 rgba(0, 0, 0, .07), 0 4px 9px 0 rgba(0, 0, 0, .05);
 }
 
 .action-links-container .free-notion-btn:hover,
@@ -307,7 +399,7 @@ header {
     align-self: center;
     margin-left: auto;
     margin-right: 24px;
-    padding: 6px 10px;
+    padding: 4px 11px;
     font-size: 13.5px;
 }
 
@@ -340,6 +432,9 @@ main {
 
 .hero-container .hero-subtitle {
     font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #050505;
 }
 
 .hero-container button,
@@ -372,7 +467,7 @@ main {
     position: absolute;
     right: 32px;
     bottom: 0;
-    width: 240px;
+    width: 226px;
 }
 
 .features-container {
@@ -904,7 +999,7 @@ footer .flex {
     gap: 6px;
 }
 
-.language-globe-icon{
+.language-globe-icon {
     width: 16px;
     height: 16px;
 }
@@ -985,7 +1080,7 @@ footer .flex {
     /* header section */
     header {
         width: 100%;
-        padding: 16px;
+        padding: 15px 16px;
         margin: 0;
         font-size: 16px;
         justify-content: flex-start;
@@ -996,7 +1091,8 @@ footer .flex {
     }
 
     .mobile-navbar .free-notion-btn {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
     }
 
     /* main navbar style */
@@ -1242,6 +1338,7 @@ footer .flex {
 }
 
 @media screen and (max-width: 840px) {
+
     /* hero section */
     .hero-container {
         text-align: center;
@@ -1332,18 +1429,18 @@ footer .flex {
         flex-direction: column;
     }
 
-    .content-assist-header{
+    .content-assist-header {
         gap: 26px;
     }
 
     .content-assist-header .content-assist-img,
-     .task-automation-header .task-automation-img,
-     .data-privacy-header .data-privacy-img,
-     .template-header .template-img {
+    .task-automation-header .task-automation-img,
+    .data-privacy-header .data-privacy-img,
+    .template-header .template-img {
         margin-right: 20px;
     }
 
-    .qa-header .qa-img{
+    .qa-header .qa-img {
         margin-left: 18px;
     }
 
@@ -1492,9 +1589,9 @@ footer .flex {
     }
 
     .content-assist-header .content-assist-img,
-     .task-automation-header .task-automation-img,
-     .data-privacy-header .data-privacy-img,
-     .template-header .template-img {
+    .task-automation-header .task-automation-img,
+    .data-privacy-header .data-privacy-img,
+    .template-header .template-img {
         margin-right: 10px;
     }
 
@@ -1518,7 +1615,7 @@ footer .flex {
         font-size: 36px;
     }
 
-    .faq .faq-btns button{
+    .faq .faq-btns button {
         padding: 8px 12px;
     }
 
@@ -1539,11 +1636,11 @@ footer .flex {
         width: 90%;
     }
 
-    .faq .faq-question-item .faq-question-title{
+    .faq .faq-question-item .faq-question-title {
         width: 80%;
     }
 
-    footer{
+    footer {
         padding: 36px 16px;
     }
 }

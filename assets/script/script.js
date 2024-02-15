@@ -15,7 +15,7 @@ function openNavbar(){
             header.style.height = "100%";
         } else {
             navbar.style.display = "none";
-            mobileNavbarBtn.style.display = "inline-block";
+            mobileNavbarBtn.style.display = "inline-flex";
             mobileNavbar.style.borderBottom = "none";
             mobileNavbar.style.paddingBottom = "0";
             header.style.height = "auto";
@@ -51,5 +51,15 @@ function toggleLanguage(){
 window.addEventListener('click', function(event) {
     if (!languageContainer.contains(event.target) && event.target.tagName !== 'BUTTON') {
       languageContainer.style.display = 'none';
+    }
+});
+
+// function for adding border on scroll
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('header-border');
+    } else {
+        header.classList.remove('header-border');
     }
 });
