@@ -3,6 +3,7 @@ let mobileNavbarBtn = document.querySelector(".mobile-navbar .free-notion-btn")
 let mobileNavbar = document.querySelector('.mobile-navbar');
 let languageContainer = document.querySelector('.language-container')
 let header = document.querySelector('header');
+let body = document.body;
 
 // navbar toggle for small devices
 function openNavbar(){
@@ -13,12 +14,14 @@ function openNavbar(){
             mobileNavbar.style.borderBottom = "1px solid #E4E4E5";
             mobileNavbar.style.paddingBottom = "16px";
             header.style.height = "100%";
+            body.classList.add('navbar-open');
         } else {
             navbar.style.display = "none";
             mobileNavbarBtn.style.display = "inline-flex";
             mobileNavbar.style.borderBottom = "none";
             mobileNavbar.style.paddingBottom = "0";
             header.style.height = "auto";
+            body.classList.remove('navbar-open');
         }
     });
 }

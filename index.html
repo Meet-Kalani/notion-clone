@@ -52,7 +52,7 @@
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Product</a>
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="product-container flex flex-column-lg d-none-lg">
+                    <div class="product-container rounded-border-small flex flex-column-lg d-none-lg">
                         <div class="product-wrapper flex-column">
                             <div class="product-content clickable flex align-items-center">
                                 <svg class="ai-icon" viewBox="0 0 24 23">
@@ -170,7 +170,7 @@
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Download</a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="download-container flex-column d-none-lg">
+                    <div class="download-container rounded-border-small flex-column d-none-lg">
                         <a href="#" class="download-content">Notion</a>
                         <a href="#" class="download-content">Calendar</a>
                         <a href="#" class="download-content">Web Clipper</a>
@@ -182,7 +182,7 @@
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Solutions</a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="solution-container flex flex-column-lg d-none-lg">
+                    <div class="solution-container rounded-border-small flex flex-column-lg d-none-lg">
                         <div class="solution-team-size flex-column">
                             <span class="solution-title small-text">by team size</span>
                             <div class="solution-content flex align-items-center clickable">
@@ -230,7 +230,7 @@
                         <a href="#" class="nav-link rounded-border-small flex align-items-center">Resources</a><i
                             class="fa-solid fa-angle-right"></i>
                     </li>
-                    <div class="resource-container flex-column d-none-lg">
+                    <div class="resource-container rounded-border-small flex-column d-none-lg">
                         <a href="#">Blog</a>
                         <a href="#">Notion Academy</a>
                         <a href="#">Guides & tutorials</a>
@@ -248,10 +248,12 @@
             </nav>
         </div>
         <nav class="action-links-container navbar flex flex-column-lg align-items-center">
-            <a href="#" class="demo-btn w-100-lg rounded-border-small">Request a demo</a>
+            <a href="#" class="demo-btn w-100-lg rounded-border-small flex align-items-center">Request a demo</a>
             <span class="vertical-line d-none-lg">|</span>
-            <a href="#" class="login-btn w-100-lg rounded-border-small">Log in</a>
-            <a href="#" class="free-notion-btn small-text w-100-lg semi-bold rounded-border-small">Get Notion free</a>
+            <a href="#" class="login-btn flex align-items-center w-100-lg rounded-border-small">Log in</a>
+            <a href="#"
+                class="free-notion-btn flex align-items-center small-text w-100-lg semi-bold rounded-border-small">Get
+                Notion free</a>
         </nav>
     </header>
 
@@ -259,7 +261,7 @@
     <main>
         <!-- hero section -->
         <section id="hero-section">
-            <div class="hero-container flex-column">
+            <div class="hero-container">
                 <h1 class="hero-title">Just ask <br> Notion AI.</h1>
                 <span class="hero-subtitle semi-bold">Knowledge, answers, <br> ideas. One click away.</span>
                 <div class="cta-btns">
@@ -274,22 +276,26 @@
                 <div class="features-container flex">
                     <div class="feature-item clickable rounded-border">
                         <div class="flex-column">
-                            <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
-                                <path
-                                    d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z"
-                                    fill="currentColor"></path>
-                            </svg>
+                            <div class="feature-icon-container rounded-border-small flex align-items-center">
+                                <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
+                                    <path
+                                        d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
                             <span class="feature-title semi-bold block">Get answers</span>
                         </div>
                         <p class="feature-description">Just ask Q&A, and find the info you need in seconds.</p>
                     </div>
                     <div class="feature-item clickable rounded-border">
                         <div class="flex-column">
-                            <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
-                                <path
-                                    d="m32,6c-9.94,0-18,8.06-18,18,0,4.8,1.91,9.41,5.3,12.8l2.93,2.93c1.13,1.13,1.77,2.67,1.77,4.27h16c0-1.6.64-3.14,1.77-4.27l2.93-2.93c3.4-3.4,5.3-8,5.3-12.8,0-9.94-8.06-18-18-18Zm8,18h-6v14h-4v-14h-6v-4h16v4Zm-16,24h16v4l-6,6h-4l-6-6v-4Z"
-                                    fill="currentColor"></path>
-                            </svg>
+                            <div class="feature-icon-container rounded-border-small flex align-items-center">
+                                <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
+                                    <path
+                                        d="m32,6c-9.94,0-18,8.06-18,18,0,4.8,1.91,9.41,5.3,12.8l2.93,2.93c1.13,1.13,1.77,2.67,1.77,4.27h16c0-1.6.64-3.14,1.77-4.27l2.93-2.93c3.4-3.4,5.3-8,5.3-12.8,0-9.94-8.06-18-18-18Zm8,18h-6v14h-4v-14h-6v-4h16v4Zm-16,24h16v4l-6,6h-4l-6-6v-4Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
                             <span class="feature-title semi-bold block">Write better</span>
                         </div>
                         <p class="feature-description">Get help writing and brainstorming in Notion, not in a separate
@@ -297,11 +303,13 @@
                     </div>
                     <div class="feature-item clickable rounded-border">
                         <div class="flex-column">
-                            <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
-                                <path
-                                    d="m21.76,6l4.24,4.24-13.24,13.24L4,14.73l4.24-4.24,4.52,4.52,9-9Zm-9,25l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9Zm0,16l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9ZM28,13v6h28v-6h-28Zm0,22h28v-6h-28v6Zm0,16h28v-6h-28v6Z"
-                                    fill="currentColor"></path>
-                            </svg>
+                            <div class="feature-icon-container rounded-border-small flex align-items-center">
+                                <svg viewBox="0 0 64 64" width="1em" class="feature-icon rounded-border-small">
+                                    <path
+                                        d="m21.76,6l4.24,4.24-13.24,13.24L4,14.73l4.24-4.24,4.52,4.52,9-9Zm-9,25l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9Zm0,16l-4.52-4.52-4.24,4.24,8.76,8.76,13.24-13.24-4.24-4.24-9,9ZM28,13v6h28v-6h-28Zm0,22h28v-6h-28v6Zm0,16h28v-6h-28v6Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
                             <span class="feature-title semi-bold block">Autofill tables</span>
                         </div>
                         <p class="feature-description">Turn overwhelming data into clear, actionable information in
@@ -310,29 +318,34 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/imgs/asset 4.png" class="slider-img w-100" alt="Image for use case of Notion">
+            <img src="assets/imgs/asset 4.png" class="slider-img w-100 rounded-border"
+                alt="Image for use case of Notion">
         </section>
 
         <!-- AI add-on section -->
         <div class="ai-add-on clickable rounded-border">
-            <div class="flex align-items-center">
-                <svg class="ai-add-on-icon rounded-border-small" viewBox="0 0 24 23">
-                    <g>
-                        <path
-                            d="M10.4563 5.72844C10.9113 5.57094 10.9113 5.29094 10.4563 5.11594L7.98881 4.17094C7.55131 4.01344 7.04381 3.50594 6.86881 3.05094L5.92381 0.583437C5.76631 0.128438 5.48631 0.128438 5.31131 0.583437L4.36631 3.05094C4.20881 3.48844 3.70131 3.99594 3.24631 4.17094L0.778811 5.11594C0.323811 5.27344 0.323811 5.55344 0.778811 5.72844L3.24631 6.67344C3.68381 6.83094 4.19131 7.33844 4.36631 7.79344L5.31131 10.2609C5.46881 10.7159 5.74881 10.7159 5.92381 10.2609L6.86881 7.79344C7.02631 7.35594 7.53381 6.84844 7.98881 6.67344L10.4563 5.72844Z">
-                        </path>
-                        <path
-                            d="M22.4788 14.3734C23.8788 14.0234 23.8788 13.4459 22.4788 13.0959L19.3813 12.3259C17.9813 11.9759 16.5463 10.5409 16.1963 9.14091L15.4263 6.04341C15.0763 4.64341 14.4988 4.64341 14.1488 6.04341L13.3788 9.14091C13.0288 10.5409 11.5938 11.9759 10.1938 12.3259L7.09631 13.0959C5.69631 13.4459 5.69631 14.0234 7.09631 14.3734L10.1938 15.1434C11.5938 15.4934 13.0288 16.9284 13.3788 18.3284L14.1488 21.4259C14.4988 22.8259 15.0763 22.8259 15.4263 21.4259L16.1963 18.3284C16.5463 16.9284 17.9813 15.4934 19.3813 15.1434L22.4788 14.3734Z">
-                        </path>
-                    </g>
-                </svg>
-                <span class="ai-add-on-title semi-bold">Notion AI add-on</span>
+            <div>
+                <div class="flex align-items-center">
+                    <div class="ai-add-on-icon-container flex align-items-center">
+                        <svg class="ai-add-on-icon" viewBox="0 0 24 23">
+                            <g>
+                                <path
+                                    d="M10.4563 5.72844C10.9113 5.57094 10.9113 5.29094 10.4563 5.11594L7.98881 4.17094C7.55131 4.01344 7.04381 3.50594 6.86881 3.05094L5.92381 0.583437C5.76631 0.128438 5.48631 0.128438 5.31131 0.583437L4.36631 3.05094C4.20881 3.48844 3.70131 3.99594 3.24631 4.17094L0.778811 5.11594C0.323811 5.27344 0.323811 5.55344 0.778811 5.72844L3.24631 6.67344C3.68381 6.83094 4.19131 7.33844 4.36631 7.79344L5.31131 10.2609C5.46881 10.7159 5.74881 10.7159 5.92381 10.2609L6.86881 7.79344C7.02631 7.35594 7.53381 6.84844 7.98881 6.67344L10.4563 5.72844Z">
+                                </path>
+                                <path
+                                    d="M22.4788 14.3734C23.8788 14.0234 23.8788 13.4459 22.4788 13.0959L19.3813 12.3259C17.9813 11.9759 16.5463 10.5409 16.1963 9.14091L15.4263 6.04341C15.0763 4.64341 14.4988 4.64341 14.1488 6.04341L13.3788 9.14091C13.0288 10.5409 11.5938 11.9759 10.1938 12.3259L7.09631 13.0959C5.69631 13.4459 5.69631 14.0234 7.09631 14.3734L10.1938 15.1434C11.5938 15.4934 13.0288 16.9284 13.3788 18.3284L14.1488 21.4259C14.4988 22.8259 15.0763 22.8259 15.4263 21.4259L16.1963 18.3284C16.5463 16.9284 17.9813 15.4934 19.3813 15.1434L22.4788 14.3734Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="ai-add-on-title">Notion AI add-on</span>
+                </div>
+                <p class="ai-add-on-description">Add to your workspace for $8 / member / month billed annually or $10 /
+                    member / month billed monthly.</p>
+                <button type="button"
+                    class="ai-add-on-btn flex align-items-center semi-bold clickable rounded-border-small">Get started
+                    <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-            <p class="ai-add-on-description">Add to any paid plan for $8 per member / month, billed annually. $10 per
-                member
-                / month for monthly billing and Free plans.</p>
-            <button type="button" class="ai-add-on-btn semi-bold clickable rounded-border-small">Get started <i
-                    class="fa-solid fa-arrow-right"></i></button>
             <img src="assets/imgs/asset 7.png" class="ai-add-on-img" alt="Image of AI Add-on functionality">
         </div>
 
@@ -348,7 +361,7 @@
                         d="m32,8c-14.81,0-24,8.43-24,22,0,6.92,2.4,12.49,6.7,16.3l-6.7,6.7,2,3c5.42,0,10.43-1.8,14.45-4.84,2.32.55,4.84.84,7.55.84,14.81,0,24-8.43,24-22s-9.19-22-24-22Zm0,8c4.94,0,8,3.06,8,8s-3.06,8-8,8-8-3.06-8-8,3.06-8,8-8Zm0,30c-5.6,0-10.03-1.41-13.09-4.03,2.72-3.81,7.24-5.97,13.09-5.97s10.37,2.16,13.09,5.97c-3.06,2.62-7.49,4.03-13.09,4.03Z"
                         fill="currentColor"></path>
                 </svg>
-                <span class="qa-banner-title semi-bold block">Help with any question</span>
+                <span class="qa-banner-title block">Help with any question</span>
                 <p class="qa-banner-description">Q&A unblocks your work using information across your wikis, projects,
                     and
                     docs. All you have to do is ask.</p>
@@ -366,15 +379,15 @@
                     alt="Image of Ask-Projects-Image functionality">
             </div>
             <div class="qa-testimonial">
-                <p class="qa-testimonial-description">&quot;Q&A can change the landscape completely for any size
+                <p class="qa-testimonial-description">Q&A can change the landscape completely for any size
                     company.
-                    It&#39;s been central to actually making sense of all the data we already have.&quot;</p>
+                    It’s been central to actually making sense of all the data we already have.</p>
                 <div class="flex">
                     <img src="assets/imgs/asset 12.png" class="qa-testimonial-img"
                         alt="Image of Organization which used Q&A and gave feedback">
                     <div class="qa-testimonial-by">
-                        <span class="qa-testimonial-name semi-bold small-text block">Scott Entwistle</span>
-                        <span class="qa-testimonial-designation small-text block">Senior Recruiter, remote.com</span>
+                        <span class="qa-testimonial-name semi-bold block">Scott Entwistle</span>
+                        <span class="qa-testimonial-designation block">Senior Recruiter, remote.com</span>
                     </div>
                 </div>
             </div>
@@ -441,15 +454,15 @@
                 </div>
             </div>
             <div class="content-assist-testimonial">
-                <p class="content-assist-testimonial-description">&quot;It&#39;s the slickest, most practical
+                <p class="content-assist-testimonial-description">It’s the slickest, most practical
                     implementation of
-                    generative AI for text that I&#39;ve used to date.&quot;</p>
+                    generative AI for text that I’ve used to date.</p>
                 <div class="flex">
                     <img src="assets/imgs/asset 17.png" class="content-assist-testimonial-img"
                         alt="Image of Organization which used Content-Assist Feature and gave feedback">
                     <div class="content-assist-testimonial-by">
-                        <span class="content-assist-testimonial-name small-text semi-bold block">Alex Heath</span>
-                        <span class="content-assist-testimonial-designation small-text block">Deputy Editor, The
+                        <span class="content-assist-testimonial-nam semi-bold block">Alex Heath</span>
+                        <span class="content-assist-testimonial-designation block">Deputy Editor, The
                             Verge</span>
                     </div>
                 </div>
